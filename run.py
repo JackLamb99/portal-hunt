@@ -1,3 +1,16 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import narrative as nar
+
+def main_menu():
+    """
+    Runs the main menu to start the program, includes the menu_text narrative
+    """
+    print(nar.menu_text)
+    user_input = input("Enter 'start' to begin your quest: ")
+
+    while user_input.lower() != "start":
+        print("Invalid input. Please enter 'start' to begin your quest.")
+        user_input = input("Enter 'start' to begin your quest: ")
+
+    print("Call glade function here")
+
+main_menu()
