@@ -8,7 +8,7 @@ def main_menu():
     user_input = input("Enter 'start' to begin your quest: ")
 
     while user_input.lower() != "start":
-        print("Invalid input. Please enter 'start' to begin your quest.")
+        print("Invalid input. Please enter 'start' to begin your quest.\n")
         user_input = input("Enter 'start' to begin your quest: ")
 
     print("Call glade function here")
