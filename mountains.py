@@ -14,6 +14,25 @@ import narrative as nar
 import general as gen
 
 
+def mnt_crossrd_4a():
+    """
+    Runs a 'crossroad' scene, grid ref. 'Mountains-4A'
+    """
+    directions = ["north", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        print("Call frostfire() function")
+    elif valid_input == "west":
+        gen.clear()
+        mountains_desc()
+
+
 def mnt_crossrd_3b():
     """
     Runs a 'crossroad' scene, grid ref. 'Mountains-3B'
@@ -77,7 +96,7 @@ def mountains_desc():
         mnt_crossrd_3b()
     elif valid_input == "east":
         gen.clear()
-        print("Call mnt_crossrd_4a() function.")
+        mnt_crossrd_4a()
     elif valid_input == "west":
         gen.clear()
         mnt_crossrd_2a()
