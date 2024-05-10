@@ -23,7 +23,6 @@ def clear():
     """
     if name == 'nt':
         _ = system('cls')
-
     else:
         _ = system('clear')
 
@@ -40,8 +39,8 @@ def main_menu():
     Runs the main menu to start the program, includes the menu_text narrative
     """
     print(nar.MENU_TEXT)
-    user_input = input("Enter 'start' to begin your quest: ")
 
+    user_input = input("Enter 'start' to begin your quest: ")
     while user_input.lower() != "start":
         print("Invalid input. Please enter 'start' to begin your quest.\n")
         user_input = input("Enter 'start' to begin your quest: ")
@@ -55,10 +54,11 @@ def glade():
     Runs the Glade scene
     """
     directions = ["north", "east", "south", "west"]
+
     print(nar.GLADE_TEXT)
     print(f"Directions: {lst_to_str(directions)}")
-    user_input = input("Where would you like to go?: ")
 
+    user_input = input("Where would you like to go?: ")
     if user_input.lower() == "north":
         clear()
         mnt.mountains_desc()

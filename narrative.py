@@ -46,6 +46,11 @@ Where ancient dangers freely roam, \
 You must seek the portals for passage home."
 """
 
+CROSSROAD_TEXT = """
+You find yourself at an empty crossroad, it is eerily quiet and nothing of
+importance seems to be nearby.
+"""
+
 MOUNTAINS_DESC_TEXT = """
 You are at the entrance to The Mountains.
 

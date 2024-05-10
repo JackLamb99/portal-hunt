@@ -36,24 +36,50 @@ def lst_to_str(lst):
     return ", ".join(lst)
 
 
-def mountains_desc():
+def mnt_crossrd_2a():
     """
-    Runs the 'Mountains' description scene
+    Runs a 'crossroad' scene, grid ref. 'Mountains-2A'
     """
     directions = ["north", "east", "west"]
-    print(nar.MOUNTAINS_DESC_TEXT)
+
+    print(nar.CROSSROAD_TEXT)
+
     print(f"Directions: {lst_to_str(directions)}")
     user_input = input("Where would you like to go?: ")
-
     if user_input.lower() == "north":
         clear()
-        print("Call crossroad_mnt_3b function.")
+        print("Call goblins_2b() function")
     elif user_input.lower() == "east":
         clear()
-        print("Call crossroad_mnt_4a function.")
+        mountains_desc()
     elif user_input.lower() == "west":
         clear()
-        print("Call crossroad_mnt_2a function.")
+        print("Call goblins_1a() function")
+    else:
+        print(f"Invalid direction. Please enter a valid direction:\
+            {lst_to_str(directions)}\n")
+        user_input = input("Where would you like to go?: ")
+
+
+def mountains_desc():
+    """
+    Runs the 'Mountains Desc.' scene, grid ref. 'Mountains-3A'
+    """
+    directions = ["north", "east", "west"]
+
+    print(nar.MOUNTAINS_DESC_TEXT)
+    print(f"Directions: {lst_to_str(directions)}")
+
+    user_input = input("Where would you like to go?: ")
+    if user_input.lower() == "north":
+        clear()
+        print("Call mnt_crossrd_3b() function.")
+    elif user_input.lower() == "east":
+        clear()
+        print("Call mnt_crossrd_4a() function.")
+    elif user_input.lower() == "west":
+        clear()
+        mnt_crossrd_2a()
     else:
         print(f"Invalid direction. Please enter a valid direction:\
             {lst_to_str(directions)}\n")
