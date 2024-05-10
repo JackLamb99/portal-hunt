@@ -1,13 +1,19 @@
+"""Imports the narrative file containing game text"""
 import narrative as nar
 
+
 def lst_to_str(lst):
+    """
+    Returns a list as a string of the values separated by commas
+    """
     return ", ".join(lst)
+
 
 def main_menu():
     """
     Runs the main menu to start the program, includes the menu_text narrative
     """
-    print(nar.menu_text)
+    print(nar.MENU_TEXT)
     user_input = input("Enter 'start' to begin your quest: ")
 
     while user_input.lower() != "start":
@@ -16,12 +22,13 @@ def main_menu():
 
     glade()
 
+
 def glade():
     """
     Runs the Glade scene
     """
     directions = ["north", "east", "south", "west"]
-    print(nar.glade_text)
+    print(nar.GLADE_TEXT)
     print(f"Directions: {lst_to_str(directions)}")
     user_input = input("Where would you like to go?: ")
 
@@ -34,8 +41,9 @@ def glade():
     elif user_input.lower() == "west":
         print("Call Wetlands desc. function.")
     else:
-        print(f"Invalid direction. Please enter a valid direction: {lst_to_str(directions)}\n")
+        print(f"Invalid direction. Please enter a valid direction:\
+            {lst_to_str(directions)}\n")
         user_input = input("Where would you like to go?: ")
 
-run_game = main_menu()
-run_game
+
+main_menu()
