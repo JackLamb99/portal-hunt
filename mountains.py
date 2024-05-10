@@ -10,30 +10,8 @@ interaction logic for each based on user input.
 When required, functions are named based on the 'Mountains' grid reference
 provided in the README.md.
 """
-
-from os import system, name
-
 import narrative as nar
-
-
-# Reference: "Clear screen in Python", GeeksforGeeks
-# Source: https://www.geeksforgeeks.org/clear-screen-python/
-def clear():
-    """
-    Clears the content from the screen
-    """
-    if name == 'nt':
-        _ = system('cls')
-
-    else:
-        _ = system('clear')
-
-
-def lst_to_str(lst):
-    """
-    Returns a list as a string of the values separated by commas
-    """
-    return ", ".join(lst)
+import general as gen
 
 
 def mnt_crossrd_3b():
@@ -43,25 +21,22 @@ def mnt_crossrd_3b():
     directions = ["north", "east", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
 
-    print(f"Directions: {lst_to_str(directions)}")
-    user_input = input("Where would you like to go?: ")
-    if user_input.lower() == "north":
-        clear()
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
         print("Call tiger() function")
-    elif user_input.lower() == "east":
-        clear()
+    elif valid_input == "east":
+        gen.clear()
         print("Call frostfire() function")
-    elif user_input.lower() == "south":
-        clear()
+    elif valid_input == "south":
+        gen.clear()
         mountains_desc()
-    elif user_input.lower() == "west":
-        clear()
+    elif valid_input == "west":
+        gen.clear()
         print("Call goblins_2b() function")
-    else:
-        print(f"Invalid direction. Please enter a valid direction:\
-            {lst_to_str(directions)}\n")
-        user_input = input("Where would you like to go?: ")
 
 
 def mnt_crossrd_2a():
@@ -71,22 +46,19 @@ def mnt_crossrd_2a():
     directions = ["north", "east", "west"]
 
     print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
 
-    print(f"Directions: {lst_to_str(directions)}")
-    user_input = input("Where would you like to go?: ")
-    if user_input.lower() == "north":
-        clear()
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
         print("Call goblins_2b() function")
-    elif user_input.lower() == "east":
-        clear()
+    elif valid_input == "east":
+        gen.clear()
         mountains_desc()
-    elif user_input.lower() == "west":
-        clear()
+    elif valid_input == "west":
+        gen.clear()
         print("Call goblins_1a() function")
-    else:
-        print(f"Invalid direction. Please enter a valid direction:\
-            {lst_to_str(directions)}\n")
-        user_input = input("Where would you like to go?: ")
 
 
 def mountains_desc():
@@ -96,18 +68,16 @@ def mountains_desc():
     directions = ["north", "east", "west"]
 
     print(nar.MOUNTAINS_DESC_TEXT)
-    print(f"Directions: {lst_to_str(directions)}")
+    print(f"Directions: {gen.lst_to_str(directions)}")
 
-    user_input = input("Where would you like to go?: ")
-    if user_input.lower() == "north":
-        clear()
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
         mnt_crossrd_3b()
-    elif user_input.lower() == "east":
-        clear()
+    elif valid_input == "east":
+        gen.clear()
         print("Call mnt_crossrd_4a() function.")
-    elif user_input.lower() == "west":
-        clear()
+    elif valid_input == "west":
+        gen.clear()
         mnt_crossrd_2a()
-    else:
-        print("Invalid direction, please choose from the options above.")
-        user_input = input("Where would you like to go?: ")
