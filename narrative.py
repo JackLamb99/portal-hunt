@@ -1,4 +1,13 @@
-"""Main menu text, introduces the game and the aim"""
+"""
+Narrative Content for Portal Hunt
+
+This module contains all the text and narrative elements used in the story of
+the game.
+
+Includes; descriptions of locations, items and enemies, and narrative
+sequences that guide the player's interaction.
+"""
+
 MENU_TEXT = """
 Welcome adventurer, to Portal Hunt, a text-based adventure game where every \
 decision shapes your destiny.
@@ -14,7 +23,6 @@ portal that will lead you home. Good luck, adventurer. The world is yours to \
 explore.
 """
 
-"""Glade scene text, central starting point of the game"""
 GLADE_TEXT = """
 You find yourself in The Glade.
 
@@ -36,4 +44,18 @@ Through caves deep and mountains cold, \
 Where ancient dangers freely roam, \
 
 You must seek the portals for passage home."
+"""
+
+MOUNTAINS_DESC_TEXT = """
+You are at the entrance to The Mountains.
+
+A breathtaking landscape of towering, snow-capped peaks that rise dramatically
+into the sky. Jagged ridges and sheer cliffs dominate the terrain, with narrow,
+winding paths carved into the rock, leading through constricted gorges and
+over precipitous drops.
+
+The air is crisp and thin, filled with the echo of distant avalanches and the
+whisper of the wind. Amidst the rugged terrain, hardy wildlife and scattered
+pine trees find a way to thrive, the landscape is both breathtakingly
+beautiful and perilously unforgiving.
 """

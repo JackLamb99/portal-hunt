@@ -1,5 +1,31 @@
-"""Imports the narrative file containing game text"""
+"""
+Main Game File for Portal Hunt
+
+This module initializes and runs Portal Hunt. It loads the necessary resources,
+defines the general functions, and runs the initial menu function.
+
+Usage:
+- Run this file to start the game.
+- Example command: 'python run.py'
+- See README.md for additional information.
+"""
+
+from os import system, name
 import narrative as nar
+import mountains as mnt
+
+
+# Reference: "Clear screen in Python", GeeksforGeeks
+# Source: https://www.geeksforgeeks.org/clear-screen-python/
+def clear():
+    """
+    Clears the content from the screen
+    """
+    if name == 'nt':
+        _ = system('cls')
+
+    else:
+        _ = system('clear')
 
 
 def lst_to_str(lst):
@@ -20,6 +46,7 @@ def main_menu():
         print("Invalid input. Please enter 'start' to begin your quest.\n")
         user_input = input("Enter 'start' to begin your quest: ")
 
+    clear()
     glade()
 
 
@@ -33,12 +60,16 @@ def glade():
     user_input = input("Where would you like to go?: ")
 
     if user_input.lower() == "north":
-        print("Call Mountains desc. function.")
+        clear()
+        mnt.mountains_desc()
     elif user_input.lower() == "east":
+        clear()
         print("Call Caves desc. function.")
     elif user_input.lower() == "south":
+        clear()
         print("Call Scorchlands desc. function.")
     elif user_input.lower() == "west":
+        clear()
         print("Call Wetlands desc. function.")
     else:
         print(f"Invalid direction. Please enter a valid direction:\
