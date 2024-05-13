@@ -15,6 +15,30 @@ import general as gen
 import glade
 
 
+def mnt_crossrd_3d():
+    """
+    Runs a 'crossroad' scene, grid ref. 'Mountains-3D'
+    """
+    directions = ["east", "south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "east":
+        gen.clear()
+        print("Call bow() function")  # TO BE DEFINED
+    elif valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        tiger()
+    elif valid_input == "west":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call dragon() function")  # TO BE DEFINED
+
+
 def mnt_crossrd_2c():
     """
     Runs a 'crossroad' scene, grid ref. 'Mountains-2C'
@@ -154,7 +178,7 @@ def tiger():
                     "Where would you like to go?: ", directions)
                 if valid_input == "north":
                     gen.clear()
-                    print("Call mnt_crossrd_3d() function")  # TO BE DEFINED
+                    mnt_crossrd_3d()
                 elif valid_input == "east":
                     gen.clear()
                     print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
@@ -174,7 +198,7 @@ def tiger():
             print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
 
             if gen.flee_direction == ["north"]:
-                print("Call mnt_crossrd_3d() function")  # TO BE DEFINED
+                mnt_crossrd_3d()
             elif gen.flee_direction == ["east"]:
                 print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
             elif gen.flee_direction == ["south"]:
@@ -191,7 +215,7 @@ def tiger():
                                           directions)
         if valid_input == "north":
             gen.clear()
-            print("Call mnt_crossrd_3d() function")  # TO BE DEFINED
+            mnt_crossrd_3d()
         elif valid_input == "east":
             gen.clear()
             print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
