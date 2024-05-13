@@ -15,6 +15,14 @@ import general as gen
 import glade
 
 
+def mountains_portal():
+    """
+    Runs the 'mountains portal' scene, end of the 'Mountains Path'
+    """
+    print(nar.MOUNTAINS_PORTAL_TEXT)
+    print("Call end game function")  # TO BE DEFINED
+
+
 def mnt_dead_end():
     """
     Runs a 'dead end' scene, grid ref. 'Mountains-1D'
@@ -113,7 +121,7 @@ def dragon():
                     "Where would you like to go?: ", directions)
                 if valid_input == "north":
                     gen.clear()
-                    print("Call mountains_portal() function")  # TO BE DEFINED
+                    mountains_portal()
                 elif valid_input == "east":
                     gen.clear()
                     mnt_crossrd_3d()
@@ -143,7 +151,7 @@ def dragon():
                                           directions)
         if valid_input == "north":
             gen.clear()
-            print("Call mountains_portal() function")  # TO BE DEFINED
+            mountains_portal()
         elif valid_input == "east":
             gen.clear()
             mnt_crossrd_3d()
@@ -659,7 +667,8 @@ def mnt_crossrd_2a():
 
 def mountains_desc():
     """
-    Runs the 'Mountains Desc.' scene. Grid ref. 'Mountains-3A'
+    Runs the 'Mountains Desc.' scene, start of the 'Mountains Path'.
+    Grid ref. 'Mountains-3A'
     """
     directions = ["north", "east", "south", "west"]
 

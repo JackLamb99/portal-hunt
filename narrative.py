@@ -355,3 +355,22 @@ beneath the icy shroud, the echoes of the dragon's reign now silenced.
 
 You feel a faint pull of energy from a nearby portal.
 """
+
+MOUNTAINS_PORTAL_TEXT = """
+You reach the heart of the Sky Temple, where towering stone arches frame a
+breathtaking view of the open sky. In the centre, a portal shimmers to life,
+swirling with iridescent hues that dance like the northern lights.
+
+The wind weaves through the temple's ancient stones, whispering echoes of
+forgotten voices and distant footsteps. As you step closer, the portal's
+vibrant glow bathes you in its hopeful light, casting a warm aura that beckons
+you toward a long-awaited return home.
+
+Congratulations! You found the Mountains Portal and finished your quest.
+
+With different paths to take, items to find and enemies to battle, every
+playthrough can be a brand new adventure. Who knows, you may even find a
+secret ending...
+
+Thank you for playing Portal Hunt!
+"""
