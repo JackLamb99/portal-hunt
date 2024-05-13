@@ -51,6 +51,10 @@ You find yourself at an empty crossroad, it is eerily quiet and nothing of
 importance seems to be nearby.
 """
 
+FLEE_TEXT = """
+You choose to flee from this enemy.
+"""
+
 MOUNTAINS_DESC_TEXT = """
 You are at the entrance to The Mountains.
 
@@ -63,4 +67,60 @@ The air is crisp and thin, filled with the echo of distant avalanches and the
 whisper of the wind. Amidst the rugged terrain, hardy wildlife and scattered
 pine trees find a way to thrive, the landscape is both breathtakingly
 beautiful and perilously unforgiving.
+"""
+
+GOBLINS_DESC_TEXT = """
+You enter a dense thicket of snow-laden pines. The branches hang low, heavy
+with frost, forming a canopy that dims the sunlight. Among the trees, you
+notice small footprints leading off the main path, a hint of something lurking
+nearby.
+
+You spot a gang of Snow Goblins, small and sneaky creatures draped in ragged
+furs, clutching crude weapons made of bone and ice. Their pale blue skin
+merges with the snowy landscape, and their sharp, glinting teeth reveal the
+malice with which they skulk through the shadows, waiting to strike.
+"""
+
+GOBLINS_DEFEAT_TEXT = """
+You forge ahead, but the Snow Goblins close in quickly, emerging from the
+dense thicket of snow-laden pines. They are small and quick, darting through
+the snow around you with a sinister agility.
+
+You swing your arms wildly in an attempt to fend them off, but they evade with
+practiced ease, closing the gap with terrifying speed.
+
+A heavy blow from a bone club sends you to the ground, the cold snow stinging
+as you fall. The goblins swarm around you, their ragged furs the last thing
+you see as everything fades to darkness.
+
+You were not equipped to defeat the Snow Goblins.
+"""
+
+GOBLINS_VICTORY_TEXT = """
+You grasp the Frostfire, its blue flame casting an intense light through the
+dense thicket, and charge at the Snow Goblins. They recoil at the heat, their
+icy camouflage failing against the fierce glow.
+
+As they try to surround you, you swing the torch in sweeping arcs, leaving
+trails of searing heat. The goblins shriek as the fire burns through their
+ragged furs and icy weapons.
+
+With each swing, you drive them back, their snowy lair melting into slush. The
+goblins flee, their ambush thwarted by the intense power of the Frostfire.
+
+You are now free to travel through this area in peace.
+"""
+
+GOBLINS_CLEARED_TEXT = """
+You have already defeated this enemy.
+
+You calmly stride back through the dense thicket of snow-laden pines, the once-
+menacing atmosphere feels noticeably lighter. The low-hanging branches, still
+heavy with frost, part easily around you.
+
+The ground is strewn with the remnants of the Snow Goblins' ambush, charred
+remains of their crude weapons and tattered furs slowly melting into the snow.
+The thicket, no longer haunted by their presence, seems quieter, as if nature
+itself is sighing with relief. The path is clear, the threat gone, allowing
+you to move forward with a sense of accomplishment.
 """

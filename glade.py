@@ -1,3 +1,12 @@
+"""
+'Glade' scene for Portal Hunt
+
+This module contains the function and logic to navigate from 'The Glade' path
+in Portal Hunt.
+
+Separate file required to hold this function to allow users to return to 'The
+Glade' from each separate file without caused a circular import error.
+"""
 import general as gen
 import narrative as nar
 from mountains import mountains_desc
