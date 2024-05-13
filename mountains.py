@@ -15,6 +15,30 @@ import general as gen
 import glade
 
 
+def mnt_crossrd_1b():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Mountains-1B'
+    """
+    directions = ["north", "east", "south"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        print("Call voltcrusher() function")  # TO BE DEFINED
+    elif valid_input == "east":
+        gen.amend_flee_direction("east")
+        gen.clear()
+        goblins_2b()
+    elif valid_input == "south":
+        gen.amend_flee_direction("south")
+        gen.clear()
+        goblins_1a()
+
+
 def frostfire():
     """
     Checks if the 'frostfire' item is in the inventory.
@@ -193,7 +217,7 @@ def goblins_2b():
                     mnt_crossrd_2a()
                 elif valid_input == "west":
                     gen.clear()
-                    print("Call mnt_crossrd_1b() function")  # TO BE DEFINED
+                    mnt_crossrd_1b()
             # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
@@ -210,7 +234,7 @@ def goblins_2b():
             elif gen.flee_direction == ["south"]:
                 mnt_crossrd_2a()
             elif gen.flee_direction == ["west"]:
-                print("Call mnt_crossrd_1b() function")  # TO BE DEFINED
+                mnt_crossrd_1b()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -230,7 +254,7 @@ def goblins_2b():
             mnt_crossrd_2a()
         elif valid_input == "west":
             gen.clear()
-            print("Call mnt_crossrd_1b() function")  # TO BE DEFINED
+            mnt_crossrd_1b()
 
 
 def goblins_1a():
@@ -266,7 +290,7 @@ def goblins_1a():
                     "Where would you like to go?: ", directions)
                 if valid_input == "north":
                     gen.clear()
-                    print("Call mnt_crossrd_1b function")  # TO BE DEFINED
+                    mnt_crossrd_1b()
                 elif valid_input == "east":
                     gen.clear()
                     mnt_crossrd_2a()
@@ -280,7 +304,7 @@ def goblins_1a():
             print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
 
             if gen.flee_direction == ["north"]:
-                print("Call mnt_crossrd_1b() function")  # TO BE DEFINED
+                mnt_crossrd_1b()
             elif gen.flee_direction == ["east"]:
                 mnt_crossrd_2a()
 
@@ -293,7 +317,7 @@ def goblins_1a():
                                           directions)
         if valid_input == "north":
             gen.clear()
-            print("Call mnt_crossrd_1b function")  # TO BE DEFINED
+            mnt_crossrd_1b()
         elif valid_input == "east":
             gen.clear()
             mnt_crossrd_2a()
