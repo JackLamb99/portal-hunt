@@ -15,6 +15,22 @@ import general as gen
 import glade
 
 
+def mnt_dead_end():
+    """
+    Runs a 'dead end' scene, grid ref. 'Mountains-1D'
+    """
+    directions = ["south"]
+
+    print(nar.DEAD_END_TEXT)
+    print(f"Direction: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("This is a dead end, enter the direction"
+                                      " to continue: ", directions)
+    if valid_input == "south":
+        gen.clear()
+        voltcrusher()
+
+
 def bow():
     """
     Checks if the 'bow' item is in the inventory.
@@ -181,7 +197,7 @@ def voltcrusher():
                                       directions)
     if valid_input == "north":
         gen.clear()
-        print("Call dead_end_1d() function")  # TO BE DEFINED
+        mnt_dead_end()
     elif valid_input == "east":
         gen.clear()
         mnt_crossrd_2c()
@@ -223,7 +239,7 @@ def mnt_crossrd_3d():
                                       directions)
     if valid_input == "east":
         gen.clear()
-        print("Call bow() function")  # TO BE DEFINED
+        bow()
     elif valid_input == "south":
         gen.amend_flee_direction(valid_input)
         gen.clear()
