@@ -13,8 +13,8 @@ from os import system, name
 flee_direction = []
 inventory = ["frostfire"]
 enemies = {
-    "goblins1a": True,
-    "goblins2b": True,
+    "goblins-1a": True,
+    "goblins-2b": True,
     "tiger": True,
     "dragon": True
 }
@@ -56,16 +56,22 @@ def get_valid_input(prompt, lst):
                   "available options")
 
 
-def amend_flee_direction(lst, direction):
+def amend_flee_direction(direction):
     """
-    Amends the given 'list' to reflect the opposite direction of the specified
-    'direction'.
+    Clears the flee_direction list and amends the value with the opposite of
+    the given direction.
+    Used to return the player to their previous direction if they 'flee' from
+    an enemy.
     """
     if direction == "north":
-        lst[:] = ["south"]
-    if direction == "east":
-        lst[:] = ["west"]
-    if direction == "south":
-        lst[:] = ["north"]
-    if direction == "west":
-        lst[:] = ["east"]
+        flee_direction.clear()
+        flee_direction.append("south")
+    elif direction == "east":
+        flee_direction.clear()
+        flee_direction.append("west")
+    elif direction == "south":
+        flee_direction.clear()
+        flee_direction.append("north")
+    elif direction == "west":
+        flee_direction.clear()
+        flee_direction.append("east")

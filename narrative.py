@@ -112,7 +112,7 @@ You are now free to travel through this area in peace.
 """
 
 GOBLINS_CLEARED_TEXT = """
-You have already defeated this enemy.
+You have already defeated these Snow Goblins.
 
 You calmly stride back through the dense thicket of snow-laden pines, the once-
 menacing atmosphere feels noticeably lighter. The low-hanging branches, still
