@@ -111,6 +111,34 @@ has dimmed, and the whispers are now silent.
 The Frostfire is already in your inventory.
 """
 
+VOLTCRUSHER_NEW_ITEM_TEXT = """
+Scaling a steep ridge, you come across a hidden plateau. At its centre, an
+ancient stone slab is etched with lightning-bolt patterns.
+
+The air here is charged with electricity, and you can feel the hair on your
+arms standing on end. Resting on the slab is a massive axe, its metal head
+crackling with arcs of blue electricity.
+
+This is the Voltcrusher, an awe-inspiring weapon rumoured to generate powerful
+shockwaves with each strike. As you grasp its handle, a surge of energy pulses
+through you, hinting at the raw power it holds.
+"""
+
+VOLTCRUSHER_EXISTING_ITEM_TEXT = """
+Scaling a steep ridge, you reach a hidden plateau, where the air feels
+unnaturally still. At its centre lies an ancient stone slab with faint
+lightning-bolt patterns, now fading into cold rock.
+
+Only a scorch mark remains where the mighty hammer once rested, hinting at the
+power that once thrived here. The silence is heavy, broken only by a distant
+rumble of thunder.
+
+This place, once charged with energy, now feels like a fading memory, slowly
+dissolving back into the mountains.
+
+The Voltcrusher is already in your inventory.
+"""
+
 GOBLINS_DESC_TEXT = """
 You enter a dense thicket of snow-laden pines. The branches hang low, heavy
 with frost, forming a canopy that dims the sunlight. Among the trees, you

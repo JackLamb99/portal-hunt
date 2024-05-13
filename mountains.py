@@ -15,6 +15,60 @@ import general as gen
 import glade
 
 
+def voltcrusher():
+    """
+    Checks if the 'voltcrusher' item is in the inventory.
+    Runs an 'existing item' scene if true, allows player to 'keep' or 'return'
+    the item.
+    Runs a 'new item' scene if false, allows player to 'take' or 'leave' the
+    item.
+    Grid ref. 'Mountains-1C'
+    """
+    directions = ["north", "east", "south"]
+
+    # If the specified item already in the inventory
+    if "voltcrusher" in gen.inventory:
+        options = ["keep", "return"]
+
+        print(nar.VOLTCRUSHER_EXISTING_ITEM_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input(
+            "What would you like to do with this item?: ", options)
+        if valid_input == "keep":
+            print(nar.KEEP_ITEM_TEXT)
+        elif valid_input == "return":
+            gen.inventory.remove("ITEM")
+            print(nar.RETURN_ITEM_TEXT)
+    else:
+        options = ["take", "leave"]
+
+        print(nar.VOLTCRUSHER_NEW_ITEM_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input(
+            "What would you like to do with this item?: ", options)
+        if valid_input == "take":
+            gen.inventory.append("ITEM")
+            print(nar.TAKE_ITEM_TEXT)
+        elif valid_input == "leave":
+            print(nar.LEAVE_ITEM_TEXT)
+
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        print("Call dead_end_1d() function")  # TO BE DEFINED
+    elif valid_input == "east":
+        gen.clear()
+        mnt_crossrd_2c()
+    elif valid_input == "south":
+        gen.clear()
+        mnt_crossrd_1b()
+
+
 def mnt_crossrd_4c():
     """
     Runs a 'crossroad' scene, grid ref. 'Mountains-4C'
@@ -84,7 +138,7 @@ def mnt_crossrd_2c():
         goblins_2b()
     elif valid_input == "west":
         gen.clear()
-        print("Call voltcrusher() function")  # TO BE DEFINED
+        voltcrusher()
 
 
 def mnt_crossrd_1b():
@@ -100,7 +154,7 @@ def mnt_crossrd_1b():
                                       directions)
     if valid_input == "north":
         gen.clear()
-        print("Call voltcrusher() function")  # TO BE DEFINED
+        voltcrusher()
     elif valid_input == "east":
         gen.amend_flee_direction(valid_input)
         gen.clear()
