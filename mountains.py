@@ -12,6 +12,7 @@ provided in the README.md.
 """
 import narrative as nar
 import general as gen
+import glade
 
 
 def mnt_crossrd_4a():
@@ -84,7 +85,7 @@ def mountains_desc():
     """
     Runs the 'Mountains Desc.' scene, grid ref. 'Mountains-3A'
     """
-    directions = ["north", "east", "west"]
+    directions = ["north", "east", "south", "west"]
 
     print(nar.MOUNTAINS_DESC_TEXT)
     print(f"Directions: {gen.lst_to_str(directions)}")
@@ -97,6 +98,9 @@ def mountains_desc():
     elif valid_input == "east":
         gen.clear()
         mnt_crossrd_4a()
+    elif valid_input == "south":
+        gen.clear()
+        glade.glade()
     elif valid_input == "west":
         gen.clear()
         mnt_crossrd_2a()

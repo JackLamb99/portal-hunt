@@ -11,7 +11,7 @@ Usage:
 """
 import general as gen
 import narrative as nar
-import mountains as mnt
+import glade
 
 
 def main_menu():
@@ -25,32 +25,7 @@ def main_menu():
         print("Invalid input. Please enter 'start' to begin your quest.\n")
         user_input = input("Enter 'start' to begin your quest: ")
     gen.clear()
-    glade()
-
-
-def glade():
-    """
-    Runs the Glade scene
-    """
-    directions = ["north", "east", "south", "west"]
-
-    print(nar.GLADE_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
-
-    valid_input = gen.get_valid_input("Where would you like to go?: ",
-                                      directions)
-    if valid_input == "north":
-        gen.clear()
-        mnt.mountains_desc()
-    elif valid_input == "east":
-        gen.clear()
-        print("Call Caves desc. function.")
-    elif valid_input == "south":
-        gen.clear()
-        print("Call Scorchlands desc. function.")
-    elif valid_input == "west":
-        gen.clear()
-        print("Call Wetlands desc. function.")
+    glade.glade()
 
 
 main_menu()
