@@ -67,6 +67,11 @@ You find yourself at an empty crossroad, it is eerily quiet and nothing of
 importance seems to be nearby.
 """
 
+DEAD_END_TEXT = """
+The path has come to an abrupt stop, you have reached a dead end, it is eerily
+quiet and nothing of importance seems to be nearby.
+"""
+
 FLEE_TEXT = """
 You choose to flee from this enemy.
 """
@@ -137,6 +142,32 @@ This place, once charged with energy, now feels like a fading memory, slowly
 dissolving back into the mountains.
 
 The Voltcrusher is already in your inventory.
+"""
+
+BOW_NEW_ITEM_TEXT = """
+Deep within the mountains, you stumble upon a secluded alcove, a hidden gem
+within the rugged landscape. The walls are encrusted with shimmering crystals,
+casting a soft, ethereal glow across the snow-dusted ground.
+
+At the alcove's centre, resting on a crystalline pedestal, is a bow like no
+other. Its translucent frame catches the light, able to channel it into energy
+that forms radiant arrows.
+
+This is the Crystal Bow, known for its precision against airborne threats. As
+you reach for it, you sense that this weapon might hold the key to your final
+battle, the path ahead depending on your skill and bravery.
+"""
+
+BOW_EXISTING_ITEM_TEXT = """
+Deep within the mountains, you stumble upon a secluded alcove, a hidden gem
+within the rugged landscape. The walls, once glimmering with crystalline light,
+now seem dimmer, barely illuminating the snow-covered ground.
+
+At the alcove's centre stands a solitary pedestal, its crystalline surface now
+empty, once a beacon of hope, now leaving only faint echoes of its former
+glory.
+
+The Crystal Bow is already in your inventory.
 """
 
 GOBLINS_DESC_TEXT = """

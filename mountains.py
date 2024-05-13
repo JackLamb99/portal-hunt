@@ -15,13 +15,61 @@ import general as gen
 import glade
 
 
+def bow():
+    """
+    Checks if the 'bow' item is in the inventory.
+    Runs an 'existing item' scene if true, allows player to 'keep' or 'return'
+    the item.
+    Runs a 'new item' scene if false, allows player to 'take' or 'leave' the
+    item.
+    Grid ref. 'Mountains-4D'
+    """
+    directions = ["west"]
+
+    # If the specified item already in the inventory
+    if "bow" in gen.inventory:
+        options = ["keep", "return"]
+
+        print(nar.BOW_EXISTING_ITEM_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input(
+            "What would you like to do with this item?: ", options)
+        if valid_input == "keep":
+            print(nar.KEEP_ITEM_TEXT)
+        elif valid_input == "return":
+            gen.inventory.remove("bow")
+            print(nar.RETURN_ITEM_TEXT)
+    else:
+        options = ["take", "leave"]
+
+        print(nar.BOW_NEW_ITEM_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input(
+            "What would you like to do with this item?: ", options)
+        if valid_input == "take":
+            gen.inventory.append("bow")
+            print(nar.TAKE_ITEM_TEXT)
+        elif valid_input == "leave":
+            print(nar.LEAVE_ITEM_TEXT)
+
+    print(f"Direction: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("This is a dead end, enter the direction"
+                                      " to continue: ", directions)
+    if valid_input == "west":
+        gen.clear()
+        mnt_crossrd_3d()
+
+
 def dragon():
     """
     Checks if the 'dragon' is alive (True) or dead (False), runs a 'fight' or
     'flee' scene if alive, runs a 'enemy cleared' scene if dead.
     Checks if the required item/s are in the 'Inventory' to determine the
     outcome of the 'fight'.
-    Grid ref. 'Mountains-GRID'
+    Grid ref. 'Mountains-2D'
     """
     directions = ["north", "east", "south"]
 
@@ -111,7 +159,7 @@ def voltcrusher():
         if valid_input == "keep":
             print(nar.KEEP_ITEM_TEXT)
         elif valid_input == "return":
-            gen.inventory.remove("ITEM")
+            gen.inventory.remove("voltcrusher")
             print(nar.RETURN_ITEM_TEXT)
     else:
         options = ["take", "leave"]
@@ -122,7 +170,7 @@ def voltcrusher():
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
         if valid_input == "take":
-            gen.inventory.append("ITEM")
+            gen.inventory.append("voltcrusher")
             print(nar.TAKE_ITEM_TEXT)
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
@@ -183,7 +231,7 @@ def mnt_crossrd_3d():
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call dragon() function")  # TO BE DEFINED
+        dragon()
 
 
 def mnt_crossrd_2c():
@@ -200,7 +248,7 @@ def mnt_crossrd_2c():
     if valid_input == "north":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call dragon() function")  # TO BE DEFINED
+        dragon()
     elif valid_input == "east":
         gen.amend_flee_direction(valid_input)
         gen.clear()
