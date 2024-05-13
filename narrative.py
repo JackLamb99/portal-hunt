@@ -9,28 +9,28 @@ sequences that guide the player's interaction.
 """
 
 MENU_TEXT = """
-Welcome adventurer, to Portal Hunt, a text-based adventure game where every \
+Welcome adventurer, to Portal Hunt, a text-based adventure game where every
 decision shapes your destiny.
 
 Your quest is simple: find a portal that will guide you home.
 
-The journey will be perilous, with unseen dangers lurking around any corner, \
-but fear not, the key to your success lies in the ancient artefacts you \
-will discover along the way.
+The journey will be perilous, with unseen dangers lurking around any corner,
+but fear not, the key to your success lies in the ancient artefacts you will
+discover along the way.
 
-Your journey begins now. Prepare to face the unknown, and may you find the \
-portal that will lead you home. Good luck, adventurer. The world is yours to \
+Your journey begins now. Prepare to face the unknown, and may you find the
+portal that will lead you home. Good luck, adventurer. The world is yours to
 explore.
 """
 
 GLADE_TEXT = """
 You find yourself in The Glade.
 
-Golden sunlight filters through a canopy of towering trees. The ground is a \
-lush carpet of moss, dotted with colourful wildflowers. A gentle breeze stirs \
+Golden sunlight filters through a canopy of towering trees. The ground is a
+lush carpet of moss, dotted with colourful wildflowers. A gentle breeze stirs
 the leaves, mingling with the distant birdsong.
 
-An ancient oak stands at the centre, with a message carved into the bark that \
+An ancient oak stands at the centre, with a message carved into the bark that
 reads:
 
 "A warning for the brave of heart,\
@@ -44,6 +44,22 @@ Through caves deep and mountains cold, \
 Where ancient dangers freely roam, \
 
 You must seek the portals for passage home."
+"""
+
+TAKE_ITEM_TEXT = """
+You choose to take this item, it is now in your inventory.
+"""
+
+LEAVE_ITEM_TEXT = """
+You choose to leave this item, it remains in place.
+"""
+
+RETURN_ITEM_TEXT = """
+You choose to return the item, it is no longer in your inventory.
+"""
+
+KEEP_ITEM_TEXT = """
+You choose to keep the item, it remains in your inventory.
 """
 
 CROSSROAD_TEXT = """
@@ -67,6 +83,32 @@ The air is crisp and thin, filled with the echo of distant avalanches and the
 whisper of the wind. Amidst the rugged terrain, hardy wildlife and scattered
 pine trees find a way to thrive, the landscape is both breathtakingly
 beautiful and perilously unforgiving.
+"""
+
+FROSTFIRE_NEW_ITEM_TEXT = """
+You push through a dense pine grove and a narrow cave entrance catches your
+eye. The walls inside are slick with ice, reflecting a ghostly blue light from
+within.
+
+At the cave's end, a pedestal stands, encrusted with frost. Ancient runes are
+etched into the stone, glowing with an eerie luminescence, and whispers of
+forgotten rituals fill the air.
+
+Atop it rests the Frostfire, a glass torch, its flame a vibrant blue that
+dances with a fierce intensity. You can feel its warmth even from a distance,
+beckoning you to take it.
+"""
+
+FROSTFIRE_EXISTING_ITEM_TEXT = """
+You push through a dense pine forest and a narrow cave entrance catches your
+eye. The walls inside are slick with ice, reflecting a ghostly blue light from
+within.
+
+At the cave's end, a pedestal stands, encrusted with frost, now empty. The
+surrounding runes have faded, the eerie glow that once illuminated the cave
+has dimmed, and the whispers are now silent.
+
+The Frostfire is already in your inventory.
 """
 
 GOBLINS_DESC_TEXT = """
