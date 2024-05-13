@@ -15,6 +15,86 @@ import general as gen
 import glade
 
 
+def tiger():
+    """
+    Checks if the 'tiger' is alive (True) or dead (False).
+    Runs a 'fight' scene if alive.
+    Grid ref. 'Mountains-3C'
+    """
+    directions = ["north", "east", "south", "west"]
+
+    # Checks if the specified enemy is 'alive'
+    if gen.enemies["tiger"]:
+        options = ["fight", "flee"]
+
+        print(nar.TIGER_DESC_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input("What would you like to do?: ",
+                                          options)
+        # Fight scene
+        if valid_input == "fight":
+            gen.clear()
+            # If required items in inventory, victory scene
+            if "frostfire" in gen.inventory and "voltcrusher" in gen.inventory:
+                gen.enemies["tiger"] = False
+
+                print(nar.TIGER_VICTORY_TEXT)
+                print(f"Directions: {gen.lst_to_str(directions)}")
+
+                valid_input = gen.get_valid_input(
+                    "Where would you like to go?: ", directions)
+                if valid_input == "north":
+                    gen.clear()
+                    print("Call mnt_crossrd_3d() function")  # TO BE DEFINED
+                elif valid_input == "east":
+                    gen.clear()
+                    print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+                elif valid_input == "south":
+                    gen.clear()
+                    mnt_crossrd_3b()
+                elif valid_input == "west":
+                    gen.clear()
+                    print("Call mnt_crossrd_2c() function")  # TO BE DEFINED
+            # If required items not in inventory, defeat scene
+            else:
+                print(nar.TIGER_DEFEAT_TEXT)
+                print("Call end game function")  # TO BE DEFINED
+        # Flee scene
+        elif valid_input == "flee":
+            gen.clear()
+            print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
+
+            if gen.flee_direction == ["north"]:
+                print("Call mnt_crossrd_3d() function")  # TO BE DEFINED
+            elif gen.flee_direction == ["east"]:
+                print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+            elif gen.flee_direction == ["south"]:
+                mnt_crossrd_3b()
+            elif gen.flee_direction == ["west"]:
+                print("Call mnt_crossrd_2c() function")  # TO BE DEFINED
+
+    # Else if the enemy is already defeated, aftermath scene
+    else:
+        print(nar.TIGER_CLEARED_TEXT)
+        print(f"Directions: {gen.lst_to_str(directions)}")
+
+        valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                          directions)
+        if valid_input == "north":
+            gen.clear()
+            print("Call mnt_crossrd_3d() function")  # TO BE DEFINED
+        elif valid_input == "east":
+            gen.clear()
+            print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+        elif valid_input == "south":
+            gen.clear()
+            mnt_crossrd_3b()
+        elif valid_input == "west":
+            gen.clear()
+            print("Call mnt_crossrd_2c() function")  # TO BE DEFINED
+
+
 def goblins_2b():
     """
     Checks if 'goblins-2b' are alive (True) or dead (False).
@@ -23,7 +103,7 @@ def goblins_2b():
     """
     directions = ["north", "east", "south", "west"]
 
-    # Checks if specified enemy is 'alive'
+    # Checks if the specified enemy is 'alive'
     if gen.enemies["goblins-2b"]:
         options = ["fight", "flee"]
 
@@ -35,7 +115,7 @@ def goblins_2b():
         # Fight scene
         if valid_input == "fight":
             gen.clear()
-            # If required weapon in inventory, victory scene
+            # If required item in inventory, victory scene
             if "frostfire" in gen.inventory:
                 gen.enemies["goblins-2b"] = False
 
@@ -56,7 +136,7 @@ def goblins_2b():
                 elif valid_input == "west":
                     gen.clear()
                     print("Call mnt_crossrd_1b() function")  # TO BE DEFINED
-            # If required weapon not in inventory, defeat scene
+            # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
                 print("Call end game function")  # TO BE DEFINED
@@ -74,7 +154,7 @@ def goblins_2b():
             elif gen.flee_direction == ["west"]:
                 print("Call mnt_crossrd_1b() function")  # TO BE DEFINED
 
-    # Enemy already defeated, aftermath scene
+    # Else if the enemy is already defeated, aftermath scene
     else:
         print(nar.GOBLINS_CLEARED_TEXT)
         print(f"Directions: {gen.lst_to_str(directions)}")
@@ -103,7 +183,7 @@ def goblins_1a():
     """
     directions = ["north", "east"]
 
-    # Checks if specified enemy is 'alive'
+    # Checks if the specified enemy is 'alive'
     if gen.enemies["goblins-1a"]:
         options = ["fight", "flee"]
 
@@ -115,7 +195,7 @@ def goblins_1a():
         # Fight scene
         if valid_input == "fight":
             gen.clear()
-            # If required weapon in inventory, victory scene
+            # If required item in inventory, victory scene
             if "frostfire" in gen.inventory:
                 gen.enemies["goblins-1a"] = False
 
@@ -130,7 +210,7 @@ def goblins_1a():
                 elif valid_input == "east":
                     gen.clear()
                     mnt_crossrd_2a()
-            # If required weapon not in inventory, defeat scene
+            # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
                 print("Call end game function")  # TO BE DEFINED
@@ -144,7 +224,7 @@ def goblins_1a():
             elif gen.flee_direction == ["east"]:
                 mnt_crossrd_2a()
 
-    # Enemy already defeated, aftermath scene
+    # Else if the enemy is already defeated, aftermath scene
     else:
         print(nar.GOBLINS_CLEARED_TEXT)
         print(f"Directions: {gen.lst_to_str(directions)}")
@@ -190,8 +270,9 @@ def mnt_crossrd_3b():
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
     if valid_input == "north":
+        gen.amend_flee_direction("north")
         gen.clear()
-        print("Call tiger() function")  # TO BE DEFINED
+        tiger()
     elif valid_input == "east":
         gen.clear()
         print("Call frostfire() function")  # TO BE DEFINED

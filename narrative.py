@@ -124,3 +124,63 @@ The thicket, no longer haunted by their presence, seems quieter, as if nature
 itself is sighing with relief. The path is clear, the threat gone, allowing
 you to move forward with a sense of accomplishment.
 """
+
+TIGER_DESC_TEXT = """
+You come across a wide, open expanse nestled between snow-covered ridges. The
+windswept terrain is dotted with sparse clusters of pine trees, the ground a
+mix of snow and rocky terrain. Amidst this icy landscape, a trail of paw
+prints as large as your hand a sign that something dangerous is near.
+
+You glimpse the Sabre-toothed Tiger lying in wait, its massive frame covered
+in tawny and white fur, blending almost seamlessly with the snow. Its golden
+eyes gleam as they scan the area, and its long fangs curve menacingly from its
+powerful jaw. With a single leap, this massive predator can close the distance,
+as agile as it is deadly.
+"""
+
+TIGER_DEFEAT_TEXT = """
+The Sabre-toothed Tiger leaps from its concealed spot, its massive frame a blur
+of tawny and white fur. You barely have time to react before it's upon you, its
+powerful paws knocking you to the ground.
+
+The force of the impact leaves you dazed and you struggle to rise as the tiger'
+s weight pins you to the icy earth. You fight to free yourself, but it's no
+use, as the tiger's curved fangs sink deep into your shoulder.
+
+The last thing you hear is the beast's growl as it vibrates through the air, a
+menacing rumble that sends shivers down your spine as the frosty world around
+you fades to black.
+
+You were not equipped to defeat the Sabre-toothed Tiger.
+"""
+
+TIGER_VICTORY_TEXT = """
+As you approach, the Sabre-toothed Tiger leaps from its hiding spot, its
+powerful muscles propelling it toward you with terrifying speed. You brandish
+the Frostfire, the blue flames illuminating the snowy expanse.
+
+The tiger hesitates, its golden eyes narrowing as it senses the intense heat.
+You seize the moment and swing the Voltcrusher into the ground, releasing a
+shockwave that sends the tiger staggering. With the tiger disoriented, you
+throw the axe with all your strength, delivering a devastating, fatal blow.
+
+The Sabre-toothed Tiger collapses, its final growl fading into the icy wind,
+the snowy landscape falling silent as you stand victorious, weapons in hand.
+
+You are now free to travel through this area in peace.
+"""
+
+TIGER_CLEARED_TEXT = """
+You have already defeated the Sabre-toothed Tiger.
+
+You return to the wide expanse nestled between snow-covered ridges, the
+windswept terrain feels almost serene. The clusters of pine trees sway gently
+with the breeze, and the once-threatening presence of the Sabre-toothed Tiger
+is no more.
+
+The ground, a mix of snow and rocky terrain, bears faint traces of your
+earlier battle and the beast's remains are now covered with a thin sheet of
+snow. You can traverse the area without fear, knowing the land has been
+reclaimed from its deadly predator, now only the distant echoes of nature's
+quiet rhythms fill the air.
+"""

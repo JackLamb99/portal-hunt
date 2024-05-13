@@ -11,7 +11,7 @@ from os import system, name
 
 
 flee_direction = []
-inventory = ["frostfire"]
+inventory = []
 enemies = {
     "goblins-1a": True,
     "goblins-2b": True,
