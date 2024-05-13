@@ -254,3 +254,73 @@ snow. You can traverse the area without fear, knowing the land has been
 reclaimed from its deadly predator, now only the distant echoes of nature's
 quiet rhythms fill the air.
 """
+
+DRAGON_DESC_TEXT = """
+You approach the Sky Temple, a towering structure carved into the mountainside.
+The stone walls are ancient, etched with intricate designs, though they now
+bear the marks of weather and time. High above, the clouds swirl in a restless
+dance, casting shifting patterns of light and shadow.
+
+From the temple's highest peak, you catch sight of the Ice Dragon, its scales
+glistening like shards of glass, reflecting the dappled sunlight. It spreads
+its vast, translucent wings, soaring effortlessly through the air, leaving a
+trail of frost in its wake. The Ice Dragon's roar echoes through the mountains,
+a chilling sound that shakes the temple's stone.
+
+You feel a faint pull of energy from a nearby portal.
+"""
+
+DRAGON_DEFEAT_TEXT = """
+As you enter Sky Temple, the Ice Dragon descends from above, its massive wings
+creating gusts of freezing wind that chill you to the bone. The air grows cold,
+frost forming on the stone walls. The dragon's roar echoes through the
+mountains, sending a shiver down your spine.
+
+As it draws closer, it exhales a blast of icy breath that freezes everything
+in its path. You attempt to take cover behind ancient stone pillars, but the
+dragon's powerful tail sweeps through them, shattering the stone and sending
+you tumbling to the ground. The icy blast engulfs you, the bitter cold numbing
+your senses.
+
+You try to escape, but the ground is slick with ice, and you lose your footing
+as your body succumbs to the relentless cold. The last thing you hear is the
+rumble of the dragon's triumphant roar, drowning out all other sounds, as the
+beast's massive jaws snap shut around you.
+
+You were not equipped to defeat the Ice Dragon.
+"""
+
+DRAGON_VICTORY_TEXT = """
+As you enter Sky Temple, the Ice Dragon descends from above, its icy breath
+freezing the air as it roars. You ready the Crystal Bow, its translucent frame
+catching the sun's rays and forming arrows of pure light. You shoot at the
+dragon's wings, the energy-infused arrows splintering the glassy scales.
+
+As it weakens and sinks the stone courtyard, you disorient the dragon with an
+ear-splitting swing of the Voltcrusher. Seizing the moment, you grasp the
+Frostfire and charge, the blue flames flaring with fierce intensity. You dash
+toward the Ice Dragon, thrusting the torch into its frosty scales. The intense
+heat shatters the ice, causing the dragon to roar in agony.
+
+With a mighty overhead arc from the Voltcrusher, you deliver the final blow,
+sending a shockwave through its body. The Ice Dragon collapses, its roar
+silenced as its icy breath fades into the cold air. You stand victorious, the
+ancient Sky Temple reclaimed from its chilling grip.
+
+You are now free to travel through this area in peace.
+"""
+
+DRAGON_CLEARED_TEXT = """
+You have already defeated the Ice Dragon.
+
+You return to the Sky Temple entrance, the air feels less hostile without the
+Ice Dragon's chilling presence. The ancient stone walls, once etched with
+frost, are now free of ice, and the swirling clouds high above seem gentler.
+
+The courtyard where you battled the dragon bears signs of the conflict,
+cracked stones and scattered patches of ice litter the ground. Yet, amidst the
+ruins, the temple seems to breathe again, its long-buried beauty emerging from
+beneath the icy shroud, the echoes of the dragon's reign now silenced.
+
+You feel a faint pull of energy from a nearby portal.
+"""
