@@ -15,6 +15,26 @@ import general as gen
 import glade
 
 
+def mnt_crossrd_4c():
+    """
+    Runs a 'crossroad' scene, grid ref. 'Mountains-4C'
+    """
+    directions = ["south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "south":
+        gen.clear()
+        frostfire()
+    elif valid_input == "west":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        tiger()
+
+
 def mnt_crossrd_3d():
     """
     Runs a 'crossroad' scene, grid ref. 'Mountains-3D'
@@ -136,7 +156,7 @@ def frostfire():
                                       directions)
     if valid_input == "north":
         gen.clear()
-        print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+        mnt_crossrd_4c()
     elif valid_input == "south":
         gen.clear()
         mnt_crossrd_4a()
@@ -181,7 +201,7 @@ def tiger():
                     mnt_crossrd_3d()
                 elif valid_input == "east":
                     gen.clear()
-                    print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+                    mnt_crossrd_4c()
                 elif valid_input == "south":
                     gen.clear()
                     mnt_crossrd_3b()
@@ -200,7 +220,7 @@ def tiger():
             if gen.flee_direction == ["north"]:
                 mnt_crossrd_3d()
             elif gen.flee_direction == ["east"]:
-                print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+                mnt_crossrd_4c()
             elif gen.flee_direction == ["south"]:
                 mnt_crossrd_3b()
             elif gen.flee_direction == ["west"]:
@@ -218,7 +238,7 @@ def tiger():
             mnt_crossrd_3d()
         elif valid_input == "east":
             gen.clear()
-            print("Call mnt_crossrd_4c() function")  # TO BE DEFINED
+            mnt_crossrd_4c()
         elif valid_input == "south":
             gen.clear()
             mnt_crossrd_3b()
