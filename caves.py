@@ -15,6 +15,28 @@ import general as gen
 import glade
 
 
+def cave_crossrd_1b():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Caves-1B'
+    """
+    directions = ["north", "east", "south"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        caves_desc()
+    elif valid_input == "east":
+        gen.clear()
+        print("Call spider_2b() function")  # TO BE DEFINED
+    elif valid_input == "south":
+        gen.clear()
+        print("Call spider_1a() function")  # TO BE DEFINED
+
+
 def cave_crossrd_2c():
     """
     Runs a 'crossroad' scene. Grid ref. 'Caves-2C'
@@ -79,7 +101,7 @@ def caves_desc():
         cave_crossrd_2c()
     elif valid_input == "south":
         gen.clear()
-        print("Call cave_crossrd_1b() function")  # TO BE DEFINED
+        cave_crossrd_1b()
     elif valid_input == "west":
         gen.clear()
         glade.glade()
