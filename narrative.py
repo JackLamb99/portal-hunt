@@ -30,8 +30,10 @@ Golden sunlight filters through a canopy of towering trees. The ground is a
 lush carpet of moss, dotted with colourful wildflowers. A gentle breeze stirs
 the leaves, mingling with the distant birdsong.
 
-An ancient oak stands at the centre, with a message carved into the bark that
-reads:
+An ancient oak stands at the centre, its trunk knotted and twisted to resemble
+a face, with deep-set eyes and a wise, weathered expression. As you approach,
+the tree springs to life, its wide eyes locking onto you, branches rustling
+softly as it speaks:
 
 "A warning for the brave of heart,\
 
@@ -666,4 +668,23 @@ With each step, you carry the memory of your hard-fought battle, a reminder of
 the strength and courage that led you through the depths of The Caves.
 
 You feel a faint pull of energy from a nearby portal.
+"""
+
+CAVES_PORTAL_TEXT = """
+After the collapse of the troll, an opening crumbled in the cavern wall,
+revealing a hidden passage among the twisted roots that leads to a stone
+archway. As you approach, you notice intricate carvings etched into its
+surface, hinting at a forgotten history.
+
+The portal shimmers with an ethereal blue light, casting soft, rippling waves
+across the walls. You step towards it, feeling the pull of the portal's energy,
+signalling the way home. With a final glance back at the conquered cavern, you
+step through the portal, leaving behind the echoes of your victory to embark
+on the next leg of your journey.
+
+Congratulations! You found the Caves Portal and finished your quest.
+
+With different paths to take, items to find and enemies to battle, every
+playthrough can be a brand new adventure. Who knows, you may even find a
+secret ending...
 """

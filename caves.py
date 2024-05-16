@@ -15,6 +15,14 @@ import general as gen
 import glade
 
 
+def caves_portal():
+    """
+    Runs the 'caves portal' scene, end of the 'Cave Path'
+    """
+    print(nar.CAVES_PORTAL_TEXT)
+    print("Call end game function")  # TO BE DEFINED
+
+
 def cave_dead_end():
     """
     Runs a 'dead end' scene. Grid ref. 'Caves-4A'
@@ -122,7 +130,7 @@ def troll():
                     cave_crossrd_4c()
                 elif valid_input == "east":
                     gen.clear()
-                    print("Call caves_portal() function")  # TO BE DEFINED
+                    caves_portal()
                 elif valid_input == "west":
                     gen.clear()
                     cave_crossrd_3b()
@@ -152,7 +160,7 @@ def troll():
             cave_crossrd_4c()
         elif valid_input == "east":
             gen.clear()
-            print("Call caves_portal() function")  # TO BE DEFINED
+            caves_portal()
         elif valid_input == "west":
             gen.clear()
             cave_crossrd_3b()
