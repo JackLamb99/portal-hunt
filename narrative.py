@@ -704,3 +704,338 @@ the landscape. In the distance, the silhouette of a volcano looms ominously,
 serving as a constant reminder of the unpredictable nature of this harsh
 dominion, where beauty and danger coexist in a delicate balance.
 """
+
+SABRE_NEW_ITEM_TEXT = """
+As you venture further into a distant corner of this fiery domain, you stumble
+into a secluded ravine, where the remnants of a once-mighty glacier cling
+stubbornly to existence. The air grows noticeably colder as you approach, and
+the ground is littered with shards of ice.
+
+Amidst the frozen landscape, you spot a cavern half-buried beneath a mound of
+snow and ice. As you cautiously step into the cavern, you're enveloped by an
+ethereal glow, casting long shadows that dance along the icy walls.
+Stalactites hang like crystalline daggers from the ceiling, dripping slowly
+with melted frost.
+
+Amidst this frozen sanctuary, upon a pedestal of ice illuminated by a pale
+blue light, lies the Frostbite Sabre, its presence a stark contrast to the
+surrounding stillness. Its blade glistens with an otherworldly shimmer,
+emanating a chilling aura that freezes the very air around it.
+"""
+
+SABRE_EXISTING_ITEM_TEXT = """
+As you venture once more into a distant corner of this fiery domain, the
+ravine seems barren, devoid of the once-potent aura that gripped it. The
+remnants of the glacier appear diminished, their icy forms melting slowly
+under the relentless heat. The air, once crisp and cold, now feels heavy with
+a sense of melancholy.
+
+The cavern, now empty, echoes with a dull hollowness, its walls stripped of
+the ethereal glow that once bathed them. With the absence of the Frostbite
+Sabre, the sanctuary feels desolate, its former majesty faded into a sombre
+shadow of what it once was.
+
+The Frostbite Sabre is already in your inventory.
+"""
+
+STAFF_NEW_ITEM_TEXT = """
+You stumble upon an unexpected oasis nestled amidst the desolation. Here, a
+small, shimmering pool reflects the sunlight that beams through a gap in the
+smoky clouds, offering a respite from the oppressive heat.
+
+The oasis exudes an aura of rejuvenation, its life-giving waters seeming to
+reclaim the surrounding area from the grasp of the relentless flames. The
+vibrant greenery, lush and defiant, sprawls outwards, pushing back against the
+encroaching desolation with fervent determination.
+
+At the water's edge stands a weathered stone altar, upon which rests the Water
+Staff, its ancient runes glowing softly with the essence of rivers and seas.
+The air hums with a soothing tranquillity, beckoning you to claim this relic
+of elemental power.
+"""
+
+STAFF_EXISTING_ITEM_TEXT = """
+You return to the once-vibrant oasis, now a shadow of its former self. The
+shimmering pool, once a beacon of life, reflects only the dim glow of dying
+embers floating in the air.
+
+The surrounding greenery, once defiant and lush, now withers and curls,
+succumbing to the relentless onslaught of the scorching heat. Charred remnants
+litter the oasis, a sombre reminder of the power that once thrived here.
+
+The weathered stone altar stands barren, stripped of the Water Staff that once
+held sway over this part of the desolate realm. The air hangs heavy with a
+palpable sense of loss, a melancholic silence enveloping the forsaken
+sanctuary.
+
+The Water Staff is already in your inventory.
+"""
+
+EARTHSHAKER_NEW_ITEM_TEXT = """
+You come across a secluded gorge, near the foot of the volcano, where the
+ground cracks and rumbles with unseen fury. Amidst the scorched terrain,
+jagged fissures snake their way through the earth, emitting sulphurous fumes
+that sting your nostrils. In the centre of this tumultuous landscape lies a
+cavern, its entrance obscured by a curtain of cascading ash.
+
+As you enter, shadows dance eerily upon the walls, illuminated by sporadic
+bursts of fiery light that seep through the ash-laden air. In the centre
+stands a towering monolith of obsidian, a solemn sentinel amidst the chaos.
+Its surface, once smooth and reflective, now bears the marks of time and
+turmoil, a testament to the relentless forces that shape this unforgiving
+realm.
+
+At its base lies the Earthshaker, a weapon of immense power forged in the
+heart of the volcano itself. Its massive form, imbued with the essence of the
+earth's fury, is capable of unleashing devastating shockwaves. As you grasp
+the hammer's handle, the ground trembles beneath your feet and a sense of
+destiny washes over you, hinting at the crucial role it will play in the
+battle to come.
+"""
+
+EARTHSHAKER_EXISTING_ITEM_TEXT = """
+As you return to the secluded gorge, a sense of desolation hangs heavy in the
+air, replacing the once-potent aura of power that permeated the surroundings.
+Near the foot of the volcano, the ground seems to groan with a mournful lament.
+The jagged fissures have grown, pumping ever-growing clouds of sulphurous
+fumes.
+
+Within the cavern, shadows flicker upon the now crumbling walls, the ash-laden
+air thick with a palpable sense of decay. The towering monolith of obsidian,
+once a symbol of strength and resilience, now bears the weight of its own
+demise. Cracks mar its surface, a poignant reminder of the Earthshaker's
+absence. At its base, the empty pedestal serves as a silent testament to the
+loss of power, the cavern itself beginning to crumble, as if mourning the
+departure of its guardian weapon.
+
+The Earthshaker is already in your inventory.
+"""
+
+WOLVES_DESC_TEXT = """
+You enter a desolate expanse, where the air hangs heavy with the scent of
+charred earth and smouldering debris. Jagged rocks jut out from the ashen
+landscape, casting eerie shadows that dance in the flickering light. In the
+distance, the faint crackling of flames can be heard, a grim reminder of the
+danger that lurks nearby.
+
+Suddenly, a chorus of low growls echo through the barren terrain as a pack of
+Ember Wolves emerge, their large forms moving with a menacing grace. Their
+scorched fur hints at their fiery origin, with glowing embers crackling across
+their skin, silhouetting this formidable foe against the smoky horizon. Brace
+yourself, for these relentless predators strike without warning, leaving
+nothing but ash in their wake.
+"""
+
+WOLVES_DEFEAT_TEXT = """
+As the pack of Ember Wolves closes in, their menacing growls echoing through
+the desolate expanse, you find yourself unarmed and unprepared for the
+ferocity of their attack. With each lunge and snap of their fiery jaws, you
+desperately try to fend them off, but their relentless assault overwhelms you.
+
+The scorching heat of their breath sears your skin, and their claws tear
+through your defences with ruthless efficiency. Despite your valiant efforts,
+you are swiftly overpowered by the sheer force of their numbers, succumbing to
+the vicious predators' relentless onslaught. As darkness descends, the last
+thing you hear is their haunting howl of victory echoing across the barren
+landscape.
+
+You were not equipped to defeat the Ember Wolves.
+"""
+
+WOLVES_VICTORY_TEXT = """
+As the pack of Ember Wolves encircles you, their fiery eyes locked onto their
+prey, you grasp the Frostbite Sabre tightly, feeling its chilling aura envelop
+you in a protective shroud of frost. With each swing of the blade, icy
+tendrils lash out, sapping the heat from the air and freezing the ground
+beneath your feet.
+
+The wolves, accustomed to the searing heat of their domain, recoil in shock as
+the biting cold pierces their scorched fur, slowing their movements. With
+calculated strikes, you drive back the relentless predators, the shimmering
+blade leaving trails of frost in its wake.
+
+Finally, as the last wolf falls, defeated by the icy grip of the Frostbite
+Sabre, a moment of silence descends upon the desolate expanse, broken only by
+the crackling of distant flames, now subdued by the victorious chill.
+
+You are now free to travel through this area in peace.
+"""
+
+WOLVES_CLEARED_TEXT = """
+You have already defeated these Ember Wolves.
+
+As you traverse the desolate expanse once more, a sense of eerie calm pervades
+the air, replacing the earlier tension that hung heavy with the threat of the
+Ember Wolves. The scent of charred earth lingers faintly, mingling with a
+slightly cooler breeze that now sweeps through the jagged rocks jutting out
+from the ashen landscape.
+
+No longer do the eerie shadows dance in the flickering light, for the absence
+of the predatory pack has lifted the veil of fear that once shrouded this
+place. In the distance, the crackling of flames seems subdued, a subtle
+reminder of the danger that once lurked nearby. You pass through the once
+treacherous terrain, now reclaimed in peaceful victory.
+"""
+
+CRAWLER_DESC_TEXT = """
+You tread cautiously through a landscape dominated by sulphur pits, a harsh
+and acrid setting, where bubbling pools of yellow sulphur churn beneath a
+cloud of noxious fumes. The ground is cracked and blistered, with jagged rocks
+jutting out at odd angles. The stench of sulphur hangs heavy, with an intense
+heat emanating from the pits, stinging your nostrils with their pungent odour.
+
+Amidst the acrid haze, you catch sight of a grotesque silhouette emerging from
+the molten depths. The Lava Crawler, a monstrous amalgamation of molten rock
+and ancient bones, slithers across the landscape with ominous purpose. Its
+segmented body crackles with magma, leaving a trail of searing heat in its
+wake. Hundreds of jagged limbs writhe and pulse with fiery energy as it moves,
+though slow, its immense weight promises deadly consequences for anything in
+its path, ready to crush and incinerate with relentless efficiency.
+"""
+
+CRAWLER_DEFEAT_TEXT = """
+The Lava Crawler advances toward you, but with nothing keep it at bay, the
+blistering heat rapidly envelopes you. The relentless onslaught proves
+overwhelming as its molten limbs ensnare you in a fiery embrace. Despite your
+efforts to evade its grasp, the searing heat of its touch seeps through your
+defences, sapping your strength with each blistering contact.
+
+With a bone-crushing force, it pins you down, the weight of its immense form
+pressing upon you like a suffocating inferno. As your vision blurs and
+consciousness fades, the scorching heat consumes you, turning your final
+moments into an agonizing blaze of defeat amidst the sulphuric haze.
+
+You were not equipped to defeat the Lava Crawler.
+"""
+
+CRAWLER_VICTORY_TEXT = """
+As the Lava Crawler looms menacingly before you, its fiery aura casting an
+ominous glow amidst the sulphur pits, you wield the Water Staff, its ancient
+runes glowing softly with the essence of rivers and seas. With a powerful
+incantation, you unleash a torrent of water, blasting the creature with a
+torrent that sizzles against its molten form.
+
+The Lava Crawler hisses and sputters as its molten form is doused, its
+movements slowing under the onslaught. Seizing the opportunity, you swiftly
+switch to the Frostbite Sabre, its chilling aura intensifying as you strike
+with calculated precision. The blade bites into the now sluggish creature,
+each strike sending shards of frozen rock flying.
+
+With a final, decisive blow, the Lava Crawler shatters into a cascade of
+brittle fragments, its fiery core extinguished by the combined might of water
+and ice. The steam now emanating from the Water Staff disperses the sulphurous
+haze around you, allowing a fragment of sunlight to bathe the rocky terrain.
+
+You are now free to travel through this area in peace.
+"""
+
+CRAWLER_CLEARED_TEXT = """
+You have already defeated Lava Crawler.
+
+As you cautiously traverse the landscape once dominated by the Lava Crawler, a
+newfound sense of tranquillity pervades the air, replacing the previous
+tension that hung heavy amidst the sulphur pits. The bubbling yellow pools now
+swirl with a subdued motion, and the acrid stench lingers less oppressively in
+the air. The ground, once cracked and blistered, now shows signs of tentative
+healing, with patches of vegetation scattered across the scorched earth.
+
+As the last traces of steam dissipate from the Lava Crawler's remains, the
+cloud of sulphurous haze around you has begun to disperse, allowing the sun to
+cast a gentle light upon the tranquil scene. You continue your journey through
+the now peaceful landscape, the echoes of your hard-won victory lingering
+amidst the newfound serenity.
+"""
+
+GOLEM_DESC_TEXT = """
+You arrive at the foot of the towering volcano, before you stands a coliseum,
+its grandeur rivalling the legendary gladiator pits of ancient Rome. Massive
+stone arches loom overhead, leading into a circular arena surrounded by
+towering tiers of weathered stone seats. As you step through the arches into
+the coliseum, you're greeted by the echoes of ancient battles that seem to
+linger in the air. The arena floor bears the scars of past encounters,
+testament to the ferocity of the challenge that waits within.
+
+Within this hallowed ground, the Magma Golem awaits, a living testament to the
+raw power of the volcano from which it was born. Its gargantuan frame,
+constructed of solid rock, pulses with streams of molten lava coursing through
+its crevices. Each step of the Magma Golem causes the ground to tremble, and
+its mighty fists can shatter even the toughest defences.
+
+You feel a faint pull of energy from a nearby portal.
+"""
+
+GOLEM_DEFEATED_TEXT = """
+As you stand before the colossal Magma Golem, its towering form radiating with
+the fiery intensity of the volcano from which it was born, you realize the
+magnitude of the challenge before you. With each thunderous step, the ground
+trembles beneath its gargantuan weight, and streams of molten lava course
+through its fissured frame like veins of liquid fire.
+
+Despite your valiant efforts to evade its relentless onslaught, its mighty
+fists descend upon you with unstoppable force, crushing through your defences
+with ease. The searing heat of its touch scorches your flesh, leaving trails
+of agonizing pain in its wake. As the Magma Golem towers over you, its fiery
+gaze locking onto yours, you realize the futility of your struggle. With a
+final, crushing blow, darkness envelops you, consumed by the overwhelming
+power of the elemental titan.
+
+You were not equipped to defeat the Magma Golem.
+"""
+
+GOLEM_VICTORY_TEXT = """
+As you face the towering menace of the Magma Golem, you wield the Water Staff.
+With a powerful incantation, you summon a flood of water to cascade over the
+Magma Golem, temporarily slowing its relentless advance as steam billows from
+its molten form.
+
+Seizing the moment, you switch to the Frostbite Sabre, its chilling aura
+enveloping you as you dart beneath the creature's towering frame. With a swift,
+calculated strike, you slash at its leg, causing it to roar in pain as the
+frozen blade bites deep.
+
+As the Magma Golem staggers and falls to its knees, you grasp the Earthshaker,
+feeling its immense power coursing through your veins. With a mighty leap, you
+soar through the air, the weapon's weight heavy in your hands. With a
+resounding crash, you bring the Earthshaker down upon the Magma Golem's chest,
+unleashing a devastating shockwave that reverberates through the coliseum. The
+creature shatters into a shower of molten fragments, its fiery essence
+extinguished by the combined might of water, ice, and earth.
+
+You are now free to travel through this area in peace.
+"""
+
+GOLEM_CLEARER_TEXT = """
+You have already defeated Magma Golem.
+
+As you return to the coliseum, a sense of tranquillity washes over the once
+tumultuous arena. The echoes of ancient battles fade into the background,
+replaced by a serene stillness that permeates the air. The scars of past
+encounters upon the arena floor now serve as silent reminders of your hard-
+fought victory against the Magma Golem.
+
+Beyond the stone arches, the towering volcano stands in solemn silence, its
+fiery rage subdued in the wake of the elemental titan's defeat. The intensity
+of the heat has lessened, and the volcano seems more dormant, its towering
+presence no longer looming with imminent threat.
+
+You feel a faint pull of energy from a nearby portal.
+"""
+
+SCORCHLANDS_PORTAL_TEXT = """
+You venture deeper into the heart of the volcano, where molten streams flow
+like rivers of fire beneath a cavernous expanse. At the epicentre, a portal
+materializes, its ethereal glow pulsating with hues of crimson and gold,
+casting flickering shadows against the rugged walls.
+
+The heat of the lava fades into the background as you approach, drawn to the
+portal's beckoning light. With each step, a sense of anticipation grows,
+fuelled by the promise of escape from this fiery realm. As you reach out to
+touch the portal, its shimmering surface envelops you, transporting you with a
+rush of swirling energy to the safety of home.
+
+Congratulations! You found the Scorchlands Portal and finished your quest.
+
+With different paths to take, items to find and enemies to battle, every
+playthrough can be a brand new adventure. Who knows, you may even find a
+secret ending...
+"""
