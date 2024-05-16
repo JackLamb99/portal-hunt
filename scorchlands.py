@@ -15,6 +15,54 @@ import general as gen
 import glade
 
 
+def sabre():
+    """
+    Checks if the 'sabre' item is in the inventory.
+    Runs an 'existing item' scene if true, allows player to 'keep' or 'return'
+    the item.
+    Runs a 'new item' scene if false, allows player to 'take' or 'leave' the
+    item.
+    Grid ref. 'Scorchlands-1D'
+    """
+    directions = ["east"]
+
+    # If the specified item already in the inventory
+    if "sabre" in gen.inventory:
+        options = ["keep", "return"]
+
+        print(nar.SABRE_EXISTING_ITEM_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input(
+            "What would you like to do with this item?: ", options)
+        if valid_input == "keep":
+            print(nar.KEEP_ITEM_TEXT)
+        elif valid_input == "return":
+            gen.inventory.remove("sabre")
+            print(nar.RETURN_ITEM_TEXT)
+    else:
+        options = ["take", "leave"]
+
+        print(nar.SABRE_NEW_ITEM_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input(
+            "What would you like to do with this item?: ", options)
+        if valid_input == "take":
+            gen.inventory.append("sabre")
+            print(nar.TAKE_ITEM_TEXT)
+        elif valid_input == "leave":
+            print(nar.LEAVE_ITEM_TEXT)
+
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "east":
+        gen.clear()
+        scor_crossrd_2d()
+
+
 def wolves_2c():
     """
     Checks if 'wolves-2c' are alive (True) or dead (False), runs a 'fight' or
@@ -274,7 +322,7 @@ def scor_crossrd_2d():
         wolves_2c()
     elif valid_input == "west":
         gen.clear()
-        print("Call sabre() function")  # TO BE DEFINED
+        sabre()
 
 
 def scor_crossrd_3c():
