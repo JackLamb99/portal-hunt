@@ -15,6 +15,30 @@ import general as gen
 import glade
 
 
+def scor_crossrd_3a():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Scorchlands-3A'
+    """
+    directions = ["north", "east", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        crawler()
+    elif valid_input == "east":
+        gen.clear()
+        print("Call earthshaker() function")  # TO BE DEFINED
+    elif valid_input == "west":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call golem() function")  # TO BE DEFINED
+
+
 def scor_crossrd_4b():
     """
     Runs a 'crossroad' scene. Grid ref. 'Scorchlands-4B'
@@ -29,11 +53,11 @@ def scor_crossrd_4b():
     if valid_input == "north":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call FUNCTION function")  # TO BE DEFINED
+        wolves_4c()
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call FUNCTION function")  # TO BE DEFINED
+        crawler()
 
 
 def sabre():
@@ -206,7 +230,7 @@ def crawler():
                     scor_crossrd_4b()
                 elif valid_input == "south":
                     gen.clear()
-                    print("Call scor_crossrd_3a() function")  # TO BE DEFINED
+                    scor_crossrd_3a()
                 elif valid_input == "west":
                     gen.clear()
                     print("Call scor_crossrd_2b() function")  # TO BE DEFINED
@@ -224,7 +248,7 @@ def crawler():
             elif gen.flee_direction == ["east"]:
                 scor_crossrd_4b()
             elif gen.flee_direction == ["south"]:
-                print("Call scor_crossrd_3a() function")  # TO BE DEFINED
+                scor_crossrd_3a()
             elif gen.flee_direction == ["west"]:
                 print("Call scor_crossrd_2b() function")  # TO BE DEFINED
 
@@ -243,7 +267,7 @@ def crawler():
             scor_crossrd_4b()
         elif valid_input == "south":
             gen.clear()
-            print("Call scor_crossrd_3a() function")  # TO BE DEFINED
+            scor_crossrd_3a()
         elif valid_input == "west":
             gen.clear()
             print("Call scor_crossrd_2b() function")  # TO BE DEFINED
