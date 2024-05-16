@@ -15,6 +15,26 @@ import general as gen
 import glade
 
 
+def wtl_crossrd_3a():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Wetlands-3A'
+    """
+    directions = ["north", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        leeches_3b()
+    elif valid_input == "west":
+        gen.clear()
+        print("Call trident() function")  # TO BE DEFINED
+
+
 def leeches_3d():
     """
     Checks if 'leeches-3d' are alive (True) or dead (False), runs a 'fight' or
@@ -211,7 +231,7 @@ def leeches_3b():
                     wtl_crossrd_4b()
                 elif valid_input == "south":
                     gen.clear()
-                    print("Call wtl_crossrd_3a() function")  # TO BE DEFINED
+                    wtl_crossrd_3a()
                 elif valid_input == "west":
                     gen.clear()
                     print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
@@ -229,7 +249,7 @@ def leeches_3b():
             elif gen.flee_direction == ["east"]:
                 wtl_crossrd_4b()
             elif gen.flee_direction == ["south"]:
-                print("Call wtl_crossrd_3a() function")  # TO BE DEFINED
+                wtl_crossrd_3a()
             elif gen.flee_direction == ["west"]:
                 print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
 
@@ -248,7 +268,7 @@ def leeches_3b():
             wtl_crossrd_4b()
         elif valid_input == "south":
             gen.clear()
-            print("Call wtl_crossrd_3a() function")  # TO BE DEFINED
+            wtl_crossrd_3a()
         elif valid_input == "west":
             gen.clear()
             print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
