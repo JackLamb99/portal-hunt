@@ -15,6 +15,30 @@ import general as gen
 import glade
 
 
+def wtl_crossrd_1c():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Wetlands-1C'
+    """
+    directions = ["north", "east", "south"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        print("Call harpoon() function")  # TO BE DEFINED
+    elif valid_input == "east":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        crocodile()
+    elif valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call serpent() function")  # TO BE DEFINED
+
+
 def wtl_crossrd_2b():
     """
     Runs a 'crossroad' scene. Grid ref. 'Wetlands-2B'
@@ -180,7 +204,7 @@ def crocodile():
                     wtl_crossrd_2b()
                 elif valid_input == "west":
                     gen.clear()
-                    print("Call wtl_crossrd_1c() function")  # TO BE DEFINED
+                    wtl_crossrd_1c()
             # If required items not in inventory, defeat scene
             else:
                 print(nar.CROCODILE_DEFEAT_TEXT)
@@ -197,7 +221,7 @@ def crocodile():
             elif gen.flee_direction == ["south"]:
                 wtl_crossrd_2b()
             elif gen.flee_direction == ["west"]:
-                print("Call wtl_crossrd_1c() function")  # TO BE DEFINED
+                wtl_crossrd_1c()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -217,7 +241,7 @@ def crocodile():
             wtl_crossrd_2b()
         elif valid_input == "west":
             gen.clear()
-            print("Call wtl_crossrd_1c() function")  # TO BE DEFINED
+            wtl_crossrd_1c()
 
 
 def leeches_3b():
