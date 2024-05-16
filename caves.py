@@ -15,6 +15,30 @@ import general as gen
 import glade
 
 
+def cave_crossrd_2a():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Caves-2A'
+    """
+    directions = ["north", "east", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        spider_2b()
+    elif valid_input == "east":
+        gen.clear()
+        print("Call mace() function")  # TO BE DEFINED
+    elif valid_input == "west":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        spider_1a()
+
+
 def cave_crossrd_3b():
     """
     Runs a 'crossroad' scene. Grid ref. 'Caves-3B'
@@ -123,7 +147,7 @@ def spider_1a():
                     cave_crossrd_1b()
                 elif valid_input == "east":
                     gen.clear()
-                    print("Call cave_crossrd_2a() function")  # TO BE DEFINED
+                    cave_crossrd_2a()
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SPIDER_DEFEAT_TEXT)
@@ -136,7 +160,7 @@ def spider_1a():
             if gen.flee_direction == ["north"]:
                 cave_crossrd_1b()
             elif gen.flee_direction == ["east"]:
-                print("Call cave_crossrd_2a() function")  # TO BE DEFINED
+                cave_crossrd_2a()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -150,7 +174,7 @@ def spider_1a():
             cave_crossrd_1b()
         elif valid_input == "east":
             gen.clear()
-            print("Call cave_crossrd_2a() function")  # TO BE DEFINED
+            cave_crossrd_2a()
 
 
 def spider_2b():
@@ -192,7 +216,7 @@ def spider_2b():
                     cave_crossrd_3b()
                 elif valid_input == "south":
                     gen.clear()
-                    print("Call cave_crossrd_2a() function")  # TO BE DEFINED
+                    cave_crossrd_2a()
                 elif valid_input == "west":
                     gen.clear()
                     cave_crossrd_1b()
@@ -210,7 +234,7 @@ def spider_2b():
             elif gen.flee_direction == ["east"]:
                 cave_crossrd_3b()
             elif gen.flee_direction == ["south"]:
-                print("Call cave_crossrd_2a() function")  # TO BE DEFINED
+                cave_crossrd_2a()
             elif gen.flee_direction == ["west"]:
                 cave_crossrd_1b()
 
@@ -229,7 +253,7 @@ def spider_2b():
             cave_crossrd_3b()
         elif valid_input == "south":
             gen.clear()
-            print("Call cave_crossrd_2a() function")  # TO BE DEFINED
+            cave_crossrd_2a()
         elif valid_input == "west":
             gen.clear()
             cave_crossrd_1b()
