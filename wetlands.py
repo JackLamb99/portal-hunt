@@ -15,6 +15,14 @@ import general as gen
 import glade
 
 
+def wetlands_portal():
+    """
+    Runs the 'wetlands portal' scene, end of the 'Wetlands Path'
+    """
+    print(nar.WETLANDS_PORTAL_TEXT)
+    print("Call end game function")  # TO BE DEFINED
+
+
 def wtl_crossrd_1a():
     """
     Runs a 'crossroad' scene. Grid ref. 'Wetlands-1A'
@@ -126,7 +134,7 @@ def serpent():
                     wtl_crossrd_1a()
                 elif valid_input == "west":
                     gen.clear()
-                    print("Call wetlands_portal() function")  # TO BE DEFINED
+                    wetlands_portal()
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SERPENT_DEFEAT_TEXT)
@@ -161,7 +169,7 @@ def serpent():
             wtl_crossrd_1a()
         elif valid_input == "west":
             gen.clear()
-            print("Call wetlands_portal() function")  # TO BE DEFINED
+            wetlands_portal()
 
 
 def trident():
@@ -337,7 +345,7 @@ def leeches_3d():
             if "elixir" in gen.inventory:
                 gen.enemies["leeches-3d"] = False
 
-                print(nar.ENEMY_VICTORY_TEXT)
+                print(nar.LEECHES_VICTORY_TEXT)
                 print(f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
