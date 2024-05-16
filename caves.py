@@ -28,18 +28,15 @@ def cave_crossrd_4c():
                                       directions)
     if valid_input == "north":
         gen.clear()
-        print("Call FUNCTION function")  # TO BE DEFINED
-    elif valid_input == "east":
-        gen.clear()
-        print("Call FUNCTION function")  # TO BE DEFINED
+        print("Call coil() function")  # TO BE DEFINED
     elif valid_input == "south":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call FUNCTION function")  # TO BE DEFINED
+        print("Call troll() function")  # TO BE DEFINED
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call FUNCTION function")  # TO BE DEFINED
+        skeletons()
 
 
 def cave_crossrd_3d():
