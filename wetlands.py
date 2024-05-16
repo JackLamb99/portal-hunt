@@ -15,6 +15,26 @@ import general as gen
 import glade
 
 
+def wtl_crossrd_1a():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Wetlands-1A'
+    """
+    directions = ["north", "east"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        serpent()
+    elif valid_input == "east":
+        gen.clear()
+        trident()
+
+
 def harpoon():
     """
     Checks if the 'harpoon' item is in the inventory.
@@ -103,7 +123,7 @@ def serpent():
                     wtl_crossrd_2b()
                 elif valid_input == "south":
                     gen.clear()
-                    print("Call wtl_crossrd_1a() function")  # TO BE DEFINED
+                    wtl_crossrd_1a()
                 elif valid_input == "west":
                     gen.clear()
                     print("Call wetlands_portal() function")  # TO BE DEFINED
@@ -121,7 +141,7 @@ def serpent():
             elif gen.flee_direction == ["east"]:
                 wtl_crossrd_2b()
             elif gen.flee_direction == ["south"]:
-                print("Call wtl_crossrd_1a() function")  # TO BE DEFINED
+                wtl_crossrd_1a()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -138,7 +158,7 @@ def serpent():
             wtl_crossrd_2b()
         elif valid_input == "south":
             gen.clear()
-            print("Call wtl_crossrd_1a() function")  # TO BE DEFINED
+            wtl_crossrd_1a()
         elif valid_input == "west":
             gen.clear()
             print("Call wetlands_portal() function")  # TO BE DEFINED
@@ -195,7 +215,7 @@ def trident():
         wtl_crossrd_3a()
     elif valid_input == "west":
         gen.clear()
-        print("Call wtl_crossrd_1a() function")  # TO BE DEFINED
+        wtl_crossrd_1a()
 
 
 def wtl_crossrd_2d():
