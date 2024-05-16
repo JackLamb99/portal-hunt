@@ -415,6 +415,37 @@ place is in mourning.
 The Everflame is already in your inventory.
 """
 
+MACE_NEW_ITEM_TEXT = """
+You press through a labyrinth of narrow, winding passages, the damp stone
+walls closing in around you. Suddenly, a faint glimmer catches your eye,
+leading you to a hidden alcove. The air grows heavy with the scent of damp
+earth, and tangled vines ensnare the ground in a chaotic web.
+
+At the heart of the alcove, a towering pedestal stands adorned with ancient
+carvings, aglow with a celestial luminescence. Mysterious whispers dance
+through the chamber, hinting at the secrets veiled within.
+
+Resting upon the pedestal lies the Blessed Mace, its surface shimmering with a
+divine radiance that seems to banish the encroaching shadows. As you reach out
+to claim it, you feel a surge of holy power coursing through you, filling you
+with the strength to smite the undead lurking within these twisting tunnels.
+"""
+
+MACE_EXISTING_ITEM_TEXT = """
+You press through a labyrinth of narrow, winding passages, the damp stone
+walls closing in around you. Suddenly, a faint glimmer catches your eye,
+leading you to a hidden alcove. The air hangs heavy with a sense of desolation,
+and the tangled vines that ensnare the ground now seem lifeless as they wither
+beneath your boots.
+
+The towering pedestal at the heart of the chamber now stands empty, its
+ancient carvings now mere shadows of their former brilliance. This place, once
+radiating with hope and life, now seems devoid of energy as the shadows creep
+ever closer.
+
+The Blessed Mace is already in your inventory.
+"""
+
 COIL_NEW_ITEM_TEXT = """
 As you press onward through the labyrinthine of passages, your footsteps echo
 against the rugged walls, revealing a passage littered with rusted tools and
