@@ -15,6 +15,89 @@ import general as gen
 import glade
 
 
+def crocodile():
+    """
+    Checks if the 'crocodile' is alive (True) or dead (False), runs a 'fight'
+    or 'flee' scene if alive, runs a 'enemy cleared' scene if dead.
+    Checks if the required item/s are in the 'Inventory' to determine the
+    outcome of the 'fight'.
+    Grid ref. 'Wetlands-2C'
+    """
+    directions = ["north", "east", "south", "west"]
+
+    # If the specified enemy is 'alive'
+    if gen.enemies["crocodile"]:
+        options = ["fight", "flee"]
+
+        print(nar.CROCODILE_DESC_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input("What would you like to do?: ",
+                                          options)
+        # Fight scene
+        if valid_input == "fight":
+            gen.clear()
+            # If all required items in inventory, victory scene
+            if all(item in gen.inventory for item in [
+                    "elixir", "trident"]):
+                gen.enemies["crocodile"] = False
+
+                print(nar.CROCODILE_VICTORY_TEXT)
+                print(f"Directions: {gen.lst_to_str(directions)}")
+
+                valid_input = gen.get_valid_input(
+                    "Where would you like to go?: ", directions)
+                if valid_input == "north":
+                    gen.clear()
+                    print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+                elif valid_input == "east":
+                    gen.clear()
+                    wtl_crossrd_3c()
+                elif valid_input == "south":
+                    gen.clear()
+                    print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
+                elif valid_input == "west":
+                    gen.clear()
+                    print("Call wtl_crossrd_1c() function")  # TO BE DEFINED
+            # If required items not in inventory, defeat scene
+            else:
+                print(nar.CROCODILE_DEFEAT_TEXT)
+                print("Call end game function")  # TO BE DEFINED
+        # Flee scene
+        elif valid_input == "flee":
+            gen.clear()
+            print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
+
+            if gen.flee_direction == ["north"]:
+                print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+            elif gen.flee_direction == ["east"]:
+                wtl_crossrd_3c()
+            elif gen.flee_direction == ["south"]:
+                print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
+            elif gen.flee_direction == ["west"]:
+                print("Call wtl_crossrd_1c() function")  # TO BE DEFINED
+
+    # Else if the enemy is already defeated, 'cleared' scene
+    else:
+        print(nar.CROCODILE_CLEARED_TEXT)
+        print(f"Directions: {gen.lst_to_str(directions)}")
+
+        valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                          directions)
+        if valid_input == "north":
+            gen.clear()
+            print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+        elif valid_input == "east":
+            gen.clear()
+            wtl_crossrd_3c()
+        elif valid_input == "south":
+            gen.clear()
+            print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
+        elif valid_input == "west":
+            gen.clear()
+            print("Call wtl_crossrd_1c() function")  # TO BE DEFINED
+
+
 def leeches_3b():
     """
     Checks if 'leeches-3b' are alive (True) or dead (False), runs a 'fight' or
@@ -190,7 +273,7 @@ def wtl_crossrd_3c():
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call crocodile() function")  # TO BE DEFINED
+        crocodile()
 
 
 def wtl_crossrd_4b():
