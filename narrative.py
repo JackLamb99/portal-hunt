@@ -964,7 +964,7 @@ its mighty fists can shatter even the toughest defences.
 You feel a faint pull of energy from a nearby portal.
 """
 
-GOLEM_DEFEATED_TEXT = """
+GOLEM_DEFEAT_TEXT = """
 As you stand before the colossal Magma Golem, its towering form radiating with
 the fiery intensity of the volcano from which it was born, you realize the
 magnitude of the challenge before you. With each thunderous step, the ground
@@ -1105,7 +1105,7 @@ landscape.
 
 As you approach the water's edge, your eyes catch a glint beneath the surface.
 Resting upon a stone altar, bathed in an ethereal glow that emanates a steady
-hum, lies Tesla’s Trident, shimmering with an untamed energy. The air seems to
+hum, lies Tesla's Trident, shimmering with an untamed energy. The air seems to
 buzz with anticipation as you reach out to grasp the weapon, feeling the
 electric tingle of its charge coursing through your fingertips.
 """
@@ -1176,7 +1176,7 @@ their circular mouths. Though blind, their incredible sense of smell allows
 them to detect any unfortunate prey that wonders too close.
 """
 
-LEECHES_DEFEATED_TEXT = """
+LEECHES_DEFEAT_TEXT = """
 Mere seconds after you wade into the stagnant pool, the Giant Leeches catch
 your scent and begin to close in. As their sleek bodies surge toward you with
 a sinister intent, you realize with dread that you lack the means to repel the
@@ -1246,7 +1246,7 @@ watery domain. As the creature advances, its dual gaze fixes upon you with a
 predatory intensity.
 """
 
-CROCODILE_DEFEATED_TEXT = """
+CROCODILE_DEFEAT_TEXT = """
 As the Two-headed Crocodile closes in with relentless aggression, you find
 yourself unequipped to fend off the ferocious beast. Its dual heads snap with
 bone-crushing force, each bite bringing you closer to the brink of defeat.

@@ -143,7 +143,7 @@ def golem():
                     scor_crossrd_1a()
             # If required items not in inventory, defeat scene
             else:
-                print(nar.GOLEM_DEFEATED_TEXT)
+                print(nar.GOLEM_DEFEAT_TEXT)
                 print("Call end game function")  # TO BE DEFINED
         # Flee scene
         elif valid_input == "flee":
