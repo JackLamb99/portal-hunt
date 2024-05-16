@@ -12,6 +12,7 @@ import narrative as nar
 from mountains import mountains_desc
 from caves import caves_desc
 from scorchlands import scorchlands_desc
+from wetlands import wetlands_desc
 
 
 def glade():
@@ -36,4 +37,4 @@ def glade():
         scorchlands_desc()
     elif valid_input == "west":
         gen.clear()
-        print("Call Wetlands desc. function.")
+        wetlands_desc()
