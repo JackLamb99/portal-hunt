@@ -15,6 +15,22 @@ import general as gen
 import glade
 
 
+def cave_dead_end():
+    """
+    Runs a 'dead end' scene. Grid ref. 'Caves-4A'
+    """
+    directions = ["west"]
+
+    print(nar.DEAD_END_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "west":
+        gen.clear()
+        mace()
+
+
 def mace():
     """
     Checks if the 'mace' item is in the inventory.
@@ -63,7 +79,7 @@ def mace():
         cave_crossrd_3b()
     elif valid_input == "east":
         gen.clear()
-        print("Call cave_dead_end() function")  # TO BE DEFINED
+        cave_dead_end()
     elif valid_input == "west":
         gen.clear()
         cave_crossrd_2a()
