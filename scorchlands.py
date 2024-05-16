@@ -15,6 +15,87 @@ import general as gen
 import glade
 
 
+def golem():
+    """
+    Checks if the 'golem' is alive (True) or dead (False), runs a 'fight' or
+    'flee' scene if alive, runs a 'enemy cleared' scene if dead.
+    Checks if the required item/s are in the 'Inventory' to determine the
+    outcome of the 'fight'.
+    Grid ref. 'Scorchlands-2A'
+    """
+    directions = ["north", "east", "south", "west"]
+
+    # If the specified enemy is 'alive'
+    if gen.enemies["golem"]:
+        options = ["fight", "flee"]
+
+        print(nar.GOLEM_DESC_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input("What would you like to do?: ",
+                                          options)
+        # Fight scene
+        if valid_input == "fight":
+            gen.clear()
+            # If all required items in inventory, victory scene
+            if all(item in gen.inventory for item in [
+                    "sabre", "staff", "earthshaker"]):
+                gen.enemies["golem"] = False
+
+                print(nar.GOLEM_VICTORY_TEXT)
+                print(f"Directions: {gen.lst_to_str(directions)}")
+
+                valid_input = gen.get_valid_input(
+                    "Where would you like to go?: ", directions)
+                if valid_input == "north":
+                    gen.clear()
+                    scor_crossrd_2b()
+                elif valid_input == "east":
+                    gen.clear()
+                    scor_crossrd_3a()
+                elif valid_input == "south":
+                    gen.clear()
+                    print("Call scorchlands_portal function")  # TO BE DEFINED
+                elif valid_input == "west":
+                    gen.clear()
+                    print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+            # If required items not in inventory, defeat scene
+            else:
+                print(nar.GOLEM_DEFEATED_TEXT)
+                print("Call end game function")  # TO BE DEFINED
+        # Flee scene
+        elif valid_input == "flee":
+            gen.clear()
+            print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
+
+            if gen.flee_direction == ["north"]:
+                scor_crossrd_2b()
+            elif gen.flee_direction == ["east"]:
+                scor_crossrd_3a()
+            elif gen.flee_direction == ["west"]:
+                print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+
+    # Else if the enemy is already defeated, 'cleared' scene
+    else:
+        print(nar.GOLEM_CLEARED_TEXT)
+        print(f"Directions: {gen.lst_to_str(directions)}")
+
+        valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                          directions)
+        if valid_input == "north":
+            gen.clear()
+            scor_crossrd_2b()
+        elif valid_input == "east":
+            gen.clear()
+            scor_crossrd_3a()
+        elif valid_input == "south":
+            gen.clear()
+            print("Call scorchlands_portal() function")  # TO BE DEFINED
+        elif valid_input == "west":
+            gen.clear()
+            print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+
+
 def earthshaker():
     """
     Checks if the 'earthshaker' item is in the inventory.
@@ -105,7 +186,7 @@ def scor_crossrd_2b():
     elif valid_input == "south":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call golem() function")  # TO BE DEFINED
+        golem()
     elif valid_input == "west":
         gen.clear()
         print("Call staff() function")  # TO BE DEFINED
@@ -132,7 +213,7 @@ def scor_crossrd_3a():
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call golem() function")  # TO BE DEFINED
+        golem()
 
 
 def scor_crossrd_4b():

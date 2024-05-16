@@ -1004,7 +1004,7 @@ extinguished by the combined might of water, ice, and earth.
 You are now free to travel through this area in peace.
 """
 
-GOLEM_CLEARER_TEXT = """
+GOLEM_CLEARED_TEXT = """
 You have already defeated Magma Golem.
 
 As you return to the coliseum, a sense of tranquillity washes over the once
