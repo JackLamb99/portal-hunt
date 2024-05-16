@@ -10,6 +10,7 @@ Glade' from each separate file without caused a circular import error.
 import general as gen
 import narrative as nar
 from mountains import mountains_desc
+from caves import caves_desc
 
 
 def glade():
@@ -28,7 +29,7 @@ def glade():
         mountains_desc()
     elif valid_input == "east":
         gen.clear()
-        print("Call Caves desc. function.")
+        caves_desc()
     elif valid_input == "south":
         gen.clear()
         print("Call Scorchlands desc. function.")

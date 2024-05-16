@@ -1,5 +1,5 @@
 """
-'Mountains' path for Portal Hunt
+'Mountains' path for Portal Hunt.
 
 This module contains the functions and logic to navigate the 'Mountains' path
 in Portal Hunt.

@@ -72,12 +72,8 @@ The path has come to an abrupt stop, you have reached a dead end, it is eerily
 quiet and nothing of importance seems to be nearby.
 """
 
-FLEE_TEXT = """
-You choose to flee from this enemy.
-"""
-
 MOUNTAINS_DESC_TEXT = """
-You are at the entrance to The Mountains.
+You are at the entrance to the Mountains.
 
 A breathtaking landscape of towering, snow-capped peaks that rise dramatically
 into the sky. Jagged ridges and sheer cliffs dominate the terrain, with narrow,
@@ -373,4 +369,18 @@ playthrough can be a brand new adventure. Who knows, you may even find a
 secret ending...
 
 Thank you for playing Portal Hunt!
+"""
+
+CAVES_DESC_TEXT = """
+You are at the entrance to the Caves.
+
+A labyrinthine network of twisting tunnels and caverns, The Caves plunge into
+the depths of the earth, shrouded in perpetual darkness. Crystalline
+formations glimmer faintly, casting eerie reflections on the damp stone walls.
+Mysterious glyphs and ancient carvings hint at a forgotten history.
+
+The air is heavy with the scent of earth and dampness, punctuated by the
+occasional drip of water echoing through the shadows. In this subterranean
+realm, danger lurks around every corner, but so too are the secrets waiting to
+be unearthed.
 """
