@@ -384,3 +384,33 @@ occasional drip of water echoing through the shadows. In this subterranean
 realm, danger lurks around every corner, but so too are the secrets waiting to
 be unearthed.
 """
+
+EVERFLAME_NEW_ITEM_TEXT = """
+As you round a bend, deep in the caves, you stumble upon a chamber bathed in a
+soft, ethereal glow. The air here is warmer, carrying the scent of burning
+embers.
+
+In the centre lies an ancient pedestal, upon which rests the Everflame, a
+marble torch adorned with swirling runes. Its flame dances with a steady,
+undying brilliance, illuminating the darkness with a comforting warmth.
+
+As you clutch its handle, you feel a surge of power coursing through you,
+knowing this enchanted flame will light your path and ward off the dangers
+lurking in the shadows.
+"""
+
+EVERFLAME_EXISTING_ITEM_TEXT = """
+As you round a bend, deep in the caves, you stumble upon the chamber where the
+Everflame once rested, but you're greeted by a chilling emptiness. The once-
+vibrant glow has faded, leaving only darkness in its wake.
+
+The air feels colder now, devoid of the comforting warmth that the enchanted
+flame once provided. You can't shake the feeling of foreboding as you realize
+the importance of the torch's absence.
+
+As you gaze upon the vacant space, a strange emptiness fills the chamber and
+an overwhelming sense of loss washes over you, as if the very essence of the
+place is in mourning.
+
+The Everflame is already in your inventory.
+"""
