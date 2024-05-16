@@ -688,3 +688,19 @@ With different paths to take, items to find and enemies to battle, every
 playthrough can be a brand new adventure. Who knows, you may even find a
 secret ending...
 """
+
+SCORCHLANDS_DESC_TEXT = """
+You are at the entrance to the Scorchlands.
+
+The fiery realm stretches out before you, heat radiates from the scorched
+ground beneath your feet, and the air shimmers with waves of intense warmth.
+Wisps of smoke drift lazily from the smouldering remnants of what were once
+vibrant forests, now reduced to blackened skeletons, their twisted branches
+reaching towards the ashen sky. Despite the devastation, resilient plants push
+through the charred earth, offering glimpses of life amidst the desolation.
+
+Fumaroles belch sulphurous clouds into the air, casting an acrid odour over
+the landscape. In the distance, the silhouette of a volcano looms ominously,
+serving as a constant reminder of the unpredictable nature of this harsh
+dominion, where beauty and danger coexist in a delicate balance.
+"""
