@@ -15,6 +15,88 @@ import general as gen
 import glade
 
 
+def leeches_3b():
+    """
+    Checks if 'leeches-3b' are alive (True) or dead (False), runs a 'fight' or
+    'flee' scene if alive, runs a 'enemy cleared' scene if dead.
+    Checks if the required item/s are in the 'Inventory' to determine the
+    outcome of the 'fight'.
+    Grid ref. 'Wetlands-3B'
+    """
+    directions = ["north", "east", "south", "west"]
+
+    # If the specified enemy is 'alive'
+    if gen.enemies["leeches-3b"]:
+        options = ["fight", "flee"]
+
+        print(nar.LEECHES_DESC_TEXT)
+        print(f"Options: {gen.lst_to_str(options)}")
+
+        valid_input = gen.get_valid_input("What would you like to do?: ",
+                                          options)
+        # Fight scene
+        if valid_input == "fight":
+            gen.clear()
+            # If all required items in inventory, victory scene
+            if "elixir" in gen.inventory:
+                gen.enemies["leeches-3b"] = False
+
+                print(nar.LEECHES_VICTORY_TEXT)
+                print(f"Directions: {gen.lst_to_str(directions)}")
+
+                valid_input = gen.get_valid_input(
+                    "Where would you like to go?: ", directions)
+                if valid_input == "north":
+                    gen.clear()
+                    wtl_crossrd_3c()
+                elif valid_input == "east":
+                    gen.clear()
+                    wtl_crossrd_4b()
+                elif valid_input == "south":
+                    gen.clear()
+                    print("Call wtl_crossrd_3a() function")  # TO BE DEFINED
+                elif valid_input == "west":
+                    gen.clear()
+                    print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
+            # If required items not in inventory, defeat scene
+            else:
+                print(nar.LEECHES_DEFEAT_TEXT)
+                print("Call end game function")  # TO BE DEFINED
+        # Flee scene
+        elif valid_input == "flee":
+            gen.clear()
+            print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
+
+            if gen.flee_direction == ["north"]:
+                wtl_crossrd_3c()
+            elif gen.flee_direction == ["east"]:
+                wtl_crossrd_4b()
+            elif gen.flee_direction == ["south"]:
+                print("Call wtl_crossrd_3a() function")  # TO BE DEFINED
+            elif gen.flee_direction == ["west"]:
+                print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
+
+    # Else if the enemy is already defeated, 'cleared' scene
+    else:
+        print(nar.LEECHES_CLEARED_TEXT)
+        print(f"Directions: {gen.lst_to_str(directions)}")
+
+        valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                          directions)
+        if valid_input == "north":
+            gen.clear()
+            wtl_crossrd_3c()
+        elif valid_input == "east":
+            gen.clear()
+            wtl_crossrd_4b()
+        elif valid_input == "south":
+            gen.clear()
+            print("Call wtl_crossrd_3a() function")  # TO BE DEFINED
+        elif valid_input == "west":
+            gen.clear()
+            print("Call wtl_crossrd_2b() function")  # TO BE DEFINED
+
+
 def elixir():
     """
     Checks if the 'elixir' item is in the inventory.
@@ -104,7 +186,7 @@ def wtl_crossrd_3c():
     elif valid_input == "south":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call leeches_3b() function")  # TO BE DEFINED
+        leeches_3b()
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
@@ -131,7 +213,7 @@ def wtl_crossrd_4b():
     elif valid_input == "west":
         gen.amend_flee_direction(valid_input)
         gen.clear()
-        print("Call leeches_3b() function")  # TO BE DEFINED
+        leeches_3b()
 
 
 def wetlands_desc():
