@@ -15,6 +15,26 @@ import general as gen
 import glade
 
 
+def scor_crossrd_1a():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Scorchlands-1A'
+    """
+    directions = ["north", "east"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        staff()
+    elif valid_input == "east":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        golem()
+
+
 def staff():
     """
     Checks if the 'staff' item is in the inventory.
@@ -66,7 +86,7 @@ def staff():
         scor_crossrd_2b()
     elif valid_input == "south":
         gen.clear()
-        print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+        scor_crossrd_1a()
 
 
 def golem():
@@ -112,7 +132,7 @@ def golem():
                     print("Call scorchlands_portal function")  # TO BE DEFINED
                 elif valid_input == "west":
                     gen.clear()
-                    print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+                    scor_crossrd_1a()
             # If required items not in inventory, defeat scene
             else:
                 print(nar.GOLEM_DEFEATED_TEXT)
@@ -127,7 +147,7 @@ def golem():
             elif gen.flee_direction == ["east"]:
                 scor_crossrd_3a()
             elif gen.flee_direction == ["west"]:
-                print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+                scor_crossrd_1a()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -147,7 +167,7 @@ def golem():
             print("Call scorchlands_portal() function")  # TO BE DEFINED
         elif valid_input == "west":
             gen.clear()
-            print("Call scor_crossrd_1a() function")  # TO BE DEFINED
+            scor_crossrd_1a()
 
 
 def earthshaker():
