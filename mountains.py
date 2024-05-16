@@ -30,10 +30,10 @@ def mnt_dead_end():
     directions = ["south"]
 
     print(nar.DEAD_END_TEXT)
-    print(f"Direction: {gen.lst_to_str(directions)}")
+    print(f"Directions: {gen.lst_to_str(directions)}")
 
-    valid_input = gen.get_valid_input("This is a dead end, enter the direction"
-                                      " to continue: ", directions)
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
     if valid_input == "south":
         gen.clear()
         voltcrusher()
@@ -78,10 +78,10 @@ def bow():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Direction: {gen.lst_to_str(directions)}")
+    print(f"Directions: {gen.lst_to_str(directions)}")
 
-    valid_input = gen.get_valid_input("This is a dead end, enter the direction"
-                                      " to continue: ", directions)
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
     if valid_input == "west":
         gen.clear()
         mnt_crossrd_3d()
