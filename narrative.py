@@ -565,3 +565,74 @@ The shadows retreat before you, no longer harbouring the threat of the
 Skeletal Warriors. With each step, you carry the assurance of a newfound peace,
 a testament to your bravery in the tangled depths of the caves.
 """
+
+TROLL_DESC_TEXT = """
+You arrive at an overgrown cavern, the largest you've seen in the caves so far,
+where thick roots intertwine with towering stalactites and stalagmites.
+Bioluminescent fungi cast an eerie glow on the cavern's ceiling, illuminating
+the vast chasm below. The air is heavy with the scent of earth and dampness,
+while distant echoes hint at hidden streams and potential dangers moving
+through the darkness.
+
+Lurking in the darkness you see the towering Cave Troll, its skin rough and
+mottled like stone. Massive and lumbering, it can crush anything in its path
+with brutal force. Thick tusks protrude from its lower jaw, and its small,
+glinting eyes betray a violent temper. The ground trembles with each heavy
+step as it roams through the cavern.
+
+You feel a faint pull of energy from a nearby portal.
+"""
+
+TROLL_DEFEAT_TEXT = """
+As the Cave Troll's menacing form fills the cavern, you steel yourself for the
+battle ahead. Despite your efforts, the troll's brute strength overwhelms you,
+each thunderous blow driving you further back. The Everflame's radiant glow
+dims in the face of the creature's ferocity, casting long shadows that seem to
+mock your futile struggle.
+
+With a deafening roar, the troll pins you to the ground, its massive tusks
+bared in triumph. Darkness encroaches as your vision fades, the echoes of your
+defeat mingling with the troll's victorious roars, a sombre reminder of your
+failure in the depths of the overgrown cavern.
+
+You were not equipped to defeat the Cave Troll.
+"""
+
+TROLL_VICTORY_TEXT = """
+As the Cave Troll looms in the dim cavern, you ready yourself for the imminent
+clash. With a swift and calculated throw, you hurl the Everflame into a
+distant corner, its radiant glow drawing the troll's attention, casting
+shadows dancing across the walls. The troll's small, glinting eyes fixate on
+the flickering flame, momentarily distracted from its impending doom.
+
+Seizing the moment, you unleash the Serpent's Coil, its arcane energy
+entwining around the troll's massive legs and sending it crashing to the
+ground. The cavern trembles with the force of its fall, dust and debris
+swirling in the air as the troll roars in fury and frustration, its thick
+tusks gnashing against the rocky floor.
+
+With a thunderous roar, the beast struggles against its bindings, but you
+close in, brandishing the Blessed Mace. With a resounding strike, empowered by
+divine light, you deliver the fatal blow, vanquishing the monstrous foe and
+securing your final and lasting victory over The Caves.
+
+You are now free to travel through this area in peace.
+"""
+
+TROLL_CLEARED_TEXT = """
+You have already defeated the Cave Troll.
+
+As you traverse the overgrown cavern once more, a sense of relief washes over
+you, replacing the tension of the past battle with a serene calmness. The
+thick roots intertwine with the stalactites and stalagmites, creating an
+intricate tapestry that speaks of the resilience of nature. Bioluminescent
+fungi still cast their eerie glow, but now it feels like a gentle embrace
+rather than a foreboding omen.
+
+The scent of earth and dampness remains, but now it carries a hint of victory,
+a testament to your triumph over the dangers that once lurked in the darkness.
+With each step, you carry the memory of your hard-fought battle, a reminder of
+the strength and courage that led you through the depths of The Caves.
+
+You feel a faint pull of energy from a nearby portal.
+"""
