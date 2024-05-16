@@ -15,6 +15,26 @@ import general as gen
 import glade
 
 
+def scor_crossrd_4d():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Scorchlands-4D'
+    """
+    directions = ["south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call wolves_4c() function")  # TO BE DEFINED
+    elif valid_input == "west":
+        gen.clear()
+        scorchlands_desc()
+
+
 def scorchlands_desc():
     """
     Runs the 'Scorchlands Desc.' scene, start of the 'Scorchlands Path'.
