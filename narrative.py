@@ -415,6 +415,65 @@ place is in mourning.
 The Everflame is already in your inventory.
 """
 
+SPIDER_DESC_TEXT = """
+As you venture deeper into the winding tunnels, the air grows thick with the
+scent of rot and decay. Shadows dance along the jagged walls, concealing
+unseen dangers. Your footsteps echo softly as you navigate the passages, until
+suddenly, you stumble upon a collapsed section of an abandoned mine.
+
+Thick strands of sticky webbing stretch across the rubble, a warning sign of a
+Giant Spider's lair. You spot it lurking in the shadows, its massive hairy
+legs spanning the width of the tunnel, while its bulbous body, marked with
+jagged patterns, looms ominously. Its dozen gleaming eyes fixate on you with a
+predatory hunger, waiting for you to blunder into its trap.
+"""
+
+SPIDER_DEFEAT_TEXT = """
+As the Giant Spider emerges from the shadows, its massive hairy legs
+skittering across the tunnel floor. In the mere seconds you take to plan your
+attack, the spider closes in, its gleaming eyes fixated on you with predatory
+intent.
+
+With lightning speed, the spider lashes out, its fangs dripping with venom as
+it sinks them into your flesh. Agony courses through your body as the venom
+takes hold, paralysing your limbs and clouding your thoughts. You struggle
+desperately, but the spider's strength is overwhelming, its massive bulk
+pinning you down as it delivers a final, fatal blow.
+
+You were not equipped to defeat the Giant Spider.
+"""
+
+SPIDER_VICTORY_TEXT = """
+You brandish the Everflame, its enchanted fire casting a defiant glow in the
+murky depths of the mine, and charge at the Giant Spider. As it recoils from
+the intense heat, you thrust the torch forward, the flames igniting the
+spider's thick webbing in a blaze of fury.
+
+With swift jabs and sweeping arcs, you drive the arachnid back, relentless in
+your assault. Enraged, it thrashes wildly, but the fire burns with unwavering
+resolve, relentlessly searing through its hairy exoskeleton.
+
+With every strike, the spider's movements grow weaker, its monstrous form
+faltering under the unyielding brilliance of the Everflame. As the flames
+consume it entirely, the creature collapses in defeat, its once-menacing
+presence extinguished at last.
+
+You are now free to travel through this area in peace.
+"""
+
+SPIDER_CLEARED_TEXT = """
+You have already defeated this Giant Spider.
+
+You backtrack through the winding tunnels, the oppressive scent of rot and
+decay still lingers in the air, though now tinged with a faint hint of victory.
+Shadows still dance along the jagged walls, but the once-concealed dangers
+seem diminished, their threat moderated by your triumph.
+
+The Giant Spider's charred body lays motionless in its once-menacing domain.
+Your footsteps echo softly as you navigate the passages, the memory of your
+battle with the Giant Spider now a testament to your resilience.
+"""
+
 SKELETONS_DESC_TEXT = """
 As you delve deeper into the tangled caves, the air becomes heavy with the
 weight of forgotten ages. You emerge into a vast chamber, its ceiling lost in
