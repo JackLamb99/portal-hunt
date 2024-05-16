@@ -20,7 +20,11 @@ enemies = {
     "spider-2b": True,
     "spider-1a": True,
     "skeletons": True,
-    "troll": True
+    "troll": True,
+    "wolves-4c": True,
+    "wolves-2c": True,
+    "crawler": True,
+    "golem": True
 }
 
 
