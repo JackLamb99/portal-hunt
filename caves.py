@@ -15,6 +15,33 @@ import general as gen
 import glade
 
 
+def cave_crossrd_4c():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Caves-4C'
+    """
+    directions = ["north", "south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.clear()
+        print("Call FUNCTION function")  # TO BE DEFINED
+    elif valid_input == "east":
+        gen.clear()
+        print("Call FUNCTION function")  # TO BE DEFINED
+    elif valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call FUNCTION function")  # TO BE DEFINED
+    elif valid_input == "west":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call FUNCTION function")  # TO BE DEFINED
+
+
 def cave_crossrd_3d():
     """
     Runs a 'crossroad' scene. Grid ref. 'Caves-3D'
@@ -220,7 +247,7 @@ def skeletons():
                     cave_crossrd_3d()
                 elif valid_input == "east":
                     gen.clear()
-                    print("Call cave_crossrd_4c() function")  # TO BE DEFINED
+                    cave_crossrd_4c()
                 elif valid_input == "south":
                     gen.clear()
                     print("Call cave_crossrd_3b() function")  # TO BE DEFINED
@@ -239,7 +266,7 @@ def skeletons():
             if gen.flee_direction == ["north"]:
                 cave_crossrd_3d()
             elif gen.flee_direction == ["east"]:
-                print("Call cave_crossrd_4c() function")  # TO BE DEFINED
+                cave_crossrd_4c()
             elif gen.flee_direction == ["south"]:
                 print("Call cave_crossrd_3b() function")  # TO BE DEFINED
             elif gen.flee_direction == ["west"]:
@@ -257,7 +284,7 @@ def skeletons():
             cave_crossrd_3d()
         elif valid_input == "east":
             gen.clear()
-            print("Call cave_crossrd_4c() function")  # TO BE DEFINED
+            cave_crossrd_4c()
         elif valid_input == "south":
             gen.clear()
             print("Call cave_crossrd_3b() function")  # TO BE DEFINED
