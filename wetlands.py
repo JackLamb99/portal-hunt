@@ -15,6 +15,27 @@ import general as gen
 import glade
 
 
+def wtl_crossrd_2d():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Wetlands-2D'
+    """
+    directions = ["east", "south"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "east":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        leeches_3d()
+    elif valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        crocodile()
+
+
 def wtl_crossrd_1c():
     """
     Runs a 'crossroad' scene. Grid ref. 'Wetlands-1C'
@@ -126,7 +147,7 @@ def leeches_3d():
                     wtl_crossrd_3c()
                 elif valid_input == "west":
                     gen.clear()
-                    print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+                    wtl_crossrd_2d()
             # If required items not in inventory, defeat scene
             else:
                 print(nar.LEECHES_DEFEAT_TEXT)
@@ -141,7 +162,7 @@ def leeches_3d():
             elif gen.flee_direction == ["south"]:
                 wtl_crossrd_3c()
             elif gen.flee_direction == ["west"]:
-                print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+                wtl_crossrd_2d()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -158,7 +179,7 @@ def leeches_3d():
             wtl_crossrd_3c()
         elif valid_input == "west":
             gen.clear()
-            print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+            wtl_crossrd_2d()
 
 
 def crocodile():
@@ -195,7 +216,7 @@ def crocodile():
                     "Where would you like to go?: ", directions)
                 if valid_input == "north":
                     gen.clear()
-                    print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+                    wtl_crossrd_2d()
                 elif valid_input == "east":
                     gen.clear()
                     wtl_crossrd_3c()
@@ -215,7 +236,7 @@ def crocodile():
             print(f"You flee back to the {gen.lst_to_str(gen.flee_direction)}")
 
             if gen.flee_direction == ["north"]:
-                print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+                wtl_crossrd_2d()
             elif gen.flee_direction == ["east"]:
                 wtl_crossrd_3c()
             elif gen.flee_direction == ["south"]:
@@ -232,7 +253,7 @@ def crocodile():
                                           directions)
         if valid_input == "north":
             gen.clear()
-            print("Call wtl_crossrd_2d() function")  # TO BE DEFINED
+            wtl_crossrd_2d()
         elif valid_input == "east":
             gen.clear()
             wtl_crossrd_3c()
