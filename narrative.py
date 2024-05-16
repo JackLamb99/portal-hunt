@@ -414,3 +414,61 @@ place is in mourning.
 
 The Everflame is already in your inventory.
 """
+
+SKELETONS_DESC_TEXT = """
+As you delve deeper into the tangled caves, the air becomes heavy with the
+weight of forgotten ages. You emerge into a vast chamber, its ceiling lost in
+darkness above. Crumbling pillars and fractured statues litter the ground,
+remnants of an ancient underground civilization now swallowed by time.
+
+Amongst the ruins, you catch sight of movement, a patrol of Skeletal Warriors,
+their hollow eye sockets glowing with a malevolent light. Clad in rusted
+armour and wielding ancient weapons, they move with an eerie, rattling grace,
+driven by an undying loyalty to a long-lost cause.
+"""
+
+SKELETONS_DEFEAT_TEXT = """
+As the Skeletal Warriors advance, their bony forms clattering with malice, you
+brace yourself for the onslaught. With no blessed weapon to aid you, you fight
+valiantly, but the undead horde overwhelms you with relentless ferocity.
+
+Their rusted blades bite deep into your flesh, draining your strength with
+each merciless strike. As your vision fades and the darkness closes in, the
+echoes of your defeat mingle with the haunting rattles of the skeletal
+warriors, a grim reminder of your failure in the depths of the tangled caves.
+
+You were not equipped to defeat the Skeletal Warriors.
+"""
+
+SKELETONS_VICTORY_TEXT = """
+As the Skeletal Warriors advance, their bony forms clattering with malice, you
+wield the Everflame in one hand, its radiant glow pushing back the darkness.
+With the other, you grasp the Blessed Mace, its divine light pulsating with
+righteous fury.
+
+With each swing, the mace blazes with holy energy, shattering the undead with
+a force beyond their comprehension. The Everflame's steady brilliance guides
+your strikes, casting away shadows and empowering your righteous onslaught
+until the last skeletal foe crumbles before you, vanquished by the combined
+might of light and divine power.
+
+As the final Skeletal Warrior falls, you raise the Everflame high, its undying
+flame illuminating the chamber with a warm, comforting glow. With a solemn
+determination, you bring the torch down upon the shattered remains of the
+undead, its flames consuming the bones with a cleansing fire.
+
+You are now free to travel through this area in peace.
+"""
+
+SKELETONS_CLEARED_TEXT = """
+You have already defeated the Skeletal Warriors.
+
+As you traverse back through the once treacherous chamber, a sense of triumph
+fills the air, mingling with the heavy weight of forgotten ages that still
+lingers. Crumbling pillars and fractured statues now serve as solemn monuments
+to your victory.
+
+The shadows retreat before you, no longer harbouring the threat of the
+Skeletal Warriors. With each step, you carry the assurance of a newfound peace,
+a testament to your bravery in the tangled depths of the caves.
+"""

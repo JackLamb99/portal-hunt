@@ -449,7 +449,7 @@ def tiger():
 
 def goblins_2b():
     """
-    Checks if goblins-2b are alive (True) or dead (False), runs a 'fight' or
+    Checks if 'goblins-2b' are alive (True) or dead (False), runs a 'fight' or
     'flee' scene if alive, runs a 'enemy cleared' scene if dead.
     Checks if the required item/s are in the 'Inventory' to determine the
     outcome of the 'fight'.
