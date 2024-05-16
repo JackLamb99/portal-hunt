@@ -415,6 +415,40 @@ place is in mourning.
 The Everflame is already in your inventory.
 """
 
+COIL_NEW_ITEM_TEXT = """
+As you press onward through the labyrinthine of passages, your footsteps echo
+against the rugged walls, revealing a passage littered with rusted tools and
+shattered stone. Gradually, the passage narrows, forcing you to crawl through
+with a determines resolve.
+
+Within the suffocating darkness, an alcove emerges, its entrance shrouded in
+twisting vines and sinuous roots that writhe like a nest of serpents. As you
+cautiously approach, the verdant foliage seems to shift and sway of its own
+accord, creating an eerie atmosphere of primal vitality.
+
+Nestled at the heart of this organic enclave lies the Serpent's Coil, a weapon
+resembling a set of bolas, yet its design is far from ordinary. Imbued with
+arcane energy, this weapon is capable of hurtling through the air with
+supernatural speed and ensnaring the largest of foes with an unyielding grip.
+"""
+
+COIL_EXISTING_ITEM_TEXT = """
+As you press onward through the labyrinthine passages, your footsteps seem to
+fall hollow against the desolate walls, echoing with a sense of abandonment.
+The once lively passage appears barren and unresponsive.
+
+Within the oppressive darkness, the alcove stands motionless, the twisted
+vines and sinuous roots now wilted and lifeless. The atmosphere, once
+pulsating with a primal energy, now hangs heavy with a sense of desolation and
+decay.
+
+What was once the heart of this organic enclave, where the Serpent's Coil
+resided, is now a void that seems to consume the very essence of any spirit
+that remains, leaving behind a hollow shell of what once was.
+
+The Serpent's Coil is already in your inventory.
+"""
+
 SPIDER_DESC_TEXT = """
 As you venture deeper into the winding tunnels, the air grows thick with the
 scent of rot and decay. Shadows dance along the jagged walls, concealing
