@@ -1039,3 +1039,358 @@ With different paths to take, items to find and enemies to battle, every
 playthrough can be a brand new adventure. Who knows, you may even find a
 secret ending...
 """
+
+WETLANDS_DESC_TEXT = """
+You are at the entrance to the Wetlands.
+
+A maze of murky waters, tangled vegetation and rushing rivers sprawl out
+before you. The air is thick with humidity, clinging to your skin like a damp
+cloak. Mangroves with their twisted roots rise from the shallow, brackish
+pools, while thick blankets of fog drift lazily across the landscape,
+obscuring your view and adding an eerie sense of mystery.
+
+The chorus of croaking frogs and buzzing insects fills the air, punctuated by
+the occasional splash as unseen creatures move through the murky depths.
+Despite its foreboding appearance, the Wetlands teem with life, its watery
+expanse offering refuge to a myriad of creatures both beautiful and deadly. In
+the distance, you eye a large, looming cloud hanging low and unmoving.
+"""
+
+ELIXIR_NEW_ITEM_TEXT = """
+As you navigate through the dense labyrinth of the Wetlands, the air grows
+thick with the scent of decaying vegetation and stagnant water. You stumble
+upon a small clearing in a dead end, shrouded in mist and hidden from prying
+eyes by a wall of gnarled mangrove roots. At its heart lies a dilapidated hut,
+its wooden beams weathered by time and overrun with creeping vines.
+
+Approaching cautiously, you push aside a tattered curtain to reveal the dim
+interior. Within shelves are lined with jars and vials filled with mysterious
+ingredients. The air is heavy with the aroma of dried herbs and exotic spices,
+mingling with the sharp, pungent scent of something potent.
+
+At the far end of the hut, a cauldron catches your eye, etched with swirling
+patterns and rudimentary artwork. Its contents shimmers faintly in the dim
+light, just enough remains to fill one of the many empty flasks around you.
+This is the Leechbane Elixir, a potent blend crafted by ancient hands to ward
+off the parasitic creatures that thrive in the murky depths of the Wetlands.
+"""
+
+ELIXIR_EXISTING_ITEM_TEXT = """
+As you navigate deeper into the dense labyrinth of the Wetlands, the air hangs
+heavy with the scent of decay, no longer masked by the potent aroma of the
+Leechbane Elixir. You find yourself in the small clearing, now devoid of the
+mystical aura that once protected it.
+
+The dilapidated hut stands in silence, the clear waters around it now dappled
+with splotches of grey, its interior feels lifeless without the shimmering
+contents of the cauldron, as though it has been sapped of energy. The absence
+of the elixir leaves a palpable void, and the once-hidden clearing, protected
+by its wall of mangrove roots now feels ominously exposed to the encroaching
+darkness.
+
+The Leechbane Elixir is already in your inventory.
+"""
+
+TRIDENT_NEW_ITEM_TEXT = """
+As you traverse the treacherous terrain, you find a hidden oasis amidst the
+murky expanse, immersed in a calming turquoise glow. A small sandy island,
+defiant against the encroaching swamp, surrounded by a barrier of resilient
+palm trees. The air is heavy with the humidity of the wetlands, but here, a
+gentle breeze carries a faint floral scent.
+
+In the centre of the oasis, a tranquil lagoon forms, flowing in a gentle
+whirling motion, its surface gleaming with the reflection of the sun. Monkeys
+relax along the sandy shore, their playful chatter echoing through the serene
+landscape.
+
+As you approach the water's edge, your eyes catch a glint beneath the surface.
+Resting upon a stone altar, bathed in an ethereal glow that emanates a steady
+hum, lies Tesla’s Trident, shimmering with an untamed energy. The air seems to
+buzz with anticipation as you reach out to grasp the weapon, feeling the
+electric tingle of its charge coursing through your fingertips.
+"""
+
+TRIDENT_EXISTING_ITEM_TEXT = """
+As you return to the hidden oasis, the once vibrant sanctuary now feels devoid
+of its former vitality. The turquoise glow that once bathed the surroundings
+has faded, leaving behind a sense of eerie stillness. The sandy island, once
+defiant against the encroaching swamp, now appears subdued, with wilted palm
+trees bowing in defeat to the invading decay.
+
+The air hangs heavy with a stagnant humidity, devoid of the gentle floral
+scent that once graced the breeze. Along the shore, the monkeys, once playful
+and carefree, now pace anxiously, their chatter replaced by agitated snarls.
+The tranquil lagoon, once flowing with a gentle whirling motion, now lies
+stagnant and unmoving, its surface mirroring the desolation that has befallen
+this once-majestic oasis.
+
+Tesla's Trident is already in your inventory.
+"""
+
+HARPOON_NEW_ITEM_TEXT = """
+As you navigate deeper into the tangled maze of the Wetlands, you stumble upon
+a hidden alcove, a sanctuary nestled amidst the tangled foliage. Suspended in
+the air by the grasp of an enormous tree, you see a cabin, its structure
+intertwined with the ancient roots and vines that cling to its weathered walls.
+
+Approaching cautiously, you notice subtle signs of recent activity, shallow
+footprints in the muddy ground and the dying embers nestled within the
+remnants of an extinguished campfire. Vines cascade from the canopy above,
+forming a natural ladder that beckons you upwards, their vibrant green leaves
+rustling gently in the breeze.
+
+Entering the elevated sanctuary, shafts of dappled sunlight filter through the
+canopy, casting a soft glow upon the interior. Amidst the organised
+arrangement of tools, supplies and furniture, your eyes fall upon the Sonic
+Harpoon. This mechanised masterpiece is capable of emitting a concentrated
+sonic blast, effective against the creatures lurking within the drowned domain.
+"""
+
+HARPOON_EXISTING_ITEM_TEXT = """
+As you return to the hidden alcove, nestled amidst the tangled foliage, a
+sense of disarray pervades the once docile sanctuary. The footprints in the
+mud are scattered and chaotic, echoing a frenzied search for the missing
+harpoon. The remnants of the campfire lie scattered, its embers cold and
+lifeless amidst the overturned logs. Vines lay strewn around the base of the
+tree, as though they were pulled from the canopy above by a frantic climb.
+
+Entering the cabin, you find its contents wild and disarranged, tools and
+furniture thrown about haphazardly, the organization of the space disrupted by
+the desperate search. Amidst the disorder, the absence of the Sonic Harpoon
+looms ominously, leaving behind a palpable sense of loss and uncertainty.
+
+The Sonic Harpoon is already in your inventory.
+"""
+
+LEECHES_DESC_TEXT = """
+You find yourself at the edge of a stagnant pool, its surface obscured by a
+thick layer of algae and debris. The air hangs heavy with the oppressive
+humidity of the swamp, creating an eerie atmosphere that sets your nerves on
+edge.
+
+Suddenly, a ripple disturbs the stillness of the water, followed by the
+unmistakable presence of the Giant Leeches. Sleek and black, they emerge from
+the depths, their elongated bodies slithering with a sinister grace. Their
+slimy skin shimmers in the dim light, while rows of razor-sharp teeth line
+their circular mouths. Though blind, their incredible sense of smell allows
+them to detect any unfortunate prey that wonders too close.
+"""
+
+LEECHES_DEFEATED_TEXT = """
+Mere seconds after you wade into the stagnant pool, the Giant Leeches catch
+your scent and begin to close in. As their sleek bodies surge toward you with
+a sinister intent, you realize with dread that you lack the means to repel the
+encroaching swarm. With each lunge, they latch onto your skin, their razor-
+sharp teeth tearing through flesh with agonizing precision.
+
+Overwhelmed by their sheer numbers relentless assault, you thrash about in a
+futile attempt to escape, but the creatures' vice-like grip only tightens. As
+darkness descends, you succumb to the relentless onslaught of the Giant
+Leeches, your strength drained and your fate sealed within the suffocating
+embrace of the murky depths.
+
+You were not equipped to defeat the Giant Leeches.
+"""
+
+LEECHES_VICTORY_TEXT = """
+Mere seconds after you wade into the stagnant pool, the Giant Leeches catch
+your scent and begin to close in. As their sleek bodies surge toward you with
+predatory intent, you reach for the flask of Leechbane Elixir with trembling
+hands. In a swift motion, you rip the cork from its neck, releasing the sharp,
+pungent potion into the surrounding water.
+
+The effect is immediate as the leeches' withdraw in disgust, their senses
+overwhelmed by the potent aroma. Disoriented and frenzied, they thrash about
+wildly, their movements becoming erratic and unpredictable. In their blind
+rage, they inadvertently turn on each other, their razor-sharp teeth lashing
+out against anything within reach.
+
+With each passing moment, you watch their numbers dwindle as they succumb to
+the chaos unleashed by the Leechbane Elixir. Finally, the once-menacing swarm
+lies scattered and defeated, their threat neutralized by the clever concoction.
+
+You are now free to travel through this area in peace.
+"""
+
+LEECHES_CLEARED_TEXT = """
+You have already defeated these Giant Leeches.
+
+As you navigate the edge of the stagnant pool once more, a newfound
+tranquillity fills the air, replacing the palpable tension that once gripped
+your senses in the presence of the Giant Leeches. The surface of the water,
+once disturbed by the frenzied movements of the predatory swarm, now lies
+still and undisturbed, reflecting the muted light filtering through the dense
+canopy above.
+
+The heavy humidity of the swamp persists, but without the looming threat of
+the leeches, the atmosphere feels lighter, less oppressive. As you move
+through the area, you notice a subtle shift in the surroundings, a soft
+rustling of leaves, perhaps the gentle sway of vines disturbed by a passing
+breeze. With the defeat of the menacing creatures, the once foreboding expanse
+now exudes a sense of quiet triumph, a testament to your resourcefulness and
+resilience.
+"""
+
+CROCODILE_DESC_TEXT = """
+You approach a rushing river, its turbulent waters churning with an ominous
+intensity, warning of the dangers lurking beneath its surface. Along the muddy
+banks, twisted mangrove roots cling desperately to the eroding soil, their
+gnarled forms a testament to the relentless power of the currents.
+
+A disturbance in the water catches your eye, a ripple, followed by the
+emergence of the Two-headed Crocodile. With deadly grace, its scaly hide
+glistens in the speckled sunlight, each head poised to strike with bone-
+crushing force. The synchronized movements of its powerful tails create a
+swirling vortex of turbulence, threatening to pull you into the depths of its
+watery domain. As the creature advances, its dual gaze fixes upon you with a
+predatory intensity.
+"""
+
+CROCODILE_DEFEATED_TEXT = """
+As the Two-headed Crocodile closes in with relentless aggression, you find
+yourself unequipped to fend off the ferocious beast. Its dual heads snap with
+bone-crushing force, each bite bringing you closer to the brink of defeat.
+With no weapon at your disposal to pierce its scaly hide, you struggle
+desperately to evade the creature's relentless assault.
+
+As you dodge and weave, the Two-headed Crocodile lunges forward with
+astonishing speed, closing in with a terrifying finality. With a sickening
+crunch, its powerful jaws clamp down around you, crushing bone and flesh with
+merciless efficiency. The world fades into darkness as the excruciating pain
+overwhelms your senses, succumbing to the rushing river's embrace as the
+ferocious beast drags you under.
+
+You were not equipped to defeat the Two-headed Crocodile.
+"""
+
+CROCODILE_VICTORY_TEXT = """
+As the Two-headed Crocodile advances with deadly intent, you swiftly reach for
+the flask of Leechbane Elixir, uncorking it with a practised ease. With a
+decisive motion, you release the pungent scent into the air, aiming for the
+charging creature. Blinded by the overpowering aroma, its dual gaze falters,
+allowing you a moment of respite.
+
+Seizing the opportunity, you brandish Tesla's Trident, its shimmering energy
+crackling with untamed power. With a swift and precise strike, you unleash a
+surge of electricity, channelling it directly into the creature's scaled hide.
+The crocodile convulses violently as the electric shock courses through its
+body, rendering it incapacitated.
+
+With its deadly heads momentarily silenced, you deliver the final blow with a
+decisive thrust of the Trident, vanquishing the formidable foe and securing
+your passage across the treacherous river. You hope that more life might
+flourish here now that the uncontrollable predator has been overthrown.
+
+You are now free to travel through this area in peace.
+"""
+
+CROCODILE_CLEARED_TEXT = """
+You have already defeated the Two-Headed Crocodile.
+
+As you make your way back through the area where the two-headed beast once
+reigned supreme, a sense of relief washes over you, replacing the earlier
+tension that hung heavy with the threat of the formidable creature. The
+rushing river, once a torrent of danger, now seems to have slowed to a gentle
+flow, its turbulent waters calmed by the absence of the relentless predator.
+
+Tropical fish dart gracefully against the current, their vibrant colours a
+stark contrast to the murky depths that once harboured such peril. Further
+upstream, a family of giant otters lounge along the riverbank, their playful
+antics a testament to the renewed sense of life that now flourishes in the
+wake of the crocodile's defeat. As you continue on your journey, you can't
+help but feel a sense of hope for the future of this once-dangerous domain.
+"""
+
+SERPENT_DESC_TEXT = """
+You approach a lake, an otherworldly expanse shimmering with mysterious energy
+beneath a canopy of dense, low hanging clouds. Steam rises from the water,
+creating a thin veil that drifts across the surface like a ghostly wisp. The
+warm waters lap gently against the shore, inviting yet foreboding, as small
+geysers sporadically erupt, sending bursts of water and vapour into the air
+with a hiss.
+
+Amidst this ethereal landscape, you spot the Water Serpent lurking beneath the
+lakes bubbling surface. A sinuous creature with scales that shift from emerald
+to cobalt, its long body twisting and coiling effortlessly through the warm
+waters. The serpent's mesmerizing golden eyes lock on to you, its forked
+tongue flickering as it senses your presence, ready to defend its domain with
+deadly grace.
+
+You feel a faint pull of energy from a nearby portal.
+"""
+
+SERPENT_DEFEAT_TEXT = """
+As the Water Serpent rises from the depths with deadly intent, you find
+yourself ill-equipped to fend off the formidable foe. Its sinuous body moves
+with an elusive grace, its shifting scales gleaming ominously in the bubbling
+waters. With no means of disorienting the beast, you struggle desperately to
+evade its relentless attacks.
+
+Each strike of its powerful tail sends waves crashing against you, knocking
+you off balance and further into the serpent's domain. Despite your best
+efforts to defend yourself, the creature's deadly grace proves too much to
+overcome. The serpent's vice-like grip tightens around you with a bone-
+crushing pressure, the boiling heat intensifies and darkness envelops you as
+the creature descends, dragging you into the depths of the lake.
+
+You were not equipped to defeat the Water Serpent.
+"""
+
+SERPENT_VICTORY_TEXT = """
+As the sinister silhouette of the Water Serpent slithers toward you beneath
+the bubbling surface of the lake, you grasp the flask of Leechbane Elixir with
+determined hands. With a swift motion, you splash the potent concoction into
+the water. The serpent surfaces, recoiling from the noxious scent as its
+golden eyes widen in discomfort.
+
+Seizing the opportunity, you retrieve the Sonic Harpoon, its mechanical
+brilliance destined for this encounter. Unable to spot the creature amid the
+haze, you hope for the best and unleash a sonic blast, creating a momentary
+opening in the dense cloud and disorientating the beast.
+
+Realizing that your opportunity is fleeting, you hurl Tesla's Trident into the
+air, its shimmering energy streaking towards the serpent with flawless
+accuracy. The serpent lets out a deafening roar as the trident strikes true,
+its sinuous form trembling violently before finally succumbing to the
+overwhelming electrical surge.
+
+You are now free to travel through this area in peace.
+"""
+
+SERPENT_CLEARED_TEXT = """
+You have already defeated the Water Serpent.
+
+You approach what was once the bubbling lake and heave a sigh of relief as you
+observe the spectacle around you. The dense, low-hanging clouds that once
+obscured the sky have mostly cleared, allowing the warm sunlight to filter
+through and illuminate the tranquil waters below. The air is now filled with
+the joyful chirping of birds, their colourful plumage a stark contrast against
+the sapphire expanse of the sky.
+
+Though the water remains warm to the touch, the intense heat that once
+permeated the area has diminished, gone are the sporadic eruptions of geysers
+that once punctuated the surface, allowing the possibility of life to thrive.
+The unnerving hiss of steam replaced by a newfound peace that reigns over this
+once-turbulent domain.
+
+You feel a faint pull of energy from a nearby portal.
+"""
+
+WETLANDS_PORTAL_TEXT = """
+You swim further into the lake, until the shore is a distant sight on the
+horizon. As you reach the centre, you stop, as though an ancient force calls
+to you from the depths. A swirling vortex of energy materialises ahead of you,
+its mesmerizing glow pulsating with hues of purple and silver.
+
+As you approach, the current of the whirlpool grows stronger, pulling you into
+its swirling embrace with an irresistible force. The water churns around you
+as you descend deeper and deeper, the portal's ethereal glow growing brighter,
+guiding you towards your destination. You finally reach the lakebed, where the
+portal awaits, ready for your long-awaited return home.
+
+Congratulations! You found the Wetlands Portal and finished your quest.
+
+With different paths to take, items to find and enemies to battle, every
+playthrough can be a brand new adventure. Who knows, you may even find a
+secret ending...
+"""
