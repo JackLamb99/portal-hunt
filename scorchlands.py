@@ -15,6 +15,14 @@ import general as gen
 import glade
 
 
+def scorchlands_portal():
+    """
+    Runs the 'scorchlands portal' scene, end of the 'Scorchlands Path'
+    """
+    print(nar.SCORCHLANDS_PORTAL_TEXT)
+    print("Call end game function")  # TO BE DEFINED
+
+
 def scor_crossrd_1a():
     """
     Runs a 'crossroad' scene. Grid ref. 'Scorchlands-1A'
@@ -129,7 +137,7 @@ def golem():
                     scor_crossrd_3a()
                 elif valid_input == "south":
                     gen.clear()
-                    print("Call scorchlands_portal function")  # TO BE DEFINED
+                    scorchlands_portal()
                 elif valid_input == "west":
                     gen.clear()
                     scor_crossrd_1a()
@@ -164,7 +172,7 @@ def golem():
             scor_crossrd_3a()
         elif valid_input == "south":
             gen.clear()
-            print("Call scorchlands_portal() function")  # TO BE DEFINED
+            scorchlands_portal()
         elif valid_input == "west":
             gen.clear()
             scor_crossrd_1a()
