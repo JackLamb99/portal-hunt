@@ -15,6 +15,29 @@ import general as gen
 import glade
 
 
+def scor_crossrd_2d():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Scorchlands-2D'
+    """
+    directions = ["east", "south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "east":
+        gen.clear()
+        scorchlands_desc()
+    elif valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call wolves_2c() function")  # TO BE DEFINED
+    elif valid_input == "west":
+        gen.clear()
+        print("Call sabre() function")  # TO BE DEFINED
+
+
 def scor_crossrd_3c():
     """
     Runs a 'crossroad' scene. Grid ref. 'Scorchlands-3C'
@@ -86,4 +109,4 @@ def scorchlands_desc():
         scor_crossrd_3c()
     elif valid_input == "west":
         gen.clear()
-        print("Call scor_crossrd_2d() function")  # TO BE DEFINED
+        scor_crossrd_2d()
