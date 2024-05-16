@@ -15,6 +15,34 @@ import general as gen
 import glade
 
 
+def scor_crossrd_2b():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Scorchlands-2B'
+    """
+    directions = ["north", "east", "south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "north":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        wolves_2c()
+    elif valid_input == "east":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        crawler()
+    elif valid_input == "south":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call golem() function")  # TO BE DEFINED
+    elif valid_input == "west":
+        gen.clear()
+        print("Call staff() function")  # TO BE DEFINED
+
+
 def scor_crossrd_3a():
     """
     Runs a 'crossroad' scene. Grid ref. 'Scorchlands-3A'
@@ -147,7 +175,7 @@ def wolves_2c():
                     scor_crossrd_3c()
                 elif valid_input == "south":
                     gen.clear()
-                    print("Call scor_crossrd_2b() function")  # TO BE DEFINED
+                    scor_crossrd_2b()
                 elif valid_input == "west":
                     gen.clear()
                     print("Call scor_crossrd_1c() function")  # TO BE DEFINED
@@ -165,7 +193,7 @@ def wolves_2c():
             elif gen.flee_direction == ["east"]:
                 scor_crossrd_3c()
             elif gen.flee_direction == ["south"]:
-                print("Call scor_crossrd_2b() function")  # TO BE DEFINED
+                scor_crossrd_2b()
             elif gen.flee_direction == ["west"]:
                 print("Call scor_crossrd_1c() function")  # TO BE DEFINED
 
@@ -184,7 +212,7 @@ def wolves_2c():
             scor_crossrd_3c()
         elif valid_input == "south":
             gen.clear()
-            print("Call scor_crossrd_2b() function")  # TO BE DEFINED
+            scor_crossrd_2b()
         elif valid_input == "west":
             gen.clear()
             print("Call scor_crossrd_1c() function")  # TO BE DEFINED
@@ -233,7 +261,7 @@ def crawler():
                     scor_crossrd_3a()
                 elif valid_input == "west":
                     gen.clear()
-                    print("Call scor_crossrd_2b() function")  # TO BE DEFINED
+                    scor_crossrd_2b()
             # If required items not in inventory, defeat scene
             else:
                 print(nar.CRAWLER_DEFEAT_TEXT)
@@ -250,7 +278,7 @@ def crawler():
             elif gen.flee_direction == ["south"]:
                 scor_crossrd_3a()
             elif gen.flee_direction == ["west"]:
-                print("Call scor_crossrd_2b() function")  # TO BE DEFINED
+                scor_crossrd_2b()
 
     # Else if the enemy is already defeated, 'cleared' scene
     else:
@@ -270,7 +298,7 @@ def crawler():
             scor_crossrd_3a()
         elif valid_input == "west":
             gen.clear()
-            print("Call scor_crossrd_2b() function")  # TO BE DEFINED
+            scor_crossrd_2b()
 
 
 def wolves_4c():
