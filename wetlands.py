@@ -15,6 +15,26 @@ import general as gen
 import glade
 
 
+def wtl_crossrd_4d():
+    """
+    Runs a 'crossroad' scene. Grid ref. 'Wetlands-4D'
+    """
+    directions = ["south", "west"]
+
+    print(nar.CROSSROAD_TEXT)
+    print(f"Directions: {gen.lst_to_str(directions)}")
+
+    valid_input = gen.get_valid_input("Where would you like to go?: ",
+                                      directions)
+    if valid_input == "south":
+        gen.clear()
+        wetlands_desc()
+    elif valid_input == "west":
+        gen.amend_flee_direction(valid_input)
+        gen.clear()
+        print("Call leeches_3d() function")  # TO BE DEFINED
+
+
 def wtl_crossrd_3c():
     """
     Runs a 'crossroad' scene. Grid ref. 'Wetlands-3C'
@@ -80,7 +100,7 @@ def wetlands_desc():
                                       directions)
     if valid_input == "north":
         gen.clear()
-        print("Call wtl_crossrd_4d() function")  # TO BE DEFINED
+        wtl_crossrd_4d()
     elif valid_input == "east":
         gen.clear()
         glade.glade()
