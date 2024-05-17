@@ -9,7 +9,11 @@
 * The program begins at a main menu, introducing the player to the game and explaining the aim of their 'quest'; to find a portal that will take them home.
 * A message prompts the user to input 'start' to begin the game.
 
-![Main Menu](readme_images/main_menu.png)
+<details><summary>Main Menu Image</summary>
+
+![Main Menu](assets/readme_images/main_menu.png)
+
+</details>
 
 ### The Glade
 
@@ -21,7 +25,11 @@
 * This block includes a brief description of the area and a poem that hints on what is to come.
 * A message prompts the user to input a direction from the available options above to proceed to the next block.
 
-![The Glade](readme_images/glade.png)
+<details><summary>The Glade</summary>
+
+![The Glade](assets/readme_images/glade.png)
+
+</details>
 
 ### Biome Description
 
@@ -29,7 +37,11 @@
 * This block provides a description of the area, or biome, in which the chosen path is set, all of the items and enemies within each path follow that same theme.
 * A message prompts the user to input a direction from the available options above to proceed to the next block.
 
-![Biome Description Example](readme_images/biome_desc.png)
+<details><summary>Biome Description Example</summary>
+
+![Biome Description Example](assets/readme_images/biome_desc.png)
+
+</details>
 
 ### Crossroads & Dead Ends
 
@@ -37,9 +49,17 @@
 * These include a generic message that is the same for every path, as they are not intended to provide any import interactive element.
 * A message prompts the user to input a direction from the available options above to proceed to the next block.
 
-![Crossroad Example](readme_images/crossroad.png)
+<details><summary>Crossroad Example</summary>
 
-![Dead End Example](readme_images/dead_end.png)
+![Crossroad Example](assets/readme_images/crossroad.png)
+
+</details>
+
+<details><summary>Dead End Example</summary>
+
+![Dead End Example](assets/readme_images/dead_end.png)
+
+</details>
 
 ### Items
 
@@ -52,7 +72,11 @@ Within each path, three items must be found in order to successfully reach the p
 * A message prompts the user to input a choice to either 'take' or 'leave' the item. Inputting 'take' will add the item to the inventory and print a short confirmation that the item was taken. Inputting 'leave' will not amend the inventory and will print a short confirmation that the item was left. 
 * After the choice is made, a message prompts the user to input a direction from the available options to proceed to the next block.
 
-![New Item Example](readme_images/new_item.png)
+<details><summary>New Item Example</summary>
+
+![New Item Example](assets/readme_images/new_item.png)
+
+</details>
 
 #### Existing Item
 
@@ -61,7 +85,11 @@ Within each path, three items must be found in order to successfully reach the p
 * A message prompts the user to input a choice to either 'keep' or 'return' the item. Inputting 'return' will remove the item to the inventory and print a short confirmation that the item was returned. Inputting 'keep' will not amend the inventory and will print a short confirmation that the item was kept.
 * After the choice is made, a message prompts the user to input a direction from the available options to proceed to the next block.
 
-![Existing Item Example](readme_images/existing_item.png)
+<details><summary>Existing Item Example</summary>
+
+![Existing Item Example](assets/readme_images/existing_item.png)
+
+</details>
 
 ### Enemies
 
@@ -77,7 +105,11 @@ There are three difficulty levels to these enemies;
 * When first entering the block, players will be provided with a description of the enemy.
 * A message prompts the user to input a choice to either fight or flee. Inputting 'fight' will check if the required items exist within the inventory and provide a result accordingly. Inputting 'flee' will return the player to the previous block, allowing them to continue their journey.
 
-![Enemy Description Example](readme_images/enemy_desc.png)
+<details><summary>Enemy Description Example</summary>
+
+![Enemy Description Example](assets/readme_images/enemy_desc.png)
+
+</details>
 
 #### Player Defeated
 
@@ -85,7 +117,11 @@ There are three difficulty levels to these enemies;
 * A description of losing the fight is provided, including a message that that they were "not equipped" to defeat the enemy, hinting to the player that they need to find right items first.
 * Losing a fight calls the 'game_over' function, allowing the player to return to the main menu or play again, resetting the game and returning them to 'The Glade' block.
 
-![Player Defeated Example](readme_images/player_defeated.png)
+<details><summary>Player Defeated Example</summary>
+
+![Player Defeated Example](assets/readme_images/player_defeated.png)
+
+</details>
 
 #### Player Victorious
 
@@ -93,7 +129,11 @@ There are three difficulty levels to these enemies;
 * A description of winning the fight is provided, including a message that they are now able to "travel through this area in peace".
 * A message prompts the user to input a direction from the available options to proceed to the next block.
 
-![Player Victorious Example](readme_images/player_victorious.png)
+<details><summary>Player Victorious Example</summary>
+
+![Player Victorious Example](assets/readme_images/player_victorious.png)
+
+</details>
 
 #### Enemy Cleared
 
@@ -101,7 +141,11 @@ There are three difficulty levels to these enemies;
 * A description is given of the area and the aftermath of the fight, implying that it is now a safer place.
 * A message prompts the user to input a direction from the available options above to proceed to the next block.
 
-![Enemy Cleared Example](readme_images/enemy_cleared.png)
+<details><summary>Enemy Cleared Example</summary>
+
+![Enemy Cleared Example](assets/readme_images/enemy_cleared.png)
+
+</details>
 
 ### Portal
 
@@ -109,4 +153,72 @@ There are three difficulty levels to these enemies;
 * A description of the player finder the portal is provided as well as a message to congratulate them, remind them that there are multiple paths to take if they would like to play again and thank them for playing the game.
 * Finding a portal calls the 'game_over' function, allowing the player to return to the main menu or play again, resetting the game and returning them to 'The Glade' block.
 
-![Portal Example](readme_images/portal.png)
+<details><summary>Portal Example</summary>
+
+![Portal Example](assets/readme_images/portal.png)
+
+</details>
+
+## Planning
+
+### Maps
+
+The following charts, or maps, were created using [Lucid Chart](https://www.lucidchart.com/) to visualise the planning process for the game, as well as provide a 'cheat sheet' for anyone looking to navigate or test the game without a challenge.
+
+<details><summary>Full Map</summary>
+
+![Full Map](assets/readme_images/full_map.png)
+
+</details>
+
+<details><summary>Mountains Path Map</summary>
+
+![Mountains Map](assets/readme_images/mountains_path.png)
+
+</details>
+
+<details><summary>Caves Path Map</summary>
+
+![SUMMARY](assets/readme_images/caves_path.png)
+
+</details>
+
+<details><summary>Scorchlands Path Map</summary>
+
+![SUMMARY](assets/readme_images/scorchlands_path.png)
+
+</details>
+
+<details><summary>Wetlands Path Map</summary>
+
+![SUMMARY](assets/readme_images/wetlands_path.png)
+
+</details>
+
+### Grids
+
+The following grids were created using [Lucid Chart](https://www.lucidchart.com/) to be used throughout project, including in commit messages, to properly reference the 'block' in question.
+
+<details><summary>Mountains Path Grid</summary>
+
+![Mountains Path Grid](assets/readme_images/mountains_grid.png)
+
+</details>
+
+<details><summary>Caves Path Grid</summary>
+
+![Caves Path Grid](assets/readme_images/caves_grid.png)
+
+</details>
+
+<details><summary>Scorchlands Path Grid</summary>
+
+![Scorchlands Path Grid](assets/readme_images/scorchlands_grid.png)
+
+</details>
+
+<details><summary>Wetlands Path Grid</summary>
+
+![Wetlands Path Grid](assets/readme_images/wetlands_grid.png)
+
+</details>
