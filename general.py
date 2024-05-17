@@ -8,8 +8,6 @@ This module also contains the 'Inventory' list and 'Enemy' dictionary that are
 used across multiple other Python files within this project.
 """
 from os import system, name
-from run import main_menu
-from glade import glade
 
 
 flee_direction = []
@@ -106,6 +104,9 @@ def game_over():
     """
     Allows the user to return the the main menu or restart the game.
     """
+    # Imported locally to avoid circular import error
+    from run import main_menu
+    from glade import glade
     options = ["menu", "again"]
 
     print(lst_to_str(options))
