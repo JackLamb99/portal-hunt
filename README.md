@@ -159,6 +159,10 @@ There are three difficulty levels to these enemies;
 
 </details>
 
+### Possible Future Implementations
+
+* A potential future implementation could be the use of ASCII art to create a more joyful user experience. ASCII art could be used for titles, items, enemies and portals to add to visual appeal of the game.
+
 ## Planning
 
 ### Maps
@@ -220,5 +224,34 @@ The following grids were created using [Lucid Chart](https://www.lucidchart.com/
 <details><summary>Wetlands Path Grid</summary>
 
 ![Wetlands Path Grid](assets/readme_images/wetlands_grid.png)
+
+</details>
+
+## User Interface
+
+### Colours
+
+* Green - Used to highlight the available options when a user input is required
+* Red - Used for the 'invalid input' messages to bring more attention to the error
+
+<details><summary>Colour Usage Example</summary>
+
+![Colour Usage Example](assets/readme_images/colours_ui_example.png)
+
+</details>
+
+### Clear Screen
+
+A function is used throughout the project to clear the screen when navigating between the blocks.
+* This prevents the game from getting to clustered and allows the user to easily read the contents of their current 'location'.
+* It also adds to the challenge of the game as user's have to remember what is around them without being able to simply scroll up.
+
+### Game Over
+
+A 'game_over' function is used when a player is defeated or successfully finds a portal, which resets the 'inventory' list and 'enemies' dictionary values to allow users a simple way to return to the main menu or play again without needing to re-run the program.
+
+<details><summary>Game Over Example</summary>
+
+![Game Over Example](assets/readme_images/game_over_ui_example.png)
 
 </details>
