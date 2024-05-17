@@ -8,6 +8,8 @@ This module also contains the 'Inventory' list and 'Enemy' dictionary that are
 used across multiple other Python files within this project.
 """
 from os import system, name
+from run import main_menu
+from glade import glade
 
 
 flee_direction = []
@@ -87,3 +89,32 @@ def amend_flee_direction(direction):
     elif direction == "west":
         flee_direction.clear()
         flee_direction.append("east")
+
+
+def reset_game():
+    """
+    Clears the 'inventory' list and resets the 'enemies' dictionary values to
+    True.
+    """
+    inventory.clear()
+
+    for enemy in enemies:
+        enemies[enemy] = True
+
+
+def game_over():
+    """
+    Allows the user to return the the main menu or restart the game.
+    """
+    options = ["menu", "again"]
+
+    print(lst_to_str(options))
+
+    valid_input = get_valid_input("Would you like to return to the main menu"
+                                  " or play again?: ", options)
+    if valid_input == "menu":
+        reset_game()
+        main_menu()
+    elif valid_input == "glade":
+        reset_game()
+        glade()
