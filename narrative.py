@@ -390,6 +390,16 @@ forgotten voices and distant footsteps. As you step closer, the portal's
 vibrant glow bathes you in its hopeful light, casting a warm aura that beckons
 you toward a long-awaited return home.
 
+   ▄█    █▄   ▄█   ▄████████     ███      ▄██████▄     ▄████████ ▄██   █▄
+  ███    ███ ███  ███    ███ ▀█████████▄ ███    ███   ███    ███ ███   ██▄
+  ███    ███ ███▌ ███    █▀     ▀███▀▀██ ███    ███   ███    ███ ███▄▄▄███
+  ███    ███ ███▌ ███            ███   ▀ ███    ███  ▄███▄▄▄▄██▀ ▀▀▀▀▀▀███
+  ███    ███ ███▌ ███            ███     ███    ███ ▀▀███▀▀▀▀▀   ▄██   ███
+  ▀██    ██▀ ███  ███    █▄      ███     ███    ███ ▀███████████ ███   ███
+   ▀██  ██▀  ███  ███    ███     ███     ███    ███   ███    ███ ███   ███
+    ▀████▀   █▀   ████████▀     ▄████▀    ▀██████▀    ███    ███  ▀█████▀
+      ▀▀                                              ▀▀▀    ▀▀▀
+
 Congratulations! You found the Mountains Portal and finished your quest.
 
 With different paths to take, items to find and enemies to battle, every
@@ -708,11 +718,23 @@ signalling the way home. With a final glance back at the conquered cavern, you
 step through the portal, leaving behind the echoes of your victory to embark
 on the next leg of your journey.
 
+   ▄█    █▄   ▄█   ▄████████     ███      ▄██████▄     ▄████████ ▄██   █▄
+  ███    ███ ███  ███    ███ ▀█████████▄ ███    ███   ███    ███ ███   ██▄
+  ███    ███ ███▌ ███    █▀     ▀███▀▀██ ███    ███   ███    ███ ███▄▄▄███
+  ███    ███ ███▌ ███            ███   ▀ ███    ███  ▄███▄▄▄▄██▀ ▀▀▀▀▀▀███
+  ███    ███ ███▌ ███            ███     ███    ███ ▀▀███▀▀▀▀▀   ▄██   ███
+  ▀██    ██▀ ███  ███    █▄      ███     ███    ███ ▀███████████ ███   ███
+   ▀██  ██▀  ███  ███    ███     ███     ███    ███   ███    ███ ███   ███
+    ▀████▀   █▀   ████████▀     ▄████▀    ▀██████▀    ███    ███  ▀█████▀
+      ▀▀                                              ▀▀▀    ▀▀▀
+
 Congratulations! You found the Caves Portal and finished your quest.
 
 With different paths to take, items to find and enemies to battle, every
 playthrough can be a brand new adventure. Who knows, you may even find a
 secret ending...
+
+Thank you for playing Portal Hunt!
 """
 
 SCORCHLANDS_DESC_TEXT = """
@@ -1059,11 +1081,23 @@ fuelled by the promise of escape from this fiery realm. As you reach out to
 touch the portal, its shimmering surface envelops you, transporting you with a
 rush of swirling energy to the safety of home.
 
+   ▄█    █▄   ▄█   ▄████████     ███      ▄██████▄     ▄████████ ▄██   █▄
+  ███    ███ ███  ███    ███ ▀█████████▄ ███    ███   ███    ███ ███   ██▄
+  ███    ███ ███▌ ███    █▀     ▀███▀▀██ ███    ███   ███    ███ ███▄▄▄███
+  ███    ███ ███▌ ███            ███   ▀ ███    ███  ▄███▄▄▄▄██▀ ▀▀▀▀▀▀███
+  ███    ███ ███▌ ███            ███     ███    ███ ▀▀███▀▀▀▀▀   ▄██   ███
+  ▀██    ██▀ ███  ███    █▄      ███     ███    ███ ▀███████████ ███   ███
+   ▀██  ██▀  ███  ███    ███     ███     ███    ███   ███    ███ ███   ███
+    ▀████▀   █▀   ████████▀     ▄████▀    ▀██████▀    ███    ███  ▀█████▀
+      ▀▀                                              ▀▀▀    ▀▀▀
+
 Congratulations! You found the Scorchlands Portal and finished your quest.
 
 With different paths to take, items to find and enemies to battle, every
 playthrough can be a brand new adventure. Who knows, you may even find a
 secret ending...
+
+Thank you for playing Portal Hunt!
 """
 
 WETLANDS_DESC_TEXT = """
@@ -1414,9 +1448,62 @@ as you descend deeper and deeper, the portal's ethereal glow growing brighter,
 guiding you towards your destination. You finally reach the lakebed, where the
 portal awaits, ready for your long-awaited return home.
 
+   ▄█    █▄   ▄█   ▄████████     ███      ▄██████▄     ▄████████ ▄██   █▄
+  ███    ███ ███  ███    ███ ▀█████████▄ ███    ███   ███    ███ ███   ██▄
+  ███    ███ ███▌ ███    █▀     ▀███▀▀██ ███    ███   ███    ███ ███▄▄▄███
+  ███    ███ ███▌ ███            ███   ▀ ███    ███  ▄███▄▄▄▄██▀ ▀▀▀▀▀▀███
+  ███    ███ ███▌ ███            ███     ███    ███ ▀▀███▀▀▀▀▀   ▄██   ███
+  ▀██    ██▀ ███  ███    █▄      ███     ███    ███ ▀███████████ ███   ███
+   ▀██  ██▀  ███  ███    ███     ███     ███    ███   ███    ███ ███   ███
+    ▀████▀   █▀   ████████▀     ▄████▀    ▀██████▀    ███    ███  ▀█████▀
+      ▀▀                                              ▀▀▀    ▀▀▀
+
 Congratulations! You found the Wetlands Portal and finished your quest.
 
 With different paths to take, items to find and enemies to battle, every
 playthrough can be a brand new adventure. Who knows, you may even find a
 secret ending...
+
+Thank you for playing Portal Hunt!
+"""
+
+ASCII_TITLE = """
+     ▄███████▄  ▄██████▄     ▄████████     ███        ▄████████  ▄█
+    ███    ███ ███    ███   ███    ███ ▀█████████▄   ███    ███ ███
+    ███    ███ ███    ███   ███    ███    ▀███▀▀██   ███    ███ ███
+    ███    ███ ███    ███  ▄███▄▄▄▄██▀     ███   ▀   ███    ███ ███
+  ▀█████████▀  ███    ███ ▀▀███▀▀▀▀▀       ███     ▀███████████ ███
+    ███        ███    ███ ▀███████████     ███       ███    ███ ███
+    ███        ███    ███   ███    ███     ███       ███    ███ ███▌    ▄
+   ▄████▀       ▀██████▀    ███    ███    ▄████▀     ███    █▀  █████▄▄██
+                            ███    ███                          ▀
+
+                ▄█    █▄    ███    █▄  ███▄▄▄▄       ███
+               ███    ███   ███    ███ ███▀▀▀██▄ ▀█████████▄
+               ███    ███   ███    ███ ███   ███    ▀███▀▀██
+              ▄███▄▄▄▄███▄▄ ███    ███ ███   ███     ███   ▀
+             ▀▀███▀▀▀▀███▀  ███    ███ ███   ███     ███
+               ███    ███   ███    ███ ███   ███     ███
+               ███    ███   ███    ███ ███   ███     ███
+               ███    █▀    ████████▀   ▀█   █▀     ▄████▀
+"""
+
+ASCII_GAME_OVER = """
+     ▄██████▄     ▄████████    ▄▄▄▄███▄▄▄▄      ▄████████
+    ███    ███   ███    ███  ▄██▀▀▀███▀▀▀██▄   ███    ███
+    ███    █▀    ███    ███  ███   ███   ███   ███    █▀
+   ▄███          ███    ███  ███   ███   ███  ▄███▄▄▄
+  ▀▀███ ████▄  ▀███████████  ███   ███   ███ ▀▀███▀▀▀
+    ███    ███   ███    ███  ███   ███   ███   ███    █▄
+    ███    ███   ███    ███  ███   ███   ███   ███    ███
+    ████████▀    ███    █▀    ▀█   ███   █▀    ██████████
+
+     ▄██████▄   ▄█    █▄     ▄████████    ▄████████    ████
+    ███    ███ ███    ███   ███    ███   ███    ███    ████
+    ███    ███ ███    ███   ███    █▀    ███    ███    ████
+    ███    ███ ███    ███  ▄███▄▄▄      ▄███▄▄▄▄██▀    ████
+    ███    ███ ███    ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀       ██
+    ███    ███ ███    ███   ███    █▄  ▀███████████
+    ███    ███ ███    ███   ███    ███   ███    ███    ████
+     ▀██████▀   ▀██████▀    ██████████   ███    ███    ████
 """

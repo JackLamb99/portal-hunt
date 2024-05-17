@@ -134,7 +134,7 @@ def dragon():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.DRAGON_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -415,7 +415,7 @@ def tiger():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.TIGER_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -498,7 +498,7 @@ def goblins_2b():
             # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -575,7 +575,7 @@ def goblins_1a():
             # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":

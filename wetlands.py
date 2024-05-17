@@ -141,7 +141,7 @@ def serpent():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SERPENT_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -366,7 +366,7 @@ def leeches_3d():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.LEECHES_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -445,7 +445,7 @@ def crocodile():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.CROCODILE_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -528,7 +528,7 @@ def leeches_3b():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.LEECHES_DEFEAT_TEXT)
-                print("Game over! Your quest has ended in defeat.\n")
+                print(nar.ASCII_GAME_OVER)
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
