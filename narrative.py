@@ -35,17 +35,43 @@ a face, with deep-set eyes and a wise, weathered expression. As you approach,
 the tree springs to life, its wide eyes locking onto you, branches rustling
 softly as it speaks:
 
-"A warning for the brave of heart,\
-
-With wisdom only a few impart, \
-
-Journey through these lands of old, \
-
-Through caves deep and mountains cold, \
-
-Where ancient dangers freely roam, \
-
+"A warning for the brave of heart,
+With wisdom only a few impart,
+Journey through these lands of old,
+Through caves deep and mountains cold,
+Where ancient dangers freely roam,
 You must seek the portals for passage home."
+"""
+
+SECRET_ENDING_TEXT = """
+You return to The Glade, where your long and perilous adventure began.
+
+The ancient oak stands at the centre, its trunk knotted and twisted in the
+middle to resemble a face, with deep-set eyes and a wise, weathered expression.
+As you approach, the tree springs to life, a wide smile spreading across its
+face as it speaks:
+
+"A thanks to you, a brave heart so true,
+For the deeds only a hero could do,
+You've journeyed through these lands of old,
+Through caves deep and mountains cold,
+Through scorching heat and forests drowned,
+With relics returned and balance found,
+You've banished the evil grip on this realm,
+Now life can thrive, taking the helm."
+
+As the tree finishes speaking, its roots begin to part and a portal shimmers
+into existence, glowing with a soft, inviting light. With a final nod from the
+ancient oak, you step into the portal and are immediately surrounded by
+swirling visions. You witness fires extinguishing, their destructive flames
+vanishing into wisps of smoke. Floodwaters retreat, revealing rich soil
+beneath. Vegetation springs to life, lush and green, while animals of all
+kinds return to their habitats, filling the air with the sounds of a
+rejuvenated world. The realm is healing, vibrant and full of life, as you are
+gently carried through the portal to your next adventure.
+
+Congratulations! By defeating every enemy and returning all of the items, you
+have unlocked the secret ending.
 """
 
 TAKE_ITEM_TEXT = """
