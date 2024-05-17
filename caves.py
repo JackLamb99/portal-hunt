@@ -20,7 +20,7 @@ def caves_portal():
     Runs the 'caves portal' scene, end of the 'Cave Path'
     """
     print(nar.CAVES_PORTAL_TEXT)
-    print("Call end game function")  # TO BE DEFINED
+    gen.game_over()
 
 
 def cave_dead_end():
@@ -137,7 +137,8 @@ def troll():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.TROLL_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -350,7 +351,8 @@ def spider_1a():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SPIDER_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -422,7 +424,8 @@ def spider_2b():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SPIDER_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -505,7 +508,8 @@ def skeletons():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SKELETONS_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()

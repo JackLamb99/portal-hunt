@@ -104,18 +104,21 @@ def game_over():
     """
     Allows the user to return the the main menu or restart the game.
     """
-    # Imported locally to avoid circular import error
-    from run import main_menu
-    from glade import glade
     options = ["menu", "again"]
 
-    print(lst_to_str(options))
+    print(f"Options: {lst_to_str(options)}")
 
     valid_input = get_valid_input("Would you like to return to the main menu"
                                   " or play again?: ", options)
     if valid_input == "menu":
         reset_game()
+        clear()
+        # Imports function locally to avoid circular import error
+        from run import main_menu
         main_menu()
-    elif valid_input == "glade":
+    elif valid_input == "again":
         reset_game()
+        clear()
+        # Imports function locally to avoid circular import error
+        from glade import glade
         glade()

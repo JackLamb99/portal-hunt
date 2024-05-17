@@ -20,7 +20,7 @@ def scorchlands_portal():
     Runs the 'scorchlands portal' scene, end of the 'Scorchlands Path'
     """
     print(nar.SCORCHLANDS_PORTAL_TEXT)
-    print("Call end game function")  # TO BE DEFINED
+    gen.game_over()
 
 
 def scor_crossrd_1a():
@@ -144,7 +144,8 @@ def golem():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.GOLEM_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -413,7 +414,8 @@ def wolves_2c():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.WOLVES_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -496,7 +498,8 @@ def crawler():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.CRAWLER_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -575,7 +578,8 @@ def wolves_4c():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.WOLVES_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()

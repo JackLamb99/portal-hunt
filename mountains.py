@@ -20,7 +20,7 @@ def mountains_portal():
     Runs the 'mountains portal' scene, end of the 'Mountains Path'
     """
     print(nar.MOUNTAINS_PORTAL_TEXT)
-    print("Call end game function")  # TO BE DEFINED
+    gen.game_over()
 
 
 def mnt_dead_end():
@@ -131,7 +131,8 @@ def dragon():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.DRAGON_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -411,7 +412,8 @@ def tiger():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.TIGER_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -493,7 +495,8 @@ def goblins_2b():
             # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -569,7 +572,8 @@ def goblins_1a():
             # If required item not in inventory, defeat scene
             else:
                 print(nar.GOBLINS_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()

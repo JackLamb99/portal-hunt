@@ -20,7 +20,7 @@ def wetlands_portal():
     Runs the 'wetlands portal' scene, end of the 'Wetlands Path'
     """
     print(nar.WETLANDS_PORTAL_TEXT)
-    print("Call end game function")  # TO BE DEFINED
+    gen.game_over()
 
 
 def wtl_crossrd_1a():
@@ -138,7 +138,8 @@ def serpent():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SERPENT_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -362,7 +363,8 @@ def leeches_3d():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.LEECHES_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -440,7 +442,8 @@ def crocodile():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.CROCODILE_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
@@ -522,7 +525,8 @@ def leeches_3b():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.LEECHES_DEFEAT_TEXT)
-                print("Call end game function")  # TO BE DEFINED
+                print("Game over! Your quest has ended in defeat.\n")
+                gen.game_over()
         # Flee scene
         elif valid_input == "flee":
             gen.clear()
