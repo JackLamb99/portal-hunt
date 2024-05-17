@@ -21,7 +21,6 @@ def main_menu():
     """
     Runs the main menu to start the program, includes the menu_text narrative
     """
-    print(nar.ASCII_TITLE)
     print(nar.MENU_TEXT)
 
     user_input = input("Enter 'start' to begin your quest: ")

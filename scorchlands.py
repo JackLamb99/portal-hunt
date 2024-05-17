@@ -147,7 +147,7 @@ def golem():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.GOLEM_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -417,7 +417,7 @@ def wolves_2c():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.WOLVES_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -501,7 +501,7 @@ def crawler():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.CRAWLER_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -581,7 +581,7 @@ def wolves_4c():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.WOLVES_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":

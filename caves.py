@@ -140,7 +140,7 @@ def troll():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.TROLL_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -354,7 +354,7 @@ def spider_1a():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SPIDER_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -427,7 +427,7 @@ def spider_2b():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SPIDER_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
@@ -511,7 +511,7 @@ def skeletons():
             # If required items not in inventory, defeat scene
             else:
                 print(nar.SKELETONS_DEFEAT_TEXT)
-                print(nar.ASCII_GAME_OVER)
+                print("Game over! Your quest has ended in defeat.\n")
                 gen.game_over()
         # Flee scene
         elif valid_input == "flee":
