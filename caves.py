@@ -10,9 +10,12 @@ interaction logic for each based on user input.
 When required, functions are named based on the 'Caves' grid reference
 provided in the README.md.
 """
+import colorama
+from colorama import Fore
 import narrative as nar
 import general as gen
 import glade
+colorama.init(autoreset=True)
 
 
 def caves_portal():
@@ -30,7 +33,7 @@ def cave_dead_end():
     directions = ["west"]
 
     print(nar.DEAD_END_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -55,7 +58,7 @@ def mace():
         options = ["keep", "return"]
 
         print(nar.MACE_EXISTING_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -68,7 +71,7 @@ def mace():
         options = ["take", "leave"]
 
         print(nar.MACE_NEW_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -78,7 +81,7 @@ def mace():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -108,7 +111,7 @@ def troll():
         options = ["fight", "flee"]
 
         print(nar.TROLL_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -121,7 +124,7 @@ def troll():
                 gen.enemies["troll"] = False
 
                 print(nar.TROLL_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -152,7 +155,7 @@ def troll():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.TROLL_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -183,7 +186,7 @@ def coil():
         options = ["keep", "return"]
 
         print(nar.COIL_EXISTING_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -196,7 +199,7 @@ def coil():
         options = ["take", "leave"]
 
         print(nar.COIL_NEW_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -206,7 +209,7 @@ def coil():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -222,7 +225,7 @@ def cave_crossrd_2a():
     directions = ["north", "east", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -246,7 +249,7 @@ def cave_crossrd_3b():
     directions = ["north", "east", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -274,7 +277,7 @@ def cave_crossrd_4c():
     directions = ["north", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -298,7 +301,7 @@ def cave_crossrd_3d():
     directions = ["south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -326,7 +329,7 @@ def spider_1a():
         options = ["fight", "flee"]
 
         print(nar.SPIDER_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -338,7 +341,7 @@ def spider_1a():
                 gen.enemies["spider-1a"] = False
 
                 print(nar.SPIDER_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -366,7 +369,7 @@ def spider_1a():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.SPIDER_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -393,7 +396,7 @@ def spider_2b():
         options = ["fight", "flee"]
 
         print(nar.SPIDER_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -405,7 +408,7 @@ def spider_2b():
                 gen.enemies["spider-2b"] = False
 
                 print(nar.SPIDER_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -443,7 +446,7 @@ def spider_2b():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.SPIDER_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -476,7 +479,7 @@ def skeletons():
         options = ["fight", "flee"]
 
         print(nar.SKELETONS_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -489,7 +492,7 @@ def skeletons():
                 gen.enemies["skeletons"] = False
 
                 print(nar.SKELETONS_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -527,7 +530,7 @@ def skeletons():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.SKELETONS_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -561,7 +564,7 @@ def everflame():
         options = ["keep", "return"]
 
         print(nar.EVERFLAME_EXISTING_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -574,7 +577,7 @@ def everflame():
         options = ["take", "leave"]
 
         print(nar.EVERFLAME_NEW_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -584,7 +587,7 @@ def everflame():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -606,7 +609,7 @@ def cave_crossrd_1b():
     directions = ["north", "east", "south"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -630,7 +633,7 @@ def cave_crossrd_2c():
     directions = ["north", "east", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -657,7 +660,7 @@ def cave_crossrd_1d():
     directions = ["east", "south"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -677,7 +680,7 @@ def caves_desc():
     directions = ["north", "east", "south", "west"]
 
     print(nar.CAVES_DESC_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)

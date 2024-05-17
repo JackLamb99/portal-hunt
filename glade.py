@@ -7,12 +7,15 @@ in Portal Hunt.
 Separate file required to hold this function to allow users to return to 'The
 Glade' from each separate file without caused a circular import error.
 """
+import colorama
+from colorama import Fore
 import general as gen
 import narrative as nar
 from mountains import mountains_desc
 from caves import caves_desc
 from scorchlands import scorchlands_desc
 from wetlands import wetlands_desc
+colorama.init(autoreset=True)
 
 
 def glade():
@@ -22,7 +25,7 @@ def glade():
     directions = ["north", "east", "south", "west"]
 
     print(nar.GLADE_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)

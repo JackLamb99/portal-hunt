@@ -10,9 +10,12 @@ interaction logic for each based on user input.
 When required, functions are named based on the 'Wetlands' grid reference
 provided in the README.md.
 """
+import colorama
+from colorama import Fore
 import narrative as nar
 import general as gen
 import glade
+colorama.init(autoreset=True)
 
 
 def wetlands_portal():
@@ -30,7 +33,7 @@ def wtl_crossrd_1a():
     directions = ["north", "east"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -59,7 +62,7 @@ def harpoon():
         options = ["keep", "return"]
 
         print(nar.HARPOON_EXISTING_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -72,7 +75,7 @@ def harpoon():
         options = ["take", "leave"]
 
         print(nar.HARPOON_NEW_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -82,7 +85,7 @@ def harpoon():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -106,7 +109,7 @@ def serpent():
         options = ["fight", "flee"]
 
         print(nar.SERPENT_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -119,7 +122,7 @@ def serpent():
                 gen.enemies["serpent"] = False
 
                 print(nar.SERPENT_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -155,7 +158,7 @@ def serpent():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.SERPENT_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -189,7 +192,7 @@ def trident():
         options = ["keep", "return"]
 
         print(nar.TRIDENT_EXISTING_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -202,7 +205,7 @@ def trident():
         options = ["take", "leave"]
 
         print(nar.TRIDENT_NEW_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -212,7 +215,7 @@ def trident():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -234,7 +237,7 @@ def wtl_crossrd_2d():
     directions = ["east", "south"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -255,7 +258,7 @@ def wtl_crossrd_1c():
     directions = ["north", "east", "south"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -279,7 +282,7 @@ def wtl_crossrd_2b():
     directions = ["north", "east", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -307,7 +310,7 @@ def wtl_crossrd_3a():
     directions = ["north", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -335,7 +338,7 @@ def leeches_3d():
         options = ["fight", "flee"]
 
         print(nar.LEECHES_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -347,7 +350,7 @@ def leeches_3d():
                 gen.enemies["leeches-3d"] = False
 
                 print(nar.LEECHES_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -380,7 +383,7 @@ def leeches_3d():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.LEECHES_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -410,7 +413,7 @@ def crocodile():
         options = ["fight", "flee"]
 
         print(nar.CROCODILE_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -423,7 +426,7 @@ def crocodile():
                 gen.enemies["crocodile"] = False
 
                 print(nar.CROCODILE_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -461,7 +464,7 @@ def crocodile():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.CROCODILE_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -494,7 +497,7 @@ def leeches_3b():
         options = ["fight", "flee"]
 
         print(nar.LEECHES_DESC_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input("What would you like to do?: ",
                                           options)
@@ -506,7 +509,7 @@ def leeches_3b():
                 gen.enemies["leeches-3b"] = False
 
                 print(nar.LEECHES_VICTORY_TEXT)
-                print(f"Directions: {gen.lst_to_str(directions)}")
+                print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
                 valid_input = gen.get_valid_input(
                     "Where would you like to go?: ", directions)
@@ -544,7 +547,7 @@ def leeches_3b():
     # Else if the enemy is already defeated, 'cleared' scene
     else:
         print(nar.LEECHES_CLEARED_TEXT)
-        print(f"Directions: {gen.lst_to_str(directions)}")
+        print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
         valid_input = gen.get_valid_input("Where would you like to go?: ",
                                           directions)
@@ -578,7 +581,7 @@ def elixir():
         options = ["keep", "return"]
 
         print(nar.ELIXIR_EXISTING_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -591,7 +594,7 @@ def elixir():
         options = ["take", "leave"]
 
         print(nar.ELIXIR_NEW_ITEM_TEXT)
-        print(f"Options: {gen.lst_to_str(options)}")
+        print(Fore.GREEN + f"Options: {gen.lst_to_str(options)}")
 
         valid_input = gen.get_valid_input(
             "What would you like to do with this item?: ", options)
@@ -601,7 +604,7 @@ def elixir():
         elif valid_input == "leave":
             print(nar.LEAVE_ITEM_TEXT)
 
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -617,7 +620,7 @@ def wtl_crossrd_4d():
     directions = ["south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -637,7 +640,7 @@ def wtl_crossrd_3c():
     directions = ["north", "east", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -665,7 +668,7 @@ def wtl_crossrd_4b():
     directions = ["north", "south", "west"]
 
     print(nar.CROSSROAD_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)
@@ -689,7 +692,7 @@ def wetlands_desc():
     directions = ["north", "east", "south", "west"]
 
     print(nar.WETLANDS_DESC_TEXT)
-    print(f"Directions: {gen.lst_to_str(directions)}")
+    print(Fore.GREEN + f"Directions: {gen.lst_to_str(directions)}")
 
     valid_input = gen.get_valid_input("Where would you like to go?: ",
                                       directions)

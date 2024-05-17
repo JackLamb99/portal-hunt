@@ -8,7 +8,9 @@ This module also contains the 'Inventory' list and 'Enemy' dictionary that are
 used across multiple other Python files within this project.
 """
 from os import system, name
-
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
 
 flee_direction = []
 inventory = []
@@ -64,8 +66,8 @@ def get_valid_input(prompt, lst):
             # If the input is valid, break out of the loop
             return user_input
         else:
-            print("Invalid direction, please choose from the "
-                  "available options")
+            print(Fore.RED + "Invalid input, please choose from the available"
+                  " options")
 
 
 def amend_flee_direction(direction):
@@ -102,11 +104,11 @@ def reset_game():
 
 def game_over():
     """
-    Allows the user to return the the main menu or restart the game.
+    Allows the user to return to the main menu or restart the game.
     """
     options = ["menu", "again"]
 
-    print(f"Options: {lst_to_str(options)}")
+    print(Fore.GREEN + f"Options: {lst_to_str(options)}")
 
     valid_input = get_valid_input("Would you like to return to the main menu"
                                   " or play again?: ", options)

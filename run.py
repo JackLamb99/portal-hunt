@@ -9,9 +9,12 @@ Usage:
 - Example command: 'python run.py'
 - See README.md for additional information.
 """
+import colorama
+from colorama import Fore
 import general as gen
 import narrative as nar
 import glade
+colorama.init(autoreset=True)
 
 
 def main_menu():
@@ -22,7 +25,8 @@ def main_menu():
 
     user_input = input("Enter 'start' to begin your quest: ")
     while user_input.lower() != "start":
-        print("Invalid input. Please enter 'start' to begin your quest.\n")
+        print(Fore.RED + "Invalid input. Please enter 'start' to begin your"
+              " quest.\n")
         user_input = input("Enter 'start' to begin your quest: ")
     gen.clear()
     glade.glade()
