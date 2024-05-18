@@ -45,7 +45,7 @@
 
 ### Crossroads & Dead Ends
 
-* 'Crossroads' and 'Dead End' blocks are used throughout each path to space out the item and enemy blocks, providing a challenge for the player to navigate between them.
+* 'Crossroads' and 'dead end' blocks are used throughout each path to space out the item and enemy blocks, providing a challenge for the player to navigate between them.
 * These include a generic message that is the same for every path, as they are not intended to provide any import interactive element.
 * A message prompts the user to input a direction from the available options above to proceed to the next block.
 
@@ -115,7 +115,7 @@ There are three difficulty levels to these enemies;
 
 * If the player chooses to fight the enemy and the required items are not in the inventory, the player will be defeated.
 * A description of losing the fight is provided, including a message that that they were "not equipped" to defeat the enemy, hinting to the player that they need to find right items first.
-* Losing a fight calls the 'game_over' function, allowing the player to return to the main menu or play again, resetting the game and returning them to 'The Glade' block.
+* Losing a fight calls the `game_over()` function, allowing the player to return to the main menu or play again, resetting the game and returning them to 'The Glade' block.
 
 <details><summary>Player Defeated Example</summary>
 
@@ -137,7 +137,7 @@ There are three difficulty levels to these enemies;
 
 #### Enemy Cleared
 
-* If the player returns to the enemy block, having previously defeated them (i.e. 'Enemy = False' in the 'enemies' dictionary), then the block will run an 'enemy cleared' scene.
+* If the player returns to the enemy block, having previously defeated them (i.e. `enemy = False` in the 'enemies' dictionary), then the block will run an 'enemy cleared' scene.
 * A description is given of the area and the aftermath of the fight, implying that it is now a safer place.
 * A message prompts the user to input a direction from the available options above to proceed to the next block.
 
@@ -151,7 +151,7 @@ There are three difficulty levels to these enemies;
 
 * After defeating the level 3 enemy, the player is able to travel to the 'Portal' block, completing that path and the main way of winning the game.
 * A description of the player finder the portal is provided as well as a message to congratulate them, remind them that there are multiple paths to take if they would like to play again and thank them for playing the game.
-* Finding a portal calls the 'game_over' function, allowing the player to return to the main menu or play again, resetting the game and returning them to 'The Glade' block.
+* Finding a portal calls the `game_over()` function, allowing the player to return to the main menu or play again, resetting the game and returning them to 'The Glade' block.
 
 <details><summary>Portal Example</summary>
 
@@ -248,7 +248,7 @@ A function is used throughout the project to clear the screen when navigating be
 
 ### Game Over
 
-A 'game_over' function is used when a player is defeated or successfully finds a portal, which resets the 'inventory' list and 'enemies' dictionary values to allow users a simple way to return to the main menu or play again without needing to re-run the program.
+The `game_over()` function is used when a player is defeated or successfully finds a portal, which resets the 'inventory' list and 'enemies' dictionary values to allow users a simple way to return to the main menu or play again without needing to re-run the program.
 
 <details><summary>Game Over Example</summary>
 
