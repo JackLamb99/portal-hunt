@@ -255,3 +255,292 @@ The `game_over()` function is used when a player is defeated or successfully fin
 ![Game Over Example](assets/readme_images/game_over_ui_example.png)
 
 </details>
+
+## Testing
+
+### Functional Testing
+
+#### Playthroughs
+
+<details><summary>Mountains Path Playthrough</summary>
+
+Steps:
+
+1. Navigate to the 'Frostfire' item (grid ref. Mountains-4B) and input 'take' when prompted
+2. Navigate to the closest 'Snow Goblins' enemy (grid ref. Mountains-2B) and input 'fight' when prompted
+3. Navigate to the remaining 'Snow Goblins' enemy (grid ref. Mountains-1A) and input 'fight' when prompted
+4. Navigate to the 'Voltcrusher' item (grid ref. Mountains-1C) and input 'take' when prompted
+5. Navigate to the 'Sabre-tooth Tiger' enemy (grid ref. Mountains-3C) and input 'fight' when prompted
+6. Navigate to the 'Crystal Bow' item (grid ref. Mountains-4D) and input 'take' when prompted
+7. Navigate to the 'Ice Dragon' enemy (grid ref. Mountains-2D) and input 'fight' when prompted
+8. Navigate to the 'Mountains Portal', successfully ending the playthrough
+
+Expectations:
+
+1. "frostfire" will be added to the 'inventory' list
+2. The fight will be successful, amending the value for the "goblins-2b" key in the 'enemies' dictionary to 'False'
+3. The fight will be successful, amending the value for the "goblins-1a" key in the 'enemies' dictionary to 'False'
+4. "voltcrusher" will be added to the 'inventory' list
+5. The fight will be successful, amending the value for the "tiger" key in the 'enemies' dictionary to 'False'
+6. "bow" will be added to the 'inventory' list
+7. The fight will be successful, amending the value for the "dragon" key in the 'enemies' dictionary to 'False'
+8. The `mountains_portal()` function will be called to end the playthrough
+
+Result: Performed as expected, no errors occurred
+
+</details>
+
+<details><summary>Cave Path Playthrough</summary>
+
+Steps:
+
+1. Navigate to the 'Everflame' item (grid ref. Caves-2D) and input 'take' when prompted
+2. Navigate to the closest 'Giant Spider' enemy (grid ref. Caves-2B) and input 'fight' when prompted
+3. Navigate to the remaining 'Giant Spider' enemy (grid ref. Caves-1A) and input 'fight' when prompted
+4. Navigate to the 'Blessed Mace' item (grid ref. Caves-3A) and input 'take' when prompted
+5. Navigate to the 'Skeletal Warriors' enemy (grid ref. Caves-3C) and input 'fight' when prompted
+6. Navigate to the 'Serpent's Coil' item (grid ref. Caves-4D) and input 'take' when prompted
+7. Navigate to the 'Cave Troll' enemy (grid ref. Caves-4B) and input 'fight' when prompted
+8. Navigate to the 'Caves Portal', successfully ending the playthrough
+
+Expectations:
+
+1. "everflame" will be added to the 'inventory' list
+2. The fight will be successful, amending the value for the "spider-2b" key in the 'enemies' dictionary to 'False'
+3. The fight will be successful, amending the value for the "spider-1a" key in the 'enemies' dictionary to 'False'
+4. "mace" will be added to the 'inventory' list
+5. The fight will be successful, amending the value for the "skeletons" key in the 'enemies' dictionary to 'False'
+6. "coil" will be added to the 'inventory' list
+7. The fight will be successful, amending the value for the "troll" key in the 'enemies' dictionary to 'False'
+8. The `caves_portal()` function will be called to end the playthrough
+
+Result: Performed as expected, no errors occurred
+
+</details>
+
+<details><summary>Scorchlands Path Playthrough</summary>
+
+Steps:
+
+1. Navigate to the 'Frostbite Sabre' item (grid ref. Scorchlands-2D) and input 'take' when prompted
+2. Navigate to the closest 'Ember Wolves' enemy (grid ref. Scorchlands-2C) and input 'fight' when prompted
+3. Navigate to the remaining 'Ember Wolves' enemy (grid ref. Scorchlands-4C) and input 'fight' when prompted
+4. Navigate to the 'Water Staff' item (grid ref. Scorchlands-1B) and input 'take' when prompted
+5. Navigate to the 'Lava Crawler' enemy (grid ref. Scorchlands-3B) and input 'fight' when prompted
+6. Navigate to the 'Earthshaker' item (grid ref. Scorchlands-4A) and input 'take' when prompted
+7. Navigate to the 'Magma Golem' enemy (grid ref. Scorchlands-2A) and input 'fight' when prompted
+8. Navigate to the 'Scorchlands Portal', successfully ending the playthrough
+
+Expectations:
+
+1. "sabre" will be added to the 'inventory' list
+2. The fight will be successful, amending the value for the "wolves-2c" key in the 'enemies' dictionary to 'False'
+3. The fight will be successful, amending the value for the "wolves-4c" key in the 'enemies' dictionary to 'False'
+4. "staff" will be added to the 'inventory' list
+5. The fight will be successful, amending the value for the "crawler" key in the 'enemies' dictionary to 'False'
+6. "earthshaker" will be added to the 'inventory' list
+7. The fight will be successful, amending the value for the "golem" key in the 'enemies' dictionary to 'False'
+8. The `scorchlands_portal()` function will be called to end the playthrough
+
+Result: Performed as expected, no errors occurred
+
+</details>
+
+<details><summary>Wetlands Path Playthrough</summary>
+
+Steps:
+
+1. Navigate to the 'Leechbane Elixir' item (grid ref. Wetlands-4a) and input 'take' when prompted
+2. Navigate to the closest 'Giant Leeches' enemy (grid ref. Wetlands-3B) and input 'fight' when prompted
+3. Navigate to the remaining 'Giant Leeches' enemy (grid ref. Wetlands-3D) and input 'fight' when prompted
+4. Navigate to the 'Telsa's Trident' item (grid ref. Wetlands-2A) and input 'take' when prompted
+5. Navigate to the 'Two-headed Crocodile' enemy (grid ref. Wetlands-2C) and input 'fight' when prompted
+6. Navigate to the 'Sonic Harpoon' item (grid ref. Wetlands-1D) and input 'take' when prompted
+7. Navigate to the 'Water Serpent' enemy (grid ref. Wetlands-1B) and input 'fight' when prompted
+8. Navigate to the 'Wetlands Portal', successfully ending the playthrough
+
+Expectations:
+
+1. "elixir" will be added to the 'inventory' list
+2. The fight will be successful, amending the value for the "leeches-3b" key in the 'enemies' dictionary to 'False'
+3. The fight will be successful, amending the value for the "leeches-3d" key in the 'enemies' dictionary to 'False'
+4. "trident" will be added to the 'inventory' list
+5. The fight will be successful, amending the value for the "crocodile" key in the 'enemies' dictionary to 'False'
+6. "harpoon" will be added to the 'inventory' list
+7. The fight will be successful, amending the value for the "serpent" key in the 'enemies' dictionary to 'False'
+8. The `wetlands_portal()` function will be called to end the playthrough
+
+Result: Performed as expected, no errors occurred
+
+</details>
+
+#### Item Interaction
+
+<details><summary>Leave Item Input</summary>
+
+Steps:
+
+1. Navigate to the item block
+2. Input 'leave'
+3. Print 'inventory' list to terminal
+
+Expectation: The item will not be added to the 'inventory' list.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Take Item Input</summary>
+
+Steps:
+
+1. Navigate to the item block
+2. Input 'take'
+3. Print 'inventory' list to terminal
+
+Expectation: The item will be added to the 'inventory' list.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Keep Item Input</summary>
+
+Steps:
+
+1. Add the item to the 'inventory' list
+2. Navigate to the item block
+3. Input 'keep'
+4. Print 'inventory' list to terminal
+
+Expectation: The item will remain in the 'inventory' list.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Return Item Input</summary>
+
+Steps:
+
+1. Add the item to the 'inventory' list
+2. Navigate to the item block
+3. Input 'return'
+4. Print 'inventory' list to terminal
+
+Expectation: The item will be removed from the 'inventory' list.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+#### Enemy Interaction
+
+<details><summary>Flee Input</summary>
+
+Steps:
+
+1. Navigate to the enemy 'block'
+2. Input 'flee'
+
+Expectation: The user will be directed back the last used block.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Fight Input (with required items)</summary>
+
+Steps:
+
+1. Add the required items to the 'inventory' list
+2. Navigate to the enemy 'block'
+3. Input 'fight'
+4. Print the 'enemies' dictionary to the terminal
+
+Expectations:
+
+1. The player will win the fight
+2. The value for the enemy key in the 'enemies' dictionary will be amended to 'False'
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Fight Input (without required items)</summary>
+
+Steps:
+
+1. Ensure the required items are not in the 'inventory' list
+2. Navigate to the enemy 'block'
+3. Input 'fight'
+
+Expectation: The user will lose the fight.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Return to Defeated Enemy</summary>
+
+Steps:
+
+1. Add the required items to the 'inventory' list
+2. Navigate to the enemy 'block'
+3. Input 'fight'
+4. Leave the enemy 'block' in any available direction
+5. Navigate back to the enemy 'block'
+
+Expectation: The 'enemy cleared' scene will call called.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+#### User Input Validation
+
+<details><summary>Valid User Input</summary>
+
+Action: Input a valid option exactly as listed above the user input request.
+
+Expectation: The required function will be called without an invalid input error message.
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Capitalised User Input</summary>
+
+Action: Input a valid option listed above the user input request, but using capitalised letters.
+
+Expectation: The required function will be called without an invalid input error message
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+<details><summary>Invalid User Input</summary>
+
+Action: Input an invalid option that is not listed above the user input request
+
+Expectations: 
+
+1. The "Invalid input, please choose from the available options" message will be printed below the user input request in red
+2. The same user input will be requested below the message
+
+Result: Performed as expected, no errors occurred.
+
+</details>
+
+### Validator Testing
+
+All of the python modules within the project were entered into the [Code Institute Python Linter](https://pep8ci.herokuapp.com/) and returned no errors
+
+### Bugs
+
+| Issue Encountered | How it was resolved |
+| --- | --- |
+| Defining the `glade()` function within the 'run' module creates a circular import error when called within the entrance function for each path. | A 'glade' module was added to hold the `glade()` function, allowing it to be called across multiple other modules without causing an error. |
+| An incorrect input can be entered, resulting in a blank return and breaking the flow of the program. | A `get_valid_input()` function was added, taking a prompt message and a valid input list as arguments. This function checks if the user's input matches an option from the provided list, returning the input if True or printing an invalid input message and requesting the input again if False. |
+| Importing the 'glade' and 'main_menu' modules at the top of the 'general' module creates a circular import error when calling them within the `game_over()` function. | Within the `game_over()` function, placed directly above where the functions are called, the required functions are imported using the `from module import function` syntax. |
+| The ASCII art used to generate a 'Portal Hunt', 'Game Over' and 'Victory' message creates an overlapping display issue when hosted on the provided terminal. | As the ASCII art was implemented solely for aesthetic purposes and does not impact the functionality of the program, it has currently been removed as I was unable to find a solution before the project deadline, this is an addition that can added in a later release. |
