@@ -2,6 +2,37 @@
 
 'Portal Hunt' is a text-based adventure game that challenges players to navigate the various paths within the fictional realm to find a portal that will take them home, winning the game. Along these paths, players will need to search for various items that are required to fight the variety of enemies they will encounter along their journey. View the live site [here](https://portal-hunt-6b8f218a5854.herokuapp.com/).
 
+## Table of Contents
+
+* [Features](#features)
+	* [Main Menu](#main-menu)
+	* [The Glade](#the-glade)
+	* [Biome Description](#biome-description)
+	* [Crossroads & Dead Ends](#crossroads--dead-ends)
+	* [Items](#items)
+	* [Enemies](#enemies)
+	* [Portal](#portal)
+	* [Possible Future Implementations](#possible-future-implementations)
+* [Planning](#planning)
+	* [Maps](#maps)
+	* [Grids](#grids)
+* [User Interface](#user-interface)
+	* [Colours](#colours)
+	* [Clear Screen](#clear-screen)
+	* [Game Over](#game-over)
+* [Testing](#testing)
+	* [Functional Testing](#functional-testing)
+	* [Validator Testing](#validator-testing)
+	* [Bugs](#bugs)
+* [Technologies](#technologies)
+* [Deployment](#deployment)
+	* [Version Control](#version-control)
+	* [Deployment to Heroku](#deployment-to-heroku)
+	* [Clone the Repository Code Locally](#clone-the-repository-code-locally)
+* [Credit](#credit)
+	* [External Code Used](#external-code-used)
+	* [Acknowledgement](#acknowledgement)
+
 ## Features
 
 ### Main Menu
@@ -613,3 +644,5 @@ Open the selected GitHub repository you want to clone locally:
 ### Acknowledgement
 
 [Gareth McGirr](https://github.com/Gareth-McGirr) - My Code Institute mentor
+
+[Back to the top](#portal-hunt)
