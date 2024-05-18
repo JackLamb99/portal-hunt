@@ -544,3 +544,23 @@ All of the python modules within the project were entered into the [Code Institu
 | An incorrect input can be entered, resulting in a blank return and breaking the flow of the program. | A `get_valid_input()` function was added, taking a prompt message and a valid input list as arguments. This function checks if the user's input matches an option from the provided list, returning the input if True or printing an invalid input message and requesting the input again if False. |
 | Importing the 'glade' and 'main_menu' modules at the top of the 'general' module creates a circular import error when calling them within the `game_over()` function. | Within the `game_over()` function, placed directly above where the functions are called, the required functions are imported using the `from module import function` syntax. |
 | The ASCII art used to generate a 'Portal Hunt', 'Game Over' and 'Victory' message creates an overlapping display issue when hosted on the provided terminal. | As the ASCII art was implemented solely for aesthetic purposes and does not impact the functionality of the program, it has currently been removed as I was unable to find a solution before the project deadline, this is an addition that can added in a later release. |
+
+## Technologies
+
+The following technologies were used in the creation of the project:
+
+Python - The entirety of the Portal Hunt game was developed using Python.
+
+[Visual Studio Code](https://code.visualstudio.com/) - The project was developed using the Visual Studio Code desktop application
+
+[GitHub](https://github.com/) - The source code is hosted on a GitHub repository
+
+Git - Used for version control during the development of the project
+
+[Heroku](https://heroku.com/) - The live program is deployed using Heroku
+
+[Lucid Chart](https://www.lucidchart.com/) - Used to create the maps and grids
+
+[OS](https://docs.python.org/3/library/os.html) - Imported to use the `system()` function and 'name' variable within the `clear()` function for clearing the terminal
+
+[Colorama](https://pypi.org/project/colorama/) - Imported to use the `Fore.` function to colour the text for the input options and the invalid input message
