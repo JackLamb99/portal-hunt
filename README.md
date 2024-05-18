@@ -564,3 +564,41 @@ Git - Used for version control during the development of the project
 [OS](https://docs.python.org/3/library/os.html) - Imported to use the `system()` function and 'name' variable within the `clear()` function for clearing the terminal
 
 [Colorama](https://pypi.org/project/colorama/) - Imported to use the `Fore.` function to colour the text for the input options and the invalid input message
+
+## Deployment
+
+### Version Control
+
+The project was developed using the [Visual Studio Code](https://code.visualstudio.com/) desktop application and pushed to the remote repository [portal-hunt](https://github.com/JackLamb99/portal-hunt) on [GitHub](https://github.com/).
+
+The following git commands were used throughout its creation to push code to the remote repository:
+
+* `git add file` or `git add .` - This command was used to add the file(s) to the staging area before they were committed.
+* `git commit –m "commit message"` - This command was used to commit changes to the local repository queue.
+* `git push` - This command was used to push all committed code to the remote repository on GitHub.
+
+### Deployment to Heroku
+
+The project was deployed using Code Institute's terminal for Heroku
+
+The steps for deployment are as follows:
+
+1. From the Heroku dashboard, create a new app, using a unique name and setting the region as required
+2. In the 'settings' tab, add the 'Python' and 'NodeJS' buildpacks, ensuring Python is above NodeJS
+3. In the 'Deploy' tab, select 'GitHub' as the 'Deployment method'
+4. Connect the required GitHub repository to the app
+5. Optional; Enable 'Automatic Deploys' to automatically deploy the chosen branch when new commits are added to the repository
+6. Select the 'main' branch for 'Manual Deploy' and click 'Deploy Branch'
+7. Once the deployment is complete, the live site will be available
+
+The live site for the Portal Hunt project can be found [here](https://portal-hunt-6b8f218a5854.herokuapp.com/).
+
+### Clone the Repository Code Locally
+
+Open the selected GitHub repository you want to clone locally:
+
+1. Click on the 'Code' drop-down button
+2. Click on the 'HTTPS' option
+3. Copy the repository link
+4. Open your IDE
+5. Type `git clone copied-URL` into the IDE terminal (Git must be installed for this step)
