@@ -602,3 +602,14 @@ Open the selected GitHub repository you want to clone locally:
 3. Copy the repository link
 4. Open your IDE
 5. Type `git clone copied-URL` into the IDE terminal (Git must be installed for this step)
+
+## Credit
+
+### External Code Used
+
+* The code for the `clear()` function, in the general.py module, was taken from [this geeksforgeeks article](https://www.geeksforgeeks.org/clear-screen-python/) as declared above the function. It uses the `system()` function and 'name' variable from the imported OS module.
+* The `colorama.init(autoreset=True)` code used in the general.py module was taken from [this video](https://youtu.be/u51Zjlnui4Y?si=qdZ9Isr-VsmDAddC), explaining how to import and use Colorama.
+
+### Acknowledgement
+
+[Gareth McGirr](https://github.com/Gareth-McGirr) - My Code Institute mentor
